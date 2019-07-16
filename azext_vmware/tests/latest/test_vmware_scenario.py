@@ -139,8 +139,7 @@ class VmwareScenarioTest(AsyncScenarioTest):
         self.assertEqual(count, 1, 'cluster count expected to be 1')
 
         # cluster modify
-        # az vmware cluster modify -g 1foobar -p cloud-taggac -n cluster-taggac --size 4
-        self.cmd('vmware cluster modify -g {rg} -p {privatecloud} -n {cluster} --size 4')
+        self.cmd('vmware cluster modify -g {rg} --location {loc} -p {privatecloud} -n {cluster} --size 4')
         await self.poll_until_result(lambda: self.cmd('vmware cluster show -g {rg} -p {privatecloud} -n {cluster}'), provissioning_succeeded)
 
         # cluster delete

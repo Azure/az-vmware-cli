@@ -3,6 +3,7 @@ generated/
 swagger.resourceprovider.yaml
 swagger.json
 vmwarevirtustream.json
+Pipefile.lock
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
