@@ -1,0 +1,1 @@
+autorest --input-file=vmwarevirtustream.json --python --output-folder=azext_vmware --namespace=vendored_sdks --azure-arm=true --override-client-name=VirtustreamClient --use=@microsoft.azure/autorest.python@~3.0.56

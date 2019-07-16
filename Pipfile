@@ -1,0 +1,16 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pylint = "*"
+
+[packages]
+# azure-cli = "*"
+azure-cli-core = "*"
+azdev = "==0.0.6"
+azure-cli-testsdk = { git = "https://github.com/Azure/azure-cli", subdirectory = "src/azure-cli-testsdk" }
+
+[requires]
+python_version = "3.7"
