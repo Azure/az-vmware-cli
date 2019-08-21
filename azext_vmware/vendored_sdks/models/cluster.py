@@ -5,29 +5,38 @@
 # regenerated.
 # --------------------------------------------------------------------------
 
-from msrest.serialization import Model
+from .resource import Resource
 
 
-class Cluster(Model):
+class Cluster(Resource):
     """Cluster.
 
-    :param provisioning_state: Possible values include: 'Succeeded', 'Failed',
-     'Cancelled', 'Updating'
-    :type provisioning_state: str or ~vendored_sdks.models.enum
-    :param cluster_size:
-    :type cluster_size: int
-    :param hosts:
-    :type hosts: list[str]
+    Variables are only populated by the server, and will be ignored when
+    sending a request.
+
+    :ivar id: Resource ID.
+    :vartype id: str
+    :ivar name: Resource name.
+    :vartype name: str
+    :ivar type: Resource type.
+    :vartype type: str
+    :param properties:
+    :type properties: ~vendored_sdks.models.ClusterProperties
     """
 
+    _validation = {
+        'id': {'readonly': True},
+        'name': {'readonly': True},
+        'type': {'readonly': True},
+    }
+
     _attribute_map = {
-        'provisioning_state': {'key': 'provisioningState', 'type': 'str'},
-        'cluster_size': {'key': 'clusterSize', 'type': 'int'},
-        'hosts': {'key': 'hosts', 'type': '[str]'},
+        'id': {'key': 'id', 'type': 'str'},
+        'name': {'key': 'name', 'type': 'str'},
+        'type': {'key': 'type', 'type': 'str'},
+        'properties': {'key': 'properties', 'type': 'ClusterProperties'},
     }
 
     def __init__(self, **kwargs):
         super(Cluster, self).__init__(**kwargs)
-        self.provisioning_state = kwargs.get('provisioning_state', None)
-        self.cluster_size = kwargs.get('cluster_size', None)
-        self.hosts = kwargs.get('hosts', None)
+        self.properties = kwargs.get('properties', None)

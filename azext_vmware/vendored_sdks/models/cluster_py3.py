@@ -5,29 +5,38 @@
 # regenerated.
 # --------------------------------------------------------------------------
 
-from msrest.serialization import Model
+from .resource_py3 import Resource
 
 
-class Cluster(Model):
+class Cluster(Resource):
     """Cluster.
 
-    :param provisioning_state: Possible values include: 'Succeeded', 'Failed',
-     'Cancelled', 'Updating'
-    :type provisioning_state: str or ~vendored_sdks.models.enum
-    :param cluster_size:
-    :type cluster_size: int
-    :param hosts:
-    :type hosts: list[str]
+    Variables are only populated by the server, and will be ignored when
+    sending a request.
+
+    :ivar id: Resource ID.
+    :vartype id: str
+    :ivar name: Resource name.
+    :vartype name: str
+    :ivar type: Resource type.
+    :vartype type: str
+    :param properties:
+    :type properties: ~vendored_sdks.models.ClusterProperties
     """
 
-    _attribute_map = {
-        'provisioning_state': {'key': 'provisioningState', 'type': 'str'},
-        'cluster_size': {'key': 'clusterSize', 'type': 'int'},
-        'hosts': {'key': 'hosts', 'type': '[str]'},
+    _validation = {
+        'id': {'readonly': True},
+        'name': {'readonly': True},
+        'type': {'readonly': True},
     }
 
-    def __init__(self, *, provisioning_state=None, cluster_size: int=None, hosts=None, **kwargs) -> None:
+    _attribute_map = {
+        'id': {'key': 'id', 'type': 'str'},
+        'name': {'key': 'name', 'type': 'str'},
+        'type': {'key': 'type', 'type': 'str'},
+        'properties': {'key': 'properties', 'type': 'ClusterProperties'},
+    }
+
+    def __init__(self, *, properties=None, **kwargs) -> None:
         super(Cluster, self).__init__(**kwargs)
-        self.provisioning_state = provisioning_state
-        self.cluster_size = cluster_size
-        self.hosts = hosts
+        self.properties = properties

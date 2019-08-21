@@ -8,33 +8,30 @@
 from msrest.serialization import Model
 
 
-class ExpressRouteAuthorization(Model):
-    """ExpressRouteAuthorization.
+class Operation(Model):
+    """A REST API operation.
 
     Variables are only populated by the server, and will be ignored when
     sending a request.
 
-    :param name:
-    :type name: str
-    :ivar id:
-    :vartype id: str
-    :ivar key:
-    :vartype key: str
+    :ivar name: Name of the operation being performed on this object
+    :vartype name: str
+    :ivar display: Contains the localized display information for this
+     operation
+    :vartype display: ~vendored_sdks.models.OperationDisplay
     """
 
     _validation = {
-        'id': {'readonly': True},
-        'key': {'readonly': True},
+        'name': {'readonly': True},
+        'display': {'readonly': True},
     }
 
     _attribute_map = {
         'name': {'key': 'name', 'type': 'str'},
-        'id': {'key': 'id', 'type': 'str'},
-        'key': {'key': 'key', 'type': 'str'},
+        'display': {'key': 'display', 'type': 'OperationDisplay'},
     }
 
     def __init__(self, **kwargs):
-        super(ExpressRouteAuthorization, self).__init__(**kwargs)
-        self.name = kwargs.get('name', None)
-        self.id = None
-        self.key = None
+        super(Operation, self).__init__(**kwargs)
+        self.name = None
+        self.display = None

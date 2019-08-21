@@ -15,17 +15,16 @@ class Circuit(Model):
     :type primary_subnet: str
     :param secondary_subnet: CIDR of secondary subnet
     :type secondary_subnet: str
-    :param express_route_id: ID of privateCloud customer ER (Microsoft Colo
+    :param express_route_id: Identifier of the ExpressRoute (Microsoft Colo
      only)
     :type express_route_id: str
-    :param authorizations: authorizations on privateCloud customer ER
-     (Microsoft Colo only)
+    :param authorizations: Authorizations for the ExpressRoute (Microsoft Colo
+     only)
     :type authorizations:
      list[~vendored_sdks.models.ExpressRouteAuthorization]
-    :param global_reach_connections: global reach connections with
-     privateCloud customer ER (Microsoft Colo only)
-    :type global_reach_connections:
-     list[~vendored_sdks.models.GlobalReachConnection]
+    :param express_route_private_peering_id: ExpressRoute private peering
+     identifier
+    :type express_route_private_peering_id: str
     """
 
     _attribute_map = {
@@ -33,7 +32,7 @@ class Circuit(Model):
         'secondary_subnet': {'key': 'secondarySubnet', 'type': 'str'},
         'express_route_id': {'key': 'expressRouteID', 'type': 'str'},
         'authorizations': {'key': 'authorizations', 'type': '[ExpressRouteAuthorization]'},
-        'global_reach_connections': {'key': 'globalReachConnections', 'type': '[GlobalReachConnection]'},
+        'express_route_private_peering_id': {'key': 'expressRoutePrivatePeeringID', 'type': 'str'},
     }
 
     def __init__(self, **kwargs):
@@ -42,4 +41,4 @@ class Circuit(Model):
         self.secondary_subnet = kwargs.get('secondary_subnet', None)
         self.express_route_id = kwargs.get('express_route_id', None)
         self.authorizations = kwargs.get('authorizations', None)
-        self.global_reach_connections = kwargs.get('global_reach_connections', None)
+        self.express_route_private_peering_id = kwargs.get('express_route_private_peering_id', None)

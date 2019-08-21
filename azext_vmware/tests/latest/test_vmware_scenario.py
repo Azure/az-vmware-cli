@@ -11,7 +11,7 @@ import functools
 
 from azure_devtools.scenario_tests import AllowLargeResponse
 from azure.cli.testsdk import (ScenarioTest, ResourceGroupPreparer)
-from msrestazure.azure_exceptions import CloudError
+from azext_vmware.vendored_sdks.models import ApiErrorException
 
 class AsyncScenarioTest(ScenarioTest):
 
@@ -83,48 +83,40 @@ class VmwareScenarioTest(AsyncScenarioTest):
         })
 
         # show should throw ResourceNotFound
-        with self.assertRaisesRegexp(CloudError, 'ResourceNotFound'):
+        with self.assertRaisesRegexp(ApiErrorException, 'ResourceNotFound'):
             self.cmd('vmware privatecloud show -g {rg} -n {privatecloud}')
 
-        count = len(self.cmd('vmware privatecloud list -g {rg}').get_output_in_json()['value'])
+        count = len(self.cmd('vmware privatecloud list -g {rg}').get_output_in_json())
         self.assertEqual(count, 0, 'private cloud count expected to be 0')
 
         # begin creating a private cloud
-        self.cmd('vmware privatecloud create -g {rg} -n {privatecloud} --location {loc} --cluster-size 4 --vpc 192.168.50.0/22')
+        self.cmd('vmware privatecloud create -g {rg} -n {privatecloud} --location {loc} --cluster-size 4 --network-block 192.168.48.0/22')
 
-        count = len(self.cmd('vmware privatecloud list -g {rg}').get_output_in_json()['value'])
+        count = len(self.cmd('vmware privatecloud list -g {rg}').get_output_in_json())
         self.assertEqual(count, 1, 'private cloud count expected to be 1')
 
         # poll until it is no longer ResourceNotFound
-        await self.poll_until_no_exception(lambda: self.cmd('vmware privatecloud show -g {rg} -n {privatecloud}'), CloudError)
+        await self.poll_until_no_exception(lambda: self.cmd('vmware privatecloud show -g {rg} -n {privatecloud}'), ApiErrorException)
         await self.poll_until_result(lambda: self.cmd('vmware privatecloud show -g {rg} -n {privatecloud}'), provissioning_succeeded)
 
         # get admin credentials
-        self.cmd('vmware privatecloud getadmincredentials -g {rg} -n {privatecloud}')
+        self.cmd('vmware privatecloud listadmincredentials -g {rg} -n {privatecloud}')
 
         # add authorization
-        self.cmd('vmware privatecloud addauthorization -g {rg} -n {privatecloud} --authorization-name myauthname')
-        await self.poll_until_result(lambda: self.cmd('vmware privatecloud show -g {rg} -n {privatecloud}'), provissioning_succeeded)
+        # self.cmd('vmware privatecloud addauthorization -g {rg} -n {privatecloud} --authorization-name myauthname')
+        # await self.poll_until_result(lambda: self.cmd('vmware privatecloud show -g {rg} -n {privatecloud}'), provissioning_succeeded)
 
         # delete authorization
-        self.cmd('vmware privatecloud deleteauthorization -g {rg} -n {privatecloud} --authorization-name myauthname')
-        await self.poll_until_result(lambda: self.cmd('vmware privatecloud show -g {rg} -n {privatecloud}'), provissioning_succeeded)
-
-        # add global reach connection
-        self.cmd('vmware privatecloud addglobalreachconnection -g {rg} -n {privatecloud} --id /subscriptions/11234567-0123-0123-0123-0123456789ab/resourceGroups/mygroup/providers/Microsoft.Network/expressroutecircuits/myer/authorizations/myauth --key 00000000-1111-2222-3333-444444444444')
-        await self.poll_until_result(lambda: self.cmd('vmware privatecloud show -g {rg} -n {privatecloud}'), provissioning_succeeded)
-
-        # delete global reach connection
-        self.cmd('vmware privatecloud deleteglobalreachconnection -g {rg} -n {privatecloud} --id /subscriptions/11234567-0123-0123-0123-0123456789ab/resourceGroups/mygroup/providers/Microsoft.Network/expressroutecircuits/myer/authorizations/myauth')
-        await self.poll_until_result(lambda: self.cmd('vmware privatecloud show -g {rg} -n {privatecloud}'), provissioning_succeeded)
+        # self.cmd('vmware privatecloud deleteauthorization -g {rg} -n {privatecloud} --authorization-name myauthname')
+        # await self.poll_until_result(lambda: self.cmd('vmware privatecloud show -g {rg} -n {privatecloud}'), provissioning_succeeded)
 
         # add identity source
-        self.cmd('vmware privatecloud addidentitysource -g {rg} -n {privatecloud} --name groupName --alias groupAlias --domain domain --base-user-dn "ou=baseUser" --base-group-dn "ou=baseGroup" --primary-server ldaps://1.1.1.1:636 --secondary-server ldaps://1.1.1.2:636 --use-ssl true --username someone --credential something')
-        await self.poll_until_result(lambda: self.cmd('vmware privatecloud show -g {rg} -n {privatecloud}'), provissioning_succeeded)
+        # self.cmd('vmware privatecloud addidentitysource -g {rg} -n {privatecloud} --name groupName --alias groupAlias --domain domain --base-user-dn "ou=baseUser" --base-group-dn "ou=baseGroup" --primary-server ldaps://1.1.1.1:636 --secondary-server ldaps://1.1.1.2:636 --use-ssl true --username someone --credential something')
+        # await self.poll_until_result(lambda: self.cmd('vmware privatecloud show -g {rg} -n {privatecloud}'), provissioning_succeeded)
 
         # delete identity source
-        self.cmd('vmware privatecloud deleteidentitysource -g {rg} -n {privatecloud} --name groupName --alias groupAlias --domain domain')
-        await self.poll_until_result(lambda: self.cmd('vmware privatecloud show -g {rg} -n {privatecloud}'), provissioning_succeeded)
+        # self.cmd('vmware privatecloud deleteidentitysource -g {rg} -n {privatecloud} --name groupName --alias groupAlias --domain domain')
+        # await self.poll_until_result(lambda: self.cmd('vmware privatecloud show -g {rg} -n {privatecloud}'), provissioning_succeeded)
 
         # cluster list should report 0
         count = len(self.cmd('vmware cluster list -g {rg} -p {privatecloud}').get_output_in_json())
@@ -138,8 +130,8 @@ class VmwareScenarioTest(AsyncScenarioTest):
         count = len(self.cmd('vmware cluster list -g {rg} -p {privatecloud}').get_output_in_json())
         self.assertEqual(count, 1, 'cluster count expected to be 1')
 
-        # cluster modify
-        self.cmd('vmware cluster modify -g {rg} --location {loc} -p {privatecloud} -n {cluster} --size 4')
+        # cluster update
+        self.cmd('vmware cluster update -g {rg} --location {loc} -p {privatecloud} -n {cluster} --size 4')
         await self.poll_until_result(lambda: self.cmd('vmware cluster show -g {rg} -p {privatecloud} -n {cluster}'), provissioning_succeeded)
 
         # cluster delete
@@ -149,8 +141,8 @@ class VmwareScenarioTest(AsyncScenarioTest):
         # delete the private cloud
         self.cmd('vmware privatecloud delete -g {rg} -n {privatecloud}')
 
-        count = len(self.cmd('vmware privatecloud list -g {rg}').get_output_in_json()['value'])
+        count = len(self.cmd('vmware privatecloud list -g {rg}').get_output_in_json())
         self.assertEqual(count, 0, 'private cloud count expected to be 0')
 
         # it should throw ResourceNotFound
-        await self.poll_until_exception(lambda: self.cmd('vmware privatecloud show -g {rg} -n {privatecloud}'), CloudError)
+        await self.poll_until_exception(lambda: self.cmd('vmware privatecloud show -g {rg} -n {privatecloud}'), ApiErrorException)

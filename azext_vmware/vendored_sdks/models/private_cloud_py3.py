@@ -5,49 +5,44 @@
 # regenerated.
 # --------------------------------------------------------------------------
 
-from msrest.serialization import Model
+from .tracked_resource_py3 import TrackedResource
 
 
-class PrivateCloud(Model):
+class PrivateCloud(TrackedResource):
     """PrivateCloud.
 
-    :param provisioning_state: Possible values include: 'Succeeded', 'Failed',
-     'Cancelled'
-    :type provisioning_state: str or ~vendored_sdks.models.enum
-    :param circuit:
-    :type circuit: ~vendored_sdks.models.Circuit
-    :param cluster:
-    :type cluster: ~vendored_sdks.models.Cluster
-    :param clusters:
-    :type clusters: list[str]
-    :param endpoints:
-    :type endpoints: ~vendored_sdks.models.Endpoints
-    :param internet_enabled:
-    :type internet_enabled: bool
-    :param identity_sources:
-    :type identity_sources: list[~vendored_sdks.models.IdentitySource]
-    :param vpc:
-    :type vpc: str
+    Variables are only populated by the server, and will be ignored when
+    sending a request.
+
+    :ivar id: Resource ID.
+    :vartype id: str
+    :ivar name: Resource name.
+    :vartype name: str
+    :ivar type: Resource type.
+    :vartype type: str
+    :param location: Resource location
+    :type location: str
+    :param tags: Resource tags
+    :type tags: dict[str, str]
+    :param properties:
+    :type properties: ~vendored_sdks.models.PrivateCloudProperties
     """
 
-    _attribute_map = {
-        'provisioning_state': {'key': 'provisioningState', 'type': 'str'},
-        'circuit': {'key': 'circuit', 'type': 'Circuit'},
-        'cluster': {'key': 'cluster', 'type': 'Cluster'},
-        'clusters': {'key': 'clusters', 'type': '[str]'},
-        'endpoints': {'key': 'endpoints', 'type': 'Endpoints'},
-        'internet_enabled': {'key': 'internetEnabled', 'type': 'bool'},
-        'identity_sources': {'key': 'identitySources', 'type': '[IdentitySource]'},
-        'vpc': {'key': 'vpc', 'type': 'str'},
+    _validation = {
+        'id': {'readonly': True},
+        'name': {'readonly': True},
+        'type': {'readonly': True},
     }
 
-    def __init__(self, *, provisioning_state=None, circuit=None, cluster=None, clusters=None, endpoints=None, internet_enabled: bool=None, identity_sources=None, vpc: str=None, **kwargs) -> None:
-        super(PrivateCloud, self).__init__(**kwargs)
-        self.provisioning_state = provisioning_state
-        self.circuit = circuit
-        self.cluster = cluster
-        self.clusters = clusters
-        self.endpoints = endpoints
-        self.internet_enabled = internet_enabled
-        self.identity_sources = identity_sources
-        self.vpc = vpc
+    _attribute_map = {
+        'id': {'key': 'id', 'type': 'str'},
+        'name': {'key': 'name', 'type': 'str'},
+        'type': {'key': 'type', 'type': 'str'},
+        'location': {'key': 'location', 'type': 'str'},
+        'tags': {'key': 'tags', 'type': '{str}'},
+        'properties': {'key': 'properties', 'type': 'PrivateCloudProperties'},
+    }
+
+    def __init__(self, *, location: str=None, tags=None, properties=None, **kwargs) -> None:
+        super(PrivateCloud, self).__init__(location=location, tags=tags, **kwargs)
+        self.properties = properties

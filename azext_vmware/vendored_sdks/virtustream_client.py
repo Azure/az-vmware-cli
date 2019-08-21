@@ -9,8 +9,9 @@ from msrest.service_client import SDKClient
 from msrest import Serializer, Deserializer
 from msrestazure import AzureConfiguration
 from .version import VERSION
-from .operations.private_cloud_operations import PrivateCloudOperations
-from .operations.cluster_operations import ClusterOperations
+from .operations.operations import Operations
+from .operations.private_clouds_operations import PrivateCloudsOperations
+from .operations.clusters_operations import ClustersOperations
 from . import models
 
 
@@ -22,8 +23,7 @@ class VirtustreamClientConfiguration(AzureConfiguration):
     :param credentials: Credentials needed for the client to connect to Azure.
     :type credentials: :mod:`A msrestazure Credentials
      object<msrestazure.azure_active_directory>`
-    :param subscription_id: The unique identifier for a Microsoft Azure
-     subscription.
+    :param subscription_id: Unique identifier for the Azure subscription
     :type subscription_id: str
     :param str base_url: Service URL
     """
@@ -36,7 +36,7 @@ class VirtustreamClientConfiguration(AzureConfiguration):
         if subscription_id is None:
             raise ValueError("Parameter 'subscription_id' must not be None.")
         if not base_url:
-            base_url = 'http://localhost'
+            base_url = 'https://management.azure.com'
 
         super(VirtustreamClientConfiguration, self).__init__(base_url)
 
@@ -48,21 +48,22 @@ class VirtustreamClientConfiguration(AzureConfiguration):
 
 
 class VirtustreamClient(SDKClient):
-    """API for managing Virtustream Private Clouds through Azure.
+    """Azure VMware Solution by Virtustream API
 
     :ivar config: Configuration for client.
     :vartype config: VirtustreamClientConfiguration
 
-    :ivar private_cloud: PrivateCloud operations
-    :vartype private_cloud: vendored_sdks.operations.PrivateCloudOperations
-    :ivar cluster: Cluster operations
-    :vartype cluster: vendored_sdks.operations.ClusterOperations
+    :ivar operations: Operations operations
+    :vartype operations: vendored_sdks.operations.Operations
+    :ivar private_clouds: PrivateClouds operations
+    :vartype private_clouds: vendored_sdks.operations.PrivateCloudsOperations
+    :ivar clusters: Clusters operations
+    :vartype clusters: vendored_sdks.operations.ClustersOperations
 
     :param credentials: Credentials needed for the client to connect to Azure.
     :type credentials: :mod:`A msrestazure Credentials
      object<msrestazure.azure_active_directory>`
-    :param subscription_id: The unique identifier for a Microsoft Azure
-     subscription.
+    :param subscription_id: Unique identifier for the Azure subscription
     :type subscription_id: str
     :param str base_url: Service URL
     """
@@ -74,11 +75,13 @@ class VirtustreamClient(SDKClient):
         super(VirtustreamClient, self).__init__(self.config.credentials, self.config)
 
         client_models = {k: v for k, v in models.__dict__.items() if isinstance(v, type)}
-        self.api_version = '2016-09-01-preview'
+        self.api_version = '2019-08-09-preview'
         self._serialize = Serializer(client_models)
         self._deserialize = Deserializer(client_models)
 
-        self.private_cloud = PrivateCloudOperations(
+        self.operations = Operations(
             self._client, self.config, self._serialize, self._deserialize)
-        self.cluster = ClusterOperations(
+        self.private_clouds = PrivateCloudsOperations(
+            self._client, self.config, self._serialize, self._deserialize)
+        self.clusters = ClustersOperations(
             self._client, self.config, self._serialize, self._deserialize)

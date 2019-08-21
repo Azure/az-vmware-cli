@@ -5,11 +5,11 @@
 # regenerated.
 # --------------------------------------------------------------------------
 
-from .tracked_resource import TrackedResource
+from msrest.serialization import Model
 
 
-class PrivateCloud(TrackedResource):
-    """PrivateCloud.
+class Resource(Model):
+    """The core properties of ARM resources.
 
     Variables are only populated by the server, and will be ignored when
     sending a request.
@@ -20,12 +20,6 @@ class PrivateCloud(TrackedResource):
     :vartype name: str
     :ivar type: Resource type.
     :vartype type: str
-    :param location: Resource location
-    :type location: str
-    :param tags: Resource tags
-    :type tags: dict[str, str]
-    :param properties:
-    :type properties: ~vendored_sdks.models.PrivateCloudProperties
     """
 
     _validation = {
@@ -38,11 +32,10 @@ class PrivateCloud(TrackedResource):
         'id': {'key': 'id', 'type': 'str'},
         'name': {'key': 'name', 'type': 'str'},
         'type': {'key': 'type', 'type': 'str'},
-        'location': {'key': 'location', 'type': 'str'},
-        'tags': {'key': 'tags', 'type': '{str}'},
-        'properties': {'key': 'properties', 'type': 'PrivateCloudProperties'},
     }
 
     def __init__(self, **kwargs):
-        super(PrivateCloud, self).__init__(**kwargs)
-        self.properties = kwargs.get('properties', None)
+        super(Resource, self).__init__(**kwargs)
+        self.id = None
+        self.name = None
+        self.type = None

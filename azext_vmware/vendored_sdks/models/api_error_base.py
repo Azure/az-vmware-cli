@@ -8,17 +8,21 @@
 from msrest.serialization import Model
 
 
-class DeleteGlobalReachConnectionRequest(Model):
-    """DeleteGlobalReachConnectionRequest.
+class ApiErrorBase(Model):
+    """Api error.
 
-    :param id:
-    :type id: str
+    :param code: Error code
+    :type code: str
+    :param message: Error message
+    :type message: str
     """
 
     _attribute_map = {
-        'id': {'key': 'id', 'type': 'str'},
+        'code': {'key': 'code', 'type': 'str'},
+        'message': {'key': 'message', 'type': 'str'},
     }
 
     def __init__(self, **kwargs):
-        super(DeleteGlobalReachConnectionRequest, self).__init__(**kwargs)
-        self.id = kwargs.get('id', None)
+        super(ApiErrorBase, self).__init__(**kwargs)
+        self.code = kwargs.get('code', None)
+        self.message = kwargs.get('message', None)

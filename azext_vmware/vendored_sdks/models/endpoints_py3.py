@@ -11,18 +11,18 @@ from msrest.serialization import Model
 class Endpoints(Model):
     """Endpoints.
 
-    :param nsx_manager:
-    :type nsx_manager: str
+    :param nsxt_manager:
+    :type nsxt_manager: str
     :param vcsa:
     :type vcsa: str
     """
 
     _attribute_map = {
-        'nsx_manager': {'key': 'nsxManager', 'type': 'str'},
+        'nsxt_manager': {'key': 'nsxtManager', 'type': 'str'},
         'vcsa': {'key': 'vcsa', 'type': 'str'},
     }
 
-    def __init__(self, *, nsx_manager: str=None, vcsa: str=None, **kwargs) -> None:
+    def __init__(self, *, nsxt_manager: str=None, vcsa: str=None, **kwargs) -> None:
         super(Endpoints, self).__init__(**kwargs)
-        self.nsx_manager = nsx_manager
+        self.nsxt_manager = nsxt_manager
         self.vcsa = vcsa

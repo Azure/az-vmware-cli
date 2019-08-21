@@ -25,8 +25,12 @@ class IdentitySource(Model):
     :type primary_server: str
     :param secondary_server:
     :type secondary_server: str
-    :param use_ssl:
-    :type use_ssl: bool
+    :param ssl: Possible values include: 'Enabled', 'Disabled'
+    :type ssl: str or ~vendored_sdks.models.SslEnum
+    :param username:
+    :type username: str
+    :param password:
+    :type password: str
     """
 
     _attribute_map = {
@@ -37,7 +41,9 @@ class IdentitySource(Model):
         'base_group_dn': {'key': 'baseGroupDN', 'type': 'str'},
         'primary_server': {'key': 'primaryServer', 'type': 'str'},
         'secondary_server': {'key': 'secondaryServer', 'type': 'str'},
-        'use_ssl': {'key': 'useSsl', 'type': 'bool'},
+        'ssl': {'key': 'ssl', 'type': 'str'},
+        'username': {'key': 'username', 'type': 'str'},
+        'password': {'key': 'password', 'type': 'str'},
     }
 
     def __init__(self, **kwargs):
@@ -49,4 +55,6 @@ class IdentitySource(Model):
         self.base_group_dn = kwargs.get('base_group_dn', None)
         self.primary_server = kwargs.get('primary_server', None)
         self.secondary_server = kwargs.get('secondary_server', None)
-        self.use_ssl = kwargs.get('use_ssl', None)
+        self.ssl = kwargs.get('ssl', None)
+        self.username = kwargs.get('username', None)
+        self.password = kwargs.get('password', None)

@@ -5,10 +5,12 @@
 # regenerated.
 # --------------------------------------------------------------------------
 
-from .private_cloud_operations import PrivateCloudOperations
-from .cluster_operations import ClusterOperations
+from .operations import Operations
+from .private_clouds_operations import PrivateCloudsOperations
+from .clusters_operations import ClustersOperations
 
 __all__ = [
-    'PrivateCloudOperations',
-    'ClusterOperations',
+    'Operations',
+    'PrivateCloudsOperations',
+    'ClustersOperations',
 ]

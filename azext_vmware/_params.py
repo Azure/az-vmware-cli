@@ -19,7 +19,7 @@ def load_arguments(self, _):
         c.argument('circuit_primary_subnet', help='A /30 subnet for the primary circuit in the Express Route to configure routing between your network and Microsoft\'s Enterprise edge (MSEEs) routers.')
         c.argument('circuit_secondary_subnet', help='A /30 subnet for the secondary circuit in the Express Route to configure routing between your network and Microsoft\'s Enterprise edge (MSEEs) routers.')
         c.argument('cluster_size', help='Number of hosts for the new cluster. Minimum 4, Maximum 16.')
-        c.argument('vpc', help='A subnet at least of size /22.')
+        c.argument('network_block', help='A subnet at least of size /22.')
 
     with self.argument_context('vmware cluster') as c:
         c.argument('parent_resource_name', options_list=['--parent-resource-name', '-p'], help='Name of the parent resource, the name of the private cloud.')

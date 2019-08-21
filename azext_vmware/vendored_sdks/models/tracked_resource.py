@@ -5,11 +5,11 @@
 # regenerated.
 # --------------------------------------------------------------------------
 
-from .tracked_resource import TrackedResource
+from .resource import Resource
 
 
-class PrivateCloud(TrackedResource):
-    """PrivateCloud.
+class TrackedResource(Resource):
+    """The resource model definition for a ARM tracked top level resource.
 
     Variables are only populated by the server, and will be ignored when
     sending a request.
@@ -24,8 +24,6 @@ class PrivateCloud(TrackedResource):
     :type location: str
     :param tags: Resource tags
     :type tags: dict[str, str]
-    :param properties:
-    :type properties: ~vendored_sdks.models.PrivateCloudProperties
     """
 
     _validation = {
@@ -40,9 +38,9 @@ class PrivateCloud(TrackedResource):
         'type': {'key': 'type', 'type': 'str'},
         'location': {'key': 'location', 'type': 'str'},
         'tags': {'key': 'tags', 'type': '{str}'},
-        'properties': {'key': 'properties', 'type': 'PrivateCloudProperties'},
     }
 
     def __init__(self, **kwargs):
-        super(PrivateCloud, self).__init__(**kwargs)
-        self.properties = kwargs.get('properties', None)
+        super(TrackedResource, self).__init__(**kwargs)
+        self.location = kwargs.get('location', None)
+        self.tags = kwargs.get('tags', None)

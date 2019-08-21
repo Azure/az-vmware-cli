@@ -15,17 +15,16 @@ class Circuit(Model):
     :type primary_subnet: str
     :param secondary_subnet: CIDR of secondary subnet
     :type secondary_subnet: str
-    :param express_route_id: ID of privateCloud customer ER (Microsoft Colo
+    :param express_route_id: Identifier of the ExpressRoute (Microsoft Colo
      only)
     :type express_route_id: str
-    :param authorizations: authorizations on privateCloud customer ER
-     (Microsoft Colo only)
+    :param authorizations: Authorizations for the ExpressRoute (Microsoft Colo
+     only)
     :type authorizations:
      list[~vendored_sdks.models.ExpressRouteAuthorization]
-    :param global_reach_connections: global reach connections with
-     privateCloud customer ER (Microsoft Colo only)
-    :type global_reach_connections:
-     list[~vendored_sdks.models.GlobalReachConnection]
+    :param express_route_private_peering_id: ExpressRoute private peering
+     identifier
+    :type express_route_private_peering_id: str
     """
 
     _attribute_map = {
@@ -33,13 +32,13 @@ class Circuit(Model):
         'secondary_subnet': {'key': 'secondarySubnet', 'type': 'str'},
         'express_route_id': {'key': 'expressRouteID', 'type': 'str'},
         'authorizations': {'key': 'authorizations', 'type': '[ExpressRouteAuthorization]'},
-        'global_reach_connections': {'key': 'globalReachConnections', 'type': '[GlobalReachConnection]'},
+        'express_route_private_peering_id': {'key': 'expressRoutePrivatePeeringID', 'type': 'str'},
     }
 
-    def __init__(self, *, primary_subnet: str=None, secondary_subnet: str=None, express_route_id: str=None, authorizations=None, global_reach_connections=None, **kwargs) -> None:
+    def __init__(self, *, primary_subnet: str=None, secondary_subnet: str=None, express_route_id: str=None, authorizations=None, express_route_private_peering_id: str=None, **kwargs) -> None:
         super(Circuit, self).__init__(**kwargs)
         self.primary_subnet = primary_subnet
         self.secondary_subnet = secondary_subnet
         self.express_route_id = express_route_id
         self.authorizations = authorizations
-        self.global_reach_connections = global_reach_connections
+        self.express_route_private_peering_id = express_route_private_peering_id
