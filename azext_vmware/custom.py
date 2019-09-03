@@ -30,6 +30,41 @@ def privatecloud_delete(cmd, client: VirtustreamClient, resource_group_name, res
 def privatecloud_listadmincredentials(cmd, client: VirtustreamClient, resource_group_name, resource_name):
     return client.private_clouds.list_admin_credentials(resource_group_name=resource_group_name, private_cloud_name=resource_name)
 
+def privatecloud_addidentitysource(cmd, client: VirtustreamClient, resource_group_name, resource_name, name, alias, domain, base_user_dn, base_group_dn, primary_server, secondary_server, ssl, username, password):
+    from azext_vmware.vendored_sdks.models import IdentitySource
+    privatecloud = client.private_clouds.get(resource_group_name, resource_name)
+    identitysource = IdentitySource(name=name, alias=alias, domain=domain, base_user_dn=base_user_dn, base_group_dn=base_group_dn, primary_server=primary_server, secondary_server=secondary_server, ssl=ssl, username=username, password=password)
+    privatecloud.properties.identity_sources.append(identitysource)
+    return client.private_clouds.update(resource_group_name=resource_group_name, private_cloud_name=resource_name, private_cloud=privatecloud)
+
+def privatecloud_deleteidentitysource(cmd, client: VirtustreamClient, resource_group_name, resource_name, name, alias, domain):
+    from azext_vmware.vendored_sdks.models import IdentitySource
+    privatecloud = client.private_clouds.get(resource_group_name, resource_name)
+    found = next((ids for ids in privatecloud.properties.identity_sources 
+        if ids.name == name and ids.alias == alias and ids.domain == domain), None)
+    if found:
+        privatecloud.properties.identity_sources.remove(found)
+        return client.private_clouds.update(resource_group_name=resource_group_name, private_cloud_name=resource_name, private_cloud=privatecloud)
+    else:
+        return privatecloud
+
+def privatecloud_addauthorization(cmd, client: VirtustreamClient, resource_group_name, resource_name, authorization_name):
+    from azext_vmware.vendored_sdks.models import ExpressRouteAuthorization
+    privatecloud = client.private_clouds.get(resource_group_name, resource_name)
+    auth = ExpressRouteAuthorization(name=authorization_name)
+    privatecloud.properties.circuit.authorizations.append(auth)
+    return client.private_clouds.update(resource_group_name=resource_group_name, private_cloud_name=resource_name, private_cloud=privatecloud)
+
+def privatecloud_deleteauthorization(cmd, client: VirtustreamClient, resource_group_name, resource_name, authorization_name):
+    from azext_vmware.vendored_sdks.models import ExpressRouteAuthorization
+    privatecloud = client.private_clouds.get(resource_group_name, resource_name)
+    found = next((auth for auth in privatecloud.properties.circuit.authorizations
+        if auth.name == authorization_name), None)
+    if found:
+        privatecloud.properties.circuit.authorizations.remove(found)
+        return client.private_clouds.update(resource_group_name=resource_group_name, private_cloud_name=resource_name, private_cloud=privatecloud)
+    else:
+        return privatecloud
 
 def cluster_create(cmd, client: VirtustreamClient, resource_group_name, location, resource_name, parent_resource_name, size, tags=[]):
     from azext_vmware.vendored_sdks.models import Cluster, ClusterProperties

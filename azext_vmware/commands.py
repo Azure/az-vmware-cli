@@ -19,6 +19,11 @@ def load_command_table(self, _):
         g.custom_command('create', 'privatecloud_create')
         g.custom_command('delete', 'privatecloud_delete')
         g.custom_command('listadmincredentials', 'privatecloud_listadmincredentials')
+        
+        g.custom_command('addauthorization', 'privatecloud_addauthorization')
+        g.custom_command('deleteauthorization', 'privatecloud_deleteauthorization')
+        g.custom_command('addidentitysource', 'privatecloud_addidentitysource')
+        g.custom_command('deleteidentitysource', 'privatecloud_deleteidentitysource')
 
     with self.command_group('vmware cluster', vmware_sdk, client_factory=cf_vmware) as g:
         g.custom_command('create', 'cluster_create')

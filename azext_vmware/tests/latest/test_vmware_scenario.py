@@ -103,20 +103,20 @@ class VmwareScenarioTest(AsyncScenarioTest):
         self.cmd('vmware privatecloud listadmincredentials -g {rg} -n {privatecloud}')
 
         # add authorization
-        # self.cmd('vmware privatecloud addauthorization -g {rg} -n {privatecloud} --authorization-name myauthname')
-        # await self.poll_until_result(lambda: self.cmd('vmware privatecloud show -g {rg} -n {privatecloud}'), provissioning_succeeded)
+        self.cmd('vmware privatecloud addauthorization -g {rg} -n {privatecloud} --authorization-name myauthname')
+        await self.poll_until_result(lambda: self.cmd('vmware privatecloud show -g {rg} -n {privatecloud}'), provissioning_succeeded)
 
         # delete authorization
-        # self.cmd('vmware privatecloud deleteauthorization -g {rg} -n {privatecloud} --authorization-name myauthname')
-        # await self.poll_until_result(lambda: self.cmd('vmware privatecloud show -g {rg} -n {privatecloud}'), provissioning_succeeded)
+        self.cmd('vmware privatecloud deleteauthorization -g {rg} -n {privatecloud} --authorization-name myauthname')
+        await self.poll_until_result(lambda: self.cmd('vmware privatecloud show -g {rg} -n {privatecloud}'), provissioning_succeeded)
 
         # add identity source
-        # self.cmd('vmware privatecloud addidentitysource -g {rg} -n {privatecloud} --name groupName --alias groupAlias --domain domain --base-user-dn "ou=baseUser" --base-group-dn "ou=baseGroup" --primary-server ldaps://1.1.1.1:636 --secondary-server ldaps://1.1.1.2:636 --use-ssl true --username someone --credential something')
-        # await self.poll_until_result(lambda: self.cmd('vmware privatecloud show -g {rg} -n {privatecloud}'), provissioning_succeeded)
+        self.cmd('vmware privatecloud addidentitysource -g {rg} -n {privatecloud} --name groupName --alias groupAlias --domain domain --base-user-dn "ou=baseUser" --base-group-dn "ou=baseGroup" --primary-server ldaps://1.1.1.1:636 --secondary-server ldaps://1.1.1.2:636 --ssl Enabled --username someone --password something')
+        await self.poll_until_result(lambda: self.cmd('vmware privatecloud show -g {rg} -n {privatecloud}'), provissioning_succeeded)
 
         # delete identity source
-        # self.cmd('vmware privatecloud deleteidentitysource -g {rg} -n {privatecloud} --name groupName --alias groupAlias --domain domain')
-        # await self.poll_until_result(lambda: self.cmd('vmware privatecloud show -g {rg} -n {privatecloud}'), provissioning_succeeded)
+        self.cmd('vmware privatecloud deleteidentitysource -g {rg} -n {privatecloud} --name groupName --alias groupAlias --domain domain')
+        await self.poll_until_result(lambda: self.cmd('vmware privatecloud show -g {rg} -n {privatecloud}'), provissioning_succeeded)
 
         # cluster list should report 0
         count = len(self.cmd('vmware cluster list -g {rg} -p {privatecloud}').get_output_in_json())

@@ -24,12 +24,12 @@ class PrivateCloudProperties(Model):
     :type cluster: ~vendored_sdks.models.DefaultClusterProperties
     :ivar clusters:
     :vartype clusters: list[str]
-    :param endpoints:
-    :type endpoints: ~vendored_sdks.models.Endpoints
+    :ivar endpoints:
+    :vartype endpoints: ~vendored_sdks.models.Endpoints
     :param internet: Possible values include: 'Enabled', 'Disabled'
     :type internet: str or ~vendored_sdks.models.InternetEnum
-    :ivar identity_sources:
-    :vartype identity_sources: list[~vendored_sdks.models.IdentitySource]
+    :param identity_sources:
+    :type identity_sources: list[~vendored_sdks.models.IdentitySource]
     :param network_block:
     :type network_block: str
     :ivar management_network:
@@ -49,7 +49,7 @@ class PrivateCloudProperties(Model):
     _validation = {
         'provisioning_state': {'readonly': True},
         'clusters': {'readonly': True},
-        'identity_sources': {'readonly': True},
+        'endpoints': {'readonly': True},
         'management_network': {'readonly': True},
         'provisioning_network': {'readonly': True},
         'vmotion_network': {'readonly': True},
@@ -71,15 +71,15 @@ class PrivateCloudProperties(Model):
         'nsxt_password': {'key': 'nsxtPassword', 'type': 'str'},
     }
 
-    def __init__(self, *, circuit=None, cluster=None, endpoints=None, internet=None, network_block: str=None, vcenter_password: str=None, nsxt_password: str=None, **kwargs) -> None:
+    def __init__(self, *, circuit=None, cluster=None, internet=None, identity_sources=None, network_block: str=None, vcenter_password: str=None, nsxt_password: str=None, **kwargs) -> None:
         super(PrivateCloudProperties, self).__init__(**kwargs)
         self.provisioning_state = None
         self.circuit = circuit
         self.cluster = cluster
         self.clusters = None
-        self.endpoints = endpoints
+        self.endpoints = None
         self.internet = internet
-        self.identity_sources = None
+        self.identity_sources = identity_sources
         self.network_block = network_block
         self.management_network = None
         self.provisioning_network = None

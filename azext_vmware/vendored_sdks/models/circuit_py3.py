@@ -11,21 +11,31 @@ from msrest.serialization import Model
 class Circuit(Model):
     """Circuit.
 
-    :param primary_subnet: CIDR of primary subnet
-    :type primary_subnet: str
-    :param secondary_subnet: CIDR of secondary subnet
-    :type secondary_subnet: str
-    :param express_route_id: Identifier of the ExpressRoute (Microsoft Colo
+    Variables are only populated by the server, and will be ignored when
+    sending a request.
+
+    :ivar primary_subnet: CIDR of primary subnet
+    :vartype primary_subnet: str
+    :ivar secondary_subnet: CIDR of secondary subnet
+    :vartype secondary_subnet: str
+    :ivar express_route_id: Identifier of the ExpressRoute (Microsoft Colo
      only)
-    :type express_route_id: str
+    :vartype express_route_id: str
     :param authorizations: Authorizations for the ExpressRoute (Microsoft Colo
      only)
     :type authorizations:
      list[~vendored_sdks.models.ExpressRouteAuthorization]
-    :param express_route_private_peering_id: ExpressRoute private peering
+    :ivar express_route_private_peering_id: ExpressRoute private peering
      identifier
-    :type express_route_private_peering_id: str
+    :vartype express_route_private_peering_id: str
     """
+
+    _validation = {
+        'primary_subnet': {'readonly': True},
+        'secondary_subnet': {'readonly': True},
+        'express_route_id': {'readonly': True},
+        'express_route_private_peering_id': {'readonly': True},
+    }
 
     _attribute_map = {
         'primary_subnet': {'key': 'primarySubnet', 'type': 'str'},
@@ -35,10 +45,10 @@ class Circuit(Model):
         'express_route_private_peering_id': {'key': 'expressRoutePrivatePeeringID', 'type': 'str'},
     }
 
-    def __init__(self, *, primary_subnet: str=None, secondary_subnet: str=None, express_route_id: str=None, authorizations=None, express_route_private_peering_id: str=None, **kwargs) -> None:
+    def __init__(self, *, authorizations=None, **kwargs) -> None:
         super(Circuit, self).__init__(**kwargs)
-        self.primary_subnet = primary_subnet
-        self.secondary_subnet = secondary_subnet
-        self.express_route_id = express_route_id
+        self.primary_subnet = None
+        self.secondary_subnet = None
+        self.express_route_id = None
         self.authorizations = authorizations
-        self.express_route_private_peering_id = express_route_private_peering_id
+        self.express_route_private_peering_id = None

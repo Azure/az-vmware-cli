@@ -24,12 +24,12 @@ class PrivateCloudProperties(Model):
     :type cluster: ~vendored_sdks.models.DefaultClusterProperties
     :ivar clusters:
     :vartype clusters: list[str]
-    :param endpoints:
-    :type endpoints: ~vendored_sdks.models.Endpoints
+    :ivar endpoints:
+    :vartype endpoints: ~vendored_sdks.models.Endpoints
     :param internet: Possible values include: 'Enabled', 'Disabled'
     :type internet: str or ~vendored_sdks.models.InternetEnum
-    :ivar identity_sources:
-    :vartype identity_sources: list[~vendored_sdks.models.IdentitySource]
+    :param identity_sources:
+    :type identity_sources: list[~vendored_sdks.models.IdentitySource]
     :param network_block:
     :type network_block: str
     :ivar management_network:
@@ -49,7 +49,7 @@ class PrivateCloudProperties(Model):
     _validation = {
         'provisioning_state': {'readonly': True},
         'clusters': {'readonly': True},
-        'identity_sources': {'readonly': True},
+        'endpoints': {'readonly': True},
         'management_network': {'readonly': True},
         'provisioning_network': {'readonly': True},
         'vmotion_network': {'readonly': True},
@@ -77,9 +77,9 @@ class PrivateCloudProperties(Model):
         self.circuit = kwargs.get('circuit', None)
         self.cluster = kwargs.get('cluster', None)
         self.clusters = None
-        self.endpoints = kwargs.get('endpoints', None)
+        self.endpoints = None
         self.internet = kwargs.get('internet', None)
-        self.identity_sources = None
+        self.identity_sources = kwargs.get('identity_sources', None)
         self.network_block = kwargs.get('network_block', None)
         self.management_network = None
         self.provisioning_network = None

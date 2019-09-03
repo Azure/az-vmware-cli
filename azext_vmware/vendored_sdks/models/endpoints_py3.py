@@ -11,18 +11,26 @@ from msrest.serialization import Model
 class Endpoints(Model):
     """Endpoints.
 
-    :param nsxt_manager:
-    :type nsxt_manager: str
-    :param vcsa:
-    :type vcsa: str
+    Variables are only populated by the server, and will be ignored when
+    sending a request.
+
+    :ivar nsxt_manager:
+    :vartype nsxt_manager: str
+    :ivar vcsa:
+    :vartype vcsa: str
     """
+
+    _validation = {
+        'nsxt_manager': {'readonly': True},
+        'vcsa': {'readonly': True},
+    }
 
     _attribute_map = {
         'nsxt_manager': {'key': 'nsxtManager', 'type': 'str'},
         'vcsa': {'key': 'vcsa', 'type': 'str'},
     }
 
-    def __init__(self, *, nsxt_manager: str=None, vcsa: str=None, **kwargs) -> None:
+    def __init__(self, **kwargs) -> None:
         super(Endpoints, self).__init__(**kwargs)
-        self.nsxt_manager = nsxt_manager
-        self.vcsa = vcsa
+        self.nsxt_manager = None
+        self.vcsa = None
