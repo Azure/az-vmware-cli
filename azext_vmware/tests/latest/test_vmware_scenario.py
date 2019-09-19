@@ -89,7 +89,7 @@ class VmwareScenarioTest(AsyncScenarioTest):
         count = len(self.cmd('vmware privatecloud list -g {rg}').get_output_in_json())
         self.assertEqual(count, 0, 'private cloud count expected to be 0')
 
-        # begin creating a private cloud
+        # create a private cloud
         self.cmd('vmware privatecloud create -g {rg} -n {privatecloud} --location {loc} --cluster-size 4 --network-block 192.168.48.0/22')
 
         count = len(self.cmd('vmware privatecloud list -g {rg}').get_output_in_json())
@@ -101,6 +101,9 @@ class VmwareScenarioTest(AsyncScenarioTest):
 
         # get admin credentials
         self.cmd('vmware privatecloud listadmincredentials -g {rg} -n {privatecloud}')
+
+        # update private cloud to changed default cluster size
+        self.cmd('vmware privatecloud update -g {rg} -n {privatecloud} --cluster-size 3')
 
         # add authorization
         self.cmd('vmware privatecloud addauthorization -g {rg} -n {privatecloud} --authorization-name myauthname')

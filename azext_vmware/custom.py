@@ -24,6 +24,13 @@ def privatecloud_create(cmd, client: VirtustreamClient, resource_group_name, res
     cloud = PrivateCloud(location=location, properties=cloudProps, tags=tags)
     return client.private_clouds.create_or_update(resource_group_name, resource_name, cloud)
 
+def privatecloud_update(cmd, client: VirtustreamClient, resource_group_name, resource_name, cluster_size=None):
+    # from azext_vmware.vendored_sdks.models import PrivateCloud, PrivateCloudProperties, Circuit, DefaultClusterProperties
+    cloud = privatecloud_show(cmd, client, resource_group_name, resource_name)
+    if cluster_size is not None:
+        cloud.properties.cluster.cluster_size = cluster_size
+    return client.private_clouds.update(resource_group_name, resource_name, cloud)
+
 def privatecloud_delete(cmd, client: VirtustreamClient, resource_group_name, resource_name):
     return client.private_clouds.delete(resource_group_name, resource_name)
 

@@ -17,6 +17,7 @@ def load_command_table(self, _):
         g.custom_command('list', 'privatecloud_list')
         g.custom_command('show', 'privatecloud_show')
         g.custom_command('create', 'privatecloud_create')
+        g.custom_command('update', 'privatecloud_update')
         g.custom_command('delete', 'privatecloud_delete')
         g.custom_command('listadmincredentials', 'privatecloud_listadmincredentials')
         
