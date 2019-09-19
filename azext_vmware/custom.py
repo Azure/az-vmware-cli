@@ -7,8 +7,11 @@
 from knack.util import CLIError
 from azext_vmware.vendored_sdks.virtustream_client import VirtustreamClient
 
-def privatecloud_list(cmd, client: VirtustreamClient, resource_group_name):
-    return client.private_clouds.list(resource_group_name)
+def privatecloud_list(cmd, client: VirtustreamClient, resource_group_name=None):
+    if resource_group_name is None:
+        return client.private_clouds.list_in_subscription()
+    else:
+        return client.private_clouds.list(resource_group_name)
 
 def privatecloud_show(cmd, client: VirtustreamClient, resource_group_name, resource_name):
     return client.private_clouds.get(resource_group_name, resource_name)

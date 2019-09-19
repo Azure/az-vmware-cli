@@ -95,6 +95,11 @@ class VmwareScenarioTest(AsyncScenarioTest):
         count = len(self.cmd('vmware privatecloud list -g {rg}').get_output_in_json())
         self.assertEqual(count, 1, 'private cloud count expected to be 1')
 
+        # count at the subscription level
+        # test passes, but commented out for privacy
+        # count = len(self.cmd('vmware privatecloud list').get_output_in_json())
+        # self.assertGreaterEqual(count, 1, 'subscription private cloud count expected to be more than 1')
+
         # poll until it is no longer ResourceNotFound
         await self.poll_until_no_exception(lambda: self.cmd('vmware privatecloud show -g {rg} -n {privatecloud}'), ApiErrorException)
         await self.poll_until_result(lambda: self.cmd('vmware privatecloud show -g {rg} -n {privatecloud}'), provissioning_succeeded)
