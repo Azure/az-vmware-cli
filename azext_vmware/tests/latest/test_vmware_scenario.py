@@ -105,6 +105,9 @@ class VmwareScenarioTest(AsyncScenarioTest):
         # update private cloud to changed default cluster size
         self.cmd('vmware privatecloud update -g {rg} -n {privatecloud} --cluster-size 3')
 
+        # update private cloud to enable internet
+        self.cmd('vmware privatecloud update -g {rg} -n {privatecloud} --internet enabled')
+
         # add authorization
         self.cmd('vmware privatecloud addauthorization -g {rg} -n {privatecloud} --authorization-name myauthname')
         await self.poll_until_result(lambda: self.cmd('vmware privatecloud show -g {rg} -n {privatecloud}'), provissioning_succeeded)

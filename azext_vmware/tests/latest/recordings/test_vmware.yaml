@@ -31,7 +31,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 19 Sep 2019 07:46:45 GMT
+      - Thu, 19 Sep 2019 08:30:35 GMT
       expires:
       - '-1'
       pragma:
@@ -76,7 +76,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 19 Sep 2019 07:46:46 GMT
+      - Thu, 19 Sep 2019 08:30:36 GMT
       expires:
       - '-1'
       pragma:
@@ -120,7 +120,7 @@ interactions:
       string: ''
     headers:
       azure-asyncoperation:
-      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/394b2420-f86c-47e4-adef-0df561805dd2?api-version=2019-08-09-preview
+      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/6b79301f-3e2e-4c40-98cd-6b8d7169f492?api-version=2019-08-09-preview
       cache-control:
       - no-cache
       content-length:
@@ -128,7 +128,7 @@ interactions:
       content-type:
       - text/html
       date:
-      - Thu, 19 Sep 2019 07:46:53 GMT
+      - Thu, 19 Sep 2019 08:30:42 GMT
       expires:
       - '-1'
       pragma:
@@ -161,10 +161,10 @@ interactions:
       - python/3.7.4 (Darwin-18.7.0-x86_64-i386-64bit) msrest/0.6.9 msrest_azure/0.6.1
         virtustreamclient/2019-08-09-preview Azure-SDK-For-Python AZURECLI/2.0.72
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/394b2420-f86c-47e4-adef-0df561805dd2?api-version=2019-08-09-preview
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/6b79301f-3e2e-4c40-98cd-6b8d7169f492?api-version=2019-08-09-preview
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/394b2420-f86c-47e4-adef-0df561805dd2","name":"394b2420-f86c-47e4-adef-0df561805dd2","percentComplete":100,"startTime":"2019-09-19T07:46:52.9451833+00:00","status":"Building"}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/6b79301f-3e2e-4c40-98cd-6b8d7169f492","name":"6b79301f-3e2e-4c40-98cd-6b8d7169f492","percentComplete":100,"startTime":"2019-09-19T08:30:41.9762330+00:00","status":"Building"}'
     headers:
       cache-control:
       - no-cache
@@ -173,7 +173,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 19 Sep 2019 07:47:04 GMT
+      - Thu, 19 Sep 2019 08:30:53 GMT
       expires:
       - '-1'
       pragma:
@@ -208,10 +208,10 @@ interactions:
       - python/3.7.4 (Darwin-18.7.0-x86_64-i386-64bit) msrest/0.6.9 msrest_azure/0.6.1
         virtustreamclient/2019-08-09-preview Azure-SDK-For-Python AZURECLI/2.0.72
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/394b2420-f86c-47e4-adef-0df561805dd2?api-version=2019-08-09-preview
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/6b79301f-3e2e-4c40-98cd-6b8d7169f492?api-version=2019-08-09-preview
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/394b2420-f86c-47e4-adef-0df561805dd2","name":"394b2420-f86c-47e4-adef-0df561805dd2","percentComplete":100,"startTime":"2019-09-19T07:46:52.9451833+00:00","status":"Building"}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/6b79301f-3e2e-4c40-98cd-6b8d7169f492","name":"6b79301f-3e2e-4c40-98cd-6b8d7169f492","percentComplete":100,"startTime":"2019-09-19T08:30:41.9762330+00:00","status":"Building"}'
     headers:
       cache-control:
       - no-cache
@@ -220,7 +220,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 19 Sep 2019 07:47:15 GMT
+      - Thu, 19 Sep 2019 08:31:03 GMT
       expires:
       - '-1'
       pragma:
@@ -255,10 +255,10 @@ interactions:
       - python/3.7.4 (Darwin-18.7.0-x86_64-i386-64bit) msrest/0.6.9 msrest_azure/0.6.1
         virtustreamclient/2019-08-09-preview Azure-SDK-For-Python AZURECLI/2.0.72
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/394b2420-f86c-47e4-adef-0df561805dd2?api-version=2019-08-09-preview
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/6b79301f-3e2e-4c40-98cd-6b8d7169f492?api-version=2019-08-09-preview
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/394b2420-f86c-47e4-adef-0df561805dd2","name":"394b2420-f86c-47e4-adef-0df561805dd2","percentComplete":100,"startTime":"2019-09-19T07:46:52.9451833+00:00","status":"Building"}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/6b79301f-3e2e-4c40-98cd-6b8d7169f492","name":"6b79301f-3e2e-4c40-98cd-6b8d7169f492","percentComplete":100,"startTime":"2019-09-19T08:30:41.9762330+00:00","status":"Building"}'
     headers:
       cache-control:
       - no-cache
@@ -267,7 +267,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 19 Sep 2019 07:47:26 GMT
+      - Thu, 19 Sep 2019 08:31:14 GMT
       expires:
       - '-1'
       pragma:
@@ -302,10 +302,10 @@ interactions:
       - python/3.7.4 (Darwin-18.7.0-x86_64-i386-64bit) msrest/0.6.9 msrest_azure/0.6.1
         virtustreamclient/2019-08-09-preview Azure-SDK-For-Python AZURECLI/2.0.72
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/394b2420-f86c-47e4-adef-0df561805dd2?api-version=2019-08-09-preview
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/6b79301f-3e2e-4c40-98cd-6b8d7169f492?api-version=2019-08-09-preview
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/394b2420-f86c-47e4-adef-0df561805dd2","name":"394b2420-f86c-47e4-adef-0df561805dd2","percentComplete":100,"startTime":"2019-09-19T07:46:52.9451833+00:00","status":"Building"}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/6b79301f-3e2e-4c40-98cd-6b8d7169f492","name":"6b79301f-3e2e-4c40-98cd-6b8d7169f492","percentComplete":100,"startTime":"2019-09-19T08:30:41.9762330+00:00","status":"Building"}'
     headers:
       cache-control:
       - no-cache
@@ -314,7 +314,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 19 Sep 2019 07:47:36 GMT
+      - Thu, 19 Sep 2019 08:31:25 GMT
       expires:
       - '-1'
       pragma:
@@ -349,10 +349,10 @@ interactions:
       - python/3.7.4 (Darwin-18.7.0-x86_64-i386-64bit) msrest/0.6.9 msrest_azure/0.6.1
         virtustreamclient/2019-08-09-preview Azure-SDK-For-Python AZURECLI/2.0.72
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/394b2420-f86c-47e4-adef-0df561805dd2?api-version=2019-08-09-preview
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/6b79301f-3e2e-4c40-98cd-6b8d7169f492?api-version=2019-08-09-preview
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/394b2420-f86c-47e4-adef-0df561805dd2","name":"394b2420-f86c-47e4-adef-0df561805dd2","percentComplete":100,"startTime":"2019-09-19T07:46:52.9451833+00:00","status":"Building"}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/6b79301f-3e2e-4c40-98cd-6b8d7169f492","name":"6b79301f-3e2e-4c40-98cd-6b8d7169f492","percentComplete":100,"startTime":"2019-09-19T08:30:41.9762330+00:00","status":"Building"}'
     headers:
       cache-control:
       - no-cache
@@ -361,7 +361,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 19 Sep 2019 07:47:47 GMT
+      - Thu, 19 Sep 2019 08:31:36 GMT
       expires:
       - '-1'
       pragma:
@@ -396,10 +396,10 @@ interactions:
       - python/3.7.4 (Darwin-18.7.0-x86_64-i386-64bit) msrest/0.6.9 msrest_azure/0.6.1
         virtustreamclient/2019-08-09-preview Azure-SDK-For-Python AZURECLI/2.0.72
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/394b2420-f86c-47e4-adef-0df561805dd2?api-version=2019-08-09-preview
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/6b79301f-3e2e-4c40-98cd-6b8d7169f492?api-version=2019-08-09-preview
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/394b2420-f86c-47e4-adef-0df561805dd2","name":"394b2420-f86c-47e4-adef-0df561805dd2","percentComplete":100,"startTime":"2019-09-19T07:46:52.9451833+00:00","status":"Building"}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/6b79301f-3e2e-4c40-98cd-6b8d7169f492","name":"6b79301f-3e2e-4c40-98cd-6b8d7169f492","percentComplete":100,"startTime":"2019-09-19T08:30:41.9762330+00:00","status":"Building"}'
     headers:
       cache-control:
       - no-cache
@@ -408,7 +408,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 19 Sep 2019 07:47:58 GMT
+      - Thu, 19 Sep 2019 08:31:48 GMT
       expires:
       - '-1'
       pragma:
@@ -443,57 +443,10 @@ interactions:
       - python/3.7.4 (Darwin-18.7.0-x86_64-i386-64bit) msrest/0.6.9 msrest_azure/0.6.1
         virtustreamclient/2019-08-09-preview Azure-SDK-For-Python AZURECLI/2.0.72
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/394b2420-f86c-47e4-adef-0df561805dd2?api-version=2019-08-09-preview
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/6b79301f-3e2e-4c40-98cd-6b8d7169f492?api-version=2019-08-09-preview
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/394b2420-f86c-47e4-adef-0df561805dd2","name":"394b2420-f86c-47e4-adef-0df561805dd2","percentComplete":100,"startTime":"2019-09-19T07:46:52.9451833+00:00","status":"Building"}'
-    headers:
-      cache-control:
-      - no-cache
-      content-length:
-      - '401'
-      content-type:
-      - application/json; charset=utf-8
-      date:
-      - Thu, 19 Sep 2019 07:48:09 GMT
-      expires:
-      - '-1'
-      pragma:
-      - no-cache
-      server:
-      - nginx/1.15.4
-      strict-transport-security:
-      - max-age=31536000; includeSubDomains
-      transfer-encoding:
-      - chunked
-      vary:
-      - Accept-Encoding
-      x-content-type-options:
-      - nosniff
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      CommandName:
-      - vmware privatecloud create
-      Connection:
-      - keep-alive
-      ParameterSetName:
-      - -g -n --location --cluster-size --network-block
-      User-Agent:
-      - python/3.7.4 (Darwin-18.7.0-x86_64-i386-64bit) msrest/0.6.9 msrest_azure/0.6.1
-        virtustreamclient/2019-08-09-preview Azure-SDK-For-Python AZURECLI/2.0.72
-    method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/394b2420-f86c-47e4-adef-0df561805dd2?api-version=2019-08-09-preview
-  response:
-    body:
-      string: '{"endTime":"2019-09-19T07:47:03.4028547+00:00","id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/394b2420-f86c-47e4-adef-0df561805dd2","name":"394b2420-f86c-47e4-adef-0df561805dd2","percentComplete":100,"properties":{"circuit":{"authorizations":[],"expressRouteID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er","expressRoutePrivatePeeringID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er/peerings/AzurePrivatePeering","primarySubnet":"192.168.51.8/30","secondarySubnet":"192.168.51.12/30"},"cluster":{"clusterID":1,"clusterSize":4,"hosts":["he-fakehost45.nyc1.kubernetes.center","he-fakehost46.nyc1.kubernetes.center","he-fakehost47.nyc1.kubernetes.center","he-fakehost48.nyc1.kubernetes.center"]},"clusters":[],"endpoints":{"nsxtManager":"https://192.168.48.3/","vcsa":"https://192.168.48.2/"},"identitySources":[],"internet":"Disabled","managementNetwork":"192.168.48.0/24","networkBlock":"192.168.48.0/22","provisioningNetwork":"192.168.50.0/24","provisioningState":"Succeeded","vmotionNetwork":"192.168.49.0/24"},"startTime":"2019-09-19T07:46:52.9451833+00:00","status":"Succeeded"}'
+      string: '{"endTime":"2019-09-19T08:30:48.3663869+00:00","id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/6b79301f-3e2e-4c40-98cd-6b8d7169f492","name":"6b79301f-3e2e-4c40-98cd-6b8d7169f492","percentComplete":100,"properties":{"circuit":{"authorizations":[],"expressRouteID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt22-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt22-cust-eastus-azurecontainer-er","expressRoutePrivatePeeringID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt22-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt22-cust-eastus-azurecontainer-er/peerings/AzurePrivatePeering","primarySubnet":"192.168.51.8/30","secondarySubnet":"192.168.51.12/30"},"cluster":{"clusterID":1,"clusterSize":4,"hosts":["he-fakehost11.nyc1.kubernetes.center","he-fakehost10.nyc1.kubernetes.center","he-fakehost08.nyc1.kubernetes.center","he-fakehost06.nyc1.kubernetes.center"]},"clusters":[],"endpoints":{"nsxtManager":"https://192.168.48.3/","vcsa":"https://192.168.48.2/"},"identitySources":[],"internet":"Disabled","managementNetwork":"192.168.48.0/24","networkBlock":"192.168.48.0/22","provisioningNetwork":"192.168.50.0/24","provisioningState":"Succeeded","vmotionNetwork":"192.168.49.0/24"},"startTime":"2019-09-19T08:30:41.9762330+00:00","status":"Succeeded"}'
     headers:
       cache-control:
       - no-cache
@@ -502,7 +455,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 19 Sep 2019 07:48:19 GMT
+      - Thu, 19 Sep 2019 08:31:59 GMT
       expires:
       - '-1'
       pragma:
@@ -540,7 +493,7 @@ interactions:
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1?api-version=2019-08-09-preview
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1","location":"eastus2","name":"cloud1","properties":{"circuit":{"authorizations":[],"expressRouteID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er","expressRoutePrivatePeeringID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er/peerings/AzurePrivatePeering","primarySubnet":"192.168.51.8/30","secondarySubnet":"192.168.51.12/30"},"cluster":{"clusterID":1,"clusterSize":4,"hosts":["he-fakehost45.nyc1.kubernetes.center","he-fakehost46.nyc1.kubernetes.center","he-fakehost47.nyc1.kubernetes.center","he-fakehost48.nyc1.kubernetes.center"]},"clusters":[],"endpoints":{"nsxtManager":"https://192.168.48.3/","vcsa":"https://192.168.48.2/"},"identitySources":[],"internet":"Disabled","managementNetwork":"192.168.48.0/24","networkBlock":"192.168.48.0/22","provisioningNetwork":"192.168.50.0/24","provisioningState":"Succeeded","vmotionNetwork":"192.168.49.0/24"},"tags":{},"type":"Microsoft.VMwareVirtustream/privateClouds"}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1","location":"eastus2","name":"cloud1","properties":{"circuit":{"authorizations":[],"expressRouteID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt22-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt22-cust-eastus-azurecontainer-er","expressRoutePrivatePeeringID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt22-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt22-cust-eastus-azurecontainer-er/peerings/AzurePrivatePeering","primarySubnet":"192.168.51.8/30","secondarySubnet":"192.168.51.12/30"},"cluster":{"clusterID":1,"clusterSize":4,"hosts":["he-fakehost11.nyc1.kubernetes.center","he-fakehost10.nyc1.kubernetes.center","he-fakehost08.nyc1.kubernetes.center","he-fakehost06.nyc1.kubernetes.center"]},"clusters":[],"endpoints":{"nsxtManager":"https://192.168.48.3/","vcsa":"https://192.168.48.2/"},"identitySources":[],"internet":"Disabled","managementNetwork":"192.168.48.0/24","networkBlock":"192.168.48.0/22","provisioningNetwork":"192.168.50.0/24","provisioningState":"Succeeded","vmotionNetwork":"192.168.49.0/24"},"tags":{},"type":"Microsoft.VMwareVirtustream/privateClouds"}'
     headers:
       cache-control:
       - no-cache
@@ -549,7 +502,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 19 Sep 2019 07:48:20 GMT
+      - Thu, 19 Sep 2019 08:32:00 GMT
       expires:
       - '-1'
       pragma:
@@ -589,7 +542,7 @@ interactions:
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds?api-version=2019-08-09-preview
   response:
     body:
-      string: '{"nextLink":null,"value":[{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1","location":"eastus2","name":"cloud1","properties":{"circuit":{"authorizations":[],"expressRouteID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er","expressRoutePrivatePeeringID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er/peerings/AzurePrivatePeering","primarySubnet":"192.168.51.8/30","secondarySubnet":"192.168.51.12/30"},"cluster":{"clusterID":1,"clusterSize":4,"hosts":["he-fakehost45.nyc1.kubernetes.center","he-fakehost46.nyc1.kubernetes.center","he-fakehost47.nyc1.kubernetes.center","he-fakehost48.nyc1.kubernetes.center"]},"clusters":[],"endpoints":{"nsxtManager":"https://192.168.48.3/","vcsa":"https://192.168.48.2/"},"identitySources":[],"internet":"Disabled","managementNetwork":"192.168.48.0/24","networkBlock":"192.168.48.0/22","provisioningNetwork":"192.168.50.0/24","provisioningState":"Succeeded","vmotionNetwork":"192.168.49.0/24"},"tags":{},"type":"Microsoft.VMwareVirtustream/privateClouds"}]}'
+      string: '{"nextLink":null,"value":[{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1","location":"eastus2","name":"cloud1","properties":{"circuit":{"authorizations":[],"expressRouteID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt22-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt22-cust-eastus-azurecontainer-er","expressRoutePrivatePeeringID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt22-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt22-cust-eastus-azurecontainer-er/peerings/AzurePrivatePeering","primarySubnet":"192.168.51.8/30","secondarySubnet":"192.168.51.12/30"},"cluster":{"clusterID":1,"clusterSize":4,"hosts":["he-fakehost11.nyc1.kubernetes.center","he-fakehost10.nyc1.kubernetes.center","he-fakehost08.nyc1.kubernetes.center","he-fakehost06.nyc1.kubernetes.center"]},"clusters":[],"endpoints":{"nsxtManager":"https://192.168.48.3/","vcsa":"https://192.168.48.2/"},"identitySources":[],"internet":"Disabled","managementNetwork":"192.168.48.0/24","networkBlock":"192.168.48.0/22","provisioningNetwork":"192.168.50.0/24","provisioningState":"Succeeded","vmotionNetwork":"192.168.49.0/24"},"tags":{},"type":"Microsoft.VMwareVirtustream/privateClouds"}]}'
     headers:
       cache-control:
       - no-cache
@@ -598,7 +551,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 19 Sep 2019 07:48:22 GMT
+      - Thu, 19 Sep 2019 08:32:01 GMT
       expires:
       - '-1'
       pragma:
@@ -638,7 +591,7 @@ interactions:
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1?api-version=2019-08-09-preview
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1","location":"eastus2","name":"cloud1","properties":{"circuit":{"authorizations":[],"expressRouteID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er","expressRoutePrivatePeeringID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er/peerings/AzurePrivatePeering","primarySubnet":"192.168.51.8/30","secondarySubnet":"192.168.51.12/30"},"cluster":{"clusterID":1,"clusterSize":4,"hosts":["he-fakehost45.nyc1.kubernetes.center","he-fakehost46.nyc1.kubernetes.center","he-fakehost47.nyc1.kubernetes.center","he-fakehost48.nyc1.kubernetes.center"]},"clusters":[],"endpoints":{"nsxtManager":"https://192.168.48.3/","vcsa":"https://192.168.48.2/"},"identitySources":[],"internet":"Disabled","managementNetwork":"192.168.48.0/24","networkBlock":"192.168.48.0/22","provisioningNetwork":"192.168.50.0/24","provisioningState":"Succeeded","vmotionNetwork":"192.168.49.0/24"},"tags":{},"type":"Microsoft.VMwareVirtustream/privateClouds"}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1","location":"eastus2","name":"cloud1","properties":{"circuit":{"authorizations":[],"expressRouteID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt22-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt22-cust-eastus-azurecontainer-er","expressRoutePrivatePeeringID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt22-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt22-cust-eastus-azurecontainer-er/peerings/AzurePrivatePeering","primarySubnet":"192.168.51.8/30","secondarySubnet":"192.168.51.12/30"},"cluster":{"clusterID":1,"clusterSize":4,"hosts":["he-fakehost11.nyc1.kubernetes.center","he-fakehost10.nyc1.kubernetes.center","he-fakehost08.nyc1.kubernetes.center","he-fakehost06.nyc1.kubernetes.center"]},"clusters":[],"endpoints":{"nsxtManager":"https://192.168.48.3/","vcsa":"https://192.168.48.2/"},"identitySources":[],"internet":"Disabled","managementNetwork":"192.168.48.0/24","networkBlock":"192.168.48.0/22","provisioningNetwork":"192.168.50.0/24","provisioningState":"Succeeded","vmotionNetwork":"192.168.49.0/24"},"tags":{},"type":"Microsoft.VMwareVirtustream/privateClouds"}'
     headers:
       cache-control:
       - no-cache
@@ -647,7 +600,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 19 Sep 2019 07:48:22 GMT
+      - Thu, 19 Sep 2019 08:32:03 GMT
       expires:
       - '-1'
       pragma:
@@ -687,7 +640,7 @@ interactions:
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1?api-version=2019-08-09-preview
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1","location":"eastus2","name":"cloud1","properties":{"circuit":{"authorizations":[],"expressRouteID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er","expressRoutePrivatePeeringID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er/peerings/AzurePrivatePeering","primarySubnet":"192.168.51.8/30","secondarySubnet":"192.168.51.12/30"},"cluster":{"clusterID":1,"clusterSize":4,"hosts":["he-fakehost45.nyc1.kubernetes.center","he-fakehost46.nyc1.kubernetes.center","he-fakehost47.nyc1.kubernetes.center","he-fakehost48.nyc1.kubernetes.center"]},"clusters":[],"endpoints":{"nsxtManager":"https://192.168.48.3/","vcsa":"https://192.168.48.2/"},"identitySources":[],"internet":"Disabled","managementNetwork":"192.168.48.0/24","networkBlock":"192.168.48.0/22","provisioningNetwork":"192.168.50.0/24","provisioningState":"Succeeded","vmotionNetwork":"192.168.49.0/24"},"tags":{},"type":"Microsoft.VMwareVirtustream/privateClouds"}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1","location":"eastus2","name":"cloud1","properties":{"circuit":{"authorizations":[],"expressRouteID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt22-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt22-cust-eastus-azurecontainer-er","expressRoutePrivatePeeringID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt22-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt22-cust-eastus-azurecontainer-er/peerings/AzurePrivatePeering","primarySubnet":"192.168.51.8/30","secondarySubnet":"192.168.51.12/30"},"cluster":{"clusterID":1,"clusterSize":4,"hosts":["he-fakehost11.nyc1.kubernetes.center","he-fakehost10.nyc1.kubernetes.center","he-fakehost08.nyc1.kubernetes.center","he-fakehost06.nyc1.kubernetes.center"]},"clusters":[],"endpoints":{"nsxtManager":"https://192.168.48.3/","vcsa":"https://192.168.48.2/"},"identitySources":[],"internet":"Disabled","managementNetwork":"192.168.48.0/24","networkBlock":"192.168.48.0/22","provisioningNetwork":"192.168.50.0/24","provisioningState":"Succeeded","vmotionNetwork":"192.168.49.0/24"},"tags":{},"type":"Microsoft.VMwareVirtustream/privateClouds"}'
     headers:
       cache-control:
       - no-cache
@@ -696,7 +649,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 19 Sep 2019 07:48:23 GMT
+      - Thu, 19 Sep 2019 08:32:04 GMT
       expires:
       - '-1'
       pragma:
@@ -738,7 +691,7 @@ interactions:
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/listAdminCredentials?api-version=2019-08-09-preview
   response:
     body:
-      string: '{"nsxtPassword":"1zLU)j4-","nsxtUsername":"admin","vcenterPassword":"A72eQ)!t","vcenterUsername":"cloudadmin@vmcp.local"}'
+      string: '{"nsxtPassword":"34EU-ru)","nsxtUsername":"admin","vcenterPassword":"z5(LJl1&","vcenterUsername":"cloudadmin@vmcp.local"}'
     headers:
       cache-control:
       - no-cache
@@ -747,7 +700,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 19 Sep 2019 07:48:25 GMT
+      - Thu, 19 Sep 2019 08:32:04 GMT
       expires:
       - '-1'
       pragma:
@@ -789,7 +742,7 @@ interactions:
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1?api-version=2019-08-09-preview
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1","location":"eastus2","name":"cloud1","properties":{"circuit":{"authorizations":[],"expressRouteID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er","expressRoutePrivatePeeringID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er/peerings/AzurePrivatePeering","primarySubnet":"192.168.51.8/30","secondarySubnet":"192.168.51.12/30"},"cluster":{"clusterID":1,"clusterSize":4,"hosts":["he-fakehost45.nyc1.kubernetes.center","he-fakehost46.nyc1.kubernetes.center","he-fakehost47.nyc1.kubernetes.center","he-fakehost48.nyc1.kubernetes.center"]},"clusters":[],"endpoints":{"nsxtManager":"https://192.168.48.3/","vcsa":"https://192.168.48.2/"},"identitySources":[],"internet":"Disabled","managementNetwork":"192.168.48.0/24","networkBlock":"192.168.48.0/22","provisioningNetwork":"192.168.50.0/24","provisioningState":"Succeeded","vmotionNetwork":"192.168.49.0/24"},"tags":{},"type":"Microsoft.VMwareVirtustream/privateClouds"}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1","location":"eastus2","name":"cloud1","properties":{"circuit":{"authorizations":[],"expressRouteID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt22-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt22-cust-eastus-azurecontainer-er","expressRoutePrivatePeeringID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt22-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt22-cust-eastus-azurecontainer-er/peerings/AzurePrivatePeering","primarySubnet":"192.168.51.8/30","secondarySubnet":"192.168.51.12/30"},"cluster":{"clusterID":1,"clusterSize":4,"hosts":["he-fakehost11.nyc1.kubernetes.center","he-fakehost10.nyc1.kubernetes.center","he-fakehost08.nyc1.kubernetes.center","he-fakehost06.nyc1.kubernetes.center"]},"clusters":[],"endpoints":{"nsxtManager":"https://192.168.48.3/","vcsa":"https://192.168.48.2/"},"identitySources":[],"internet":"Disabled","managementNetwork":"192.168.48.0/24","networkBlock":"192.168.48.0/22","provisioningNetwork":"192.168.50.0/24","provisioningState":"Succeeded","vmotionNetwork":"192.168.49.0/24"},"tags":{},"type":"Microsoft.VMwareVirtustream/privateClouds"}'
     headers:
       cache-control:
       - no-cache
@@ -798,7 +751,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 19 Sep 2019 07:48:26 GMT
+      - Thu, 19 Sep 2019 08:32:06 GMT
       expires:
       - '-1'
       pragma:
@@ -847,7 +800,7 @@ interactions:
       string: ''
     headers:
       azure-asyncoperation:
-      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/ceb6321f-7f8b-4808-ad0b-6f38372c371d?api-version=2019-08-09-preview
+      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/cfcf576d-e8ec-4610-ac7a-2fc9c8654a30?api-version=2019-08-09-preview
       cache-control:
       - no-cache
       content-length:
@@ -855,7 +808,7 @@ interactions:
       content-type:
       - text/html
       date:
-      - Thu, 19 Sep 2019 07:48:29 GMT
+      - Thu, 19 Sep 2019 08:32:10 GMT
       expires:
       - '-1'
       pragma:
@@ -888,10 +841,10 @@ interactions:
       - python/3.7.4 (Darwin-18.7.0-x86_64-i386-64bit) msrest/0.6.9 msrest_azure/0.6.1
         virtustreamclient/2019-08-09-preview Azure-SDK-For-Python AZURECLI/2.0.72
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/ceb6321f-7f8b-4808-ad0b-6f38372c371d?api-version=2019-08-09-preview
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/cfcf576d-e8ec-4610-ac7a-2fc9c8654a30?api-version=2019-08-09-preview
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/ceb6321f-7f8b-4808-ad0b-6f38372c371d","name":"ceb6321f-7f8b-4808-ad0b-6f38372c371d","percentComplete":50,"startTime":"2019-09-19T07:48:28.6943881+00:00","status":"Building"}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/cfcf576d-e8ec-4610-ac7a-2fc9c8654a30","name":"cfcf576d-e8ec-4610-ac7a-2fc9c8654a30","percentComplete":50,"startTime":"2019-09-19T08:32:08.8010866+00:00","status":"Building"}'
     headers:
       cache-control:
       - no-cache
@@ -900,7 +853,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 19 Sep 2019 07:48:40 GMT
+      - Thu, 19 Sep 2019 08:32:21 GMT
       expires:
       - '-1'
       pragma:
@@ -935,10 +888,10 @@ interactions:
       - python/3.7.4 (Darwin-18.7.0-x86_64-i386-64bit) msrest/0.6.9 msrest_azure/0.6.1
         virtustreamclient/2019-08-09-preview Azure-SDK-For-Python AZURECLI/2.0.72
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/ceb6321f-7f8b-4808-ad0b-6f38372c371d?api-version=2019-08-09-preview
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/cfcf576d-e8ec-4610-ac7a-2fc9c8654a30?api-version=2019-08-09-preview
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/ceb6321f-7f8b-4808-ad0b-6f38372c371d","name":"ceb6321f-7f8b-4808-ad0b-6f38372c371d","percentComplete":75,"startTime":"2019-09-19T07:48:28.6943881+00:00","status":"Building"}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/cfcf576d-e8ec-4610-ac7a-2fc9c8654a30","name":"cfcf576d-e8ec-4610-ac7a-2fc9c8654a30","percentComplete":75,"startTime":"2019-09-19T08:32:08.8010866+00:00","status":"Building"}'
     headers:
       cache-control:
       - no-cache
@@ -947,7 +900,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 19 Sep 2019 07:48:51 GMT
+      - Thu, 19 Sep 2019 08:32:32 GMT
       expires:
       - '-1'
       pragma:
@@ -982,66 +935,19 @@ interactions:
       - python/3.7.4 (Darwin-18.7.0-x86_64-i386-64bit) msrest/0.6.9 msrest_azure/0.6.1
         virtustreamclient/2019-08-09-preview Azure-SDK-For-Python AZURECLI/2.0.72
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/ceb6321f-7f8b-4808-ad0b-6f38372c371d?api-version=2019-08-09-preview
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/cfcf576d-e8ec-4610-ac7a-2fc9c8654a30?api-version=2019-08-09-preview
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/ceb6321f-7f8b-4808-ad0b-6f38372c371d","name":"ceb6321f-7f8b-4808-ad0b-6f38372c371d","percentComplete":75,"startTime":"2019-09-19T07:48:28.6943881+00:00","status":"Building"}'
+      string: '{"endTime":"2019-09-19T08:32:39.7910775+00:00","id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/cfcf576d-e8ec-4610-ac7a-2fc9c8654a30","name":"cfcf576d-e8ec-4610-ac7a-2fc9c8654a30","percentComplete":100,"properties":{"circuit":{"authorizations":[],"expressRouteID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt22-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt22-cust-eastus-azurecontainer-er","expressRoutePrivatePeeringID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt22-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt22-cust-eastus-azurecontainer-er/peerings/AzurePrivatePeering","primarySubnet":"192.168.51.8/30","secondarySubnet":"192.168.51.12/30"},"cluster":{"clusterID":1,"clusterSize":4,"hosts":["he-fakehost11.nyc1.kubernetes.center","he-fakehost10.nyc1.kubernetes.center","he-fakehost08.nyc1.kubernetes.center","he-fakehost06.nyc1.kubernetes.center"]},"clusters":[],"endpoints":{"nsxtManager":"https://192.168.48.3/","vcsa":"https://192.168.48.2/"},"identitySources":[],"internet":"Disabled","managementNetwork":"192.168.48.0/24","networkBlock":"192.168.48.0/22","provisioningNetwork":"192.168.50.0/24","provisioningState":"Succeeded","vmotionNetwork":"192.168.49.0/24"},"startTime":"2019-09-19T08:32:08.8010866+00:00","status":"Succeeded"}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '400'
+      - '1543'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 19 Sep 2019 07:49:02 GMT
-      expires:
-      - '-1'
-      pragma:
-      - no-cache
-      server:
-      - nginx/1.15.4
-      strict-transport-security:
-      - max-age=31536000; includeSubDomains
-      transfer-encoding:
-      - chunked
-      vary:
-      - Accept-Encoding
-      x-content-type-options:
-      - nosniff
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      CommandName:
-      - vmware privatecloud update
-      Connection:
-      - keep-alive
-      ParameterSetName:
-      - -g -n --cluster-size
-      User-Agent:
-      - python/3.7.4 (Darwin-18.7.0-x86_64-i386-64bit) msrest/0.6.9 msrest_azure/0.6.1
-        virtustreamclient/2019-08-09-preview Azure-SDK-For-Python AZURECLI/2.0.72
-    method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/ceb6321f-7f8b-4808-ad0b-6f38372c371d?api-version=2019-08-09-preview
-  response:
-    body:
-      string: '{"endTime":"2019-09-19T07:48:59.6463244+00:00","id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/ceb6321f-7f8b-4808-ad0b-6f38372c371d","name":"ceb6321f-7f8b-4808-ad0b-6f38372c371d","percentComplete":100,"properties":{"circuit":{"authorizations":[],"expressRouteID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er","expressRoutePrivatePeeringID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er/peerings/AzurePrivatePeering","primarySubnet":"192.168.51.8/30","secondarySubnet":"192.168.51.12/30"},"cluster":{"clusterID":1,"clusterSize":3,"hosts":["he-fakehost46.nyc1.kubernetes.center","he-fakehost47.nyc1.kubernetes.center","he-fakehost48.nyc1.kubernetes.center"]},"clusters":[],"endpoints":{"nsxtManager":"https://192.168.48.3/","vcsa":"https://192.168.48.2/"},"identitySources":[],"internet":"Disabled","managementNetwork":"192.168.48.0/24","networkBlock":"192.168.48.0/22","provisioningNetwork":"192.168.50.0/24","provisioningState":"Succeeded","vmotionNetwork":"192.168.49.0/24"},"startTime":"2019-09-19T07:48:28.6943881+00:00","status":"Succeeded"}'
-    headers:
-      cache-control:
-      - no-cache
-      content-length:
-      - '1504'
-      content-type:
-      - application/json; charset=utf-8
-      date:
-      - Thu, 19 Sep 2019 07:49:12 GMT
+      - Thu, 19 Sep 2019 08:32:42 GMT
       expires:
       - '-1'
       pragma:
@@ -1079,7 +985,7 @@ interactions:
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1?api-version=2019-08-09-preview
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1","location":"eastus2","name":"cloud1","properties":{"circuit":{"authorizations":[],"expressRouteID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er","expressRoutePrivatePeeringID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er/peerings/AzurePrivatePeering","primarySubnet":"192.168.51.8/30","secondarySubnet":"192.168.51.12/30"},"cluster":{"clusterID":1,"clusterSize":3,"hosts":["he-fakehost46.nyc1.kubernetes.center","he-fakehost47.nyc1.kubernetes.center","he-fakehost48.nyc1.kubernetes.center"]},"clusters":[],"endpoints":{"nsxtManager":"https://192.168.48.3/","vcsa":"https://192.168.48.2/"},"identitySources":[],"internet":"Disabled","managementNetwork":"192.168.48.0/24","networkBlock":"192.168.48.0/22","provisioningNetwork":"192.168.50.0/24","provisioningState":"Succeeded","vmotionNetwork":"192.168.49.0/24"},"tags":{},"type":"Microsoft.VMwareVirtustream/privateClouds"}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1","location":"eastus2","name":"cloud1","properties":{"circuit":{"authorizations":[],"expressRouteID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt22-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt22-cust-eastus-azurecontainer-er","expressRoutePrivatePeeringID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt22-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt22-cust-eastus-azurecontainer-er/peerings/AzurePrivatePeering","primarySubnet":"192.168.51.8/30","secondarySubnet":"192.168.51.12/30"},"cluster":{"clusterID":1,"clusterSize":3,"hosts":["he-fakehost11.nyc1.kubernetes.center","he-fakehost10.nyc1.kubernetes.center","he-fakehost08.nyc1.kubernetes.center"]},"clusters":[],"endpoints":{"nsxtManager":"https://192.168.48.3/","vcsa":"https://192.168.48.2/"},"identitySources":[],"internet":"Disabled","managementNetwork":"192.168.48.0/24","networkBlock":"192.168.48.0/22","provisioningNetwork":"192.168.50.0/24","provisioningState":"Succeeded","vmotionNetwork":"192.168.49.0/24"},"tags":{},"type":"Microsoft.VMwareVirtustream/privateClouds"}'
     headers:
       cache-control:
       - no-cache
@@ -1088,7 +994,252 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 19 Sep 2019 07:49:14 GMT
+      - Thu, 19 Sep 2019 08:32:43 GMT
+      expires:
+      - '-1'
+      pragma:
+      - no-cache
+      server:
+      - nginx/1.15.4
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding
+      x-content-type-options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - vmware privatecloud update
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - -g -n --internet
+      User-Agent:
+      - python/3.7.4 (Darwin-18.7.0-x86_64-i386-64bit) msrest/0.6.9 msrest_azure/0.6.1
+        virtustreamclient/2019-08-09-preview Azure-SDK-For-Python AZURECLI/2.0.72
+      accept-language:
+      - en-US
+    method: GET
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1?api-version=2019-08-09-preview
+  response:
+    body:
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1","location":"eastus2","name":"cloud1","properties":{"circuit":{"authorizations":[],"expressRouteID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt22-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt22-cust-eastus-azurecontainer-er","expressRoutePrivatePeeringID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt22-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt22-cust-eastus-azurecontainer-er/peerings/AzurePrivatePeering","primarySubnet":"192.168.51.8/30","secondarySubnet":"192.168.51.12/30"},"cluster":{"clusterID":1,"clusterSize":3,"hosts":["he-fakehost11.nyc1.kubernetes.center","he-fakehost10.nyc1.kubernetes.center","he-fakehost08.nyc1.kubernetes.center"]},"clusters":[],"endpoints":{"nsxtManager":"https://192.168.48.3/","vcsa":"https://192.168.48.2/"},"identitySources":[],"internet":"Disabled","managementNetwork":"192.168.48.0/24","networkBlock":"192.168.48.0/22","provisioningNetwork":"192.168.50.0/24","provisioningState":"Succeeded","vmotionNetwork":"192.168.49.0/24"},"tags":{},"type":"Microsoft.VMwareVirtustream/privateClouds"}'
+    headers:
+      cache-control:
+      - no-cache
+      content-length:
+      - '1364'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Thu, 19 Sep 2019 08:32:45 GMT
+      expires:
+      - '-1'
+      pragma:
+      - no-cache
+      server:
+      - nginx/1.15.4
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding
+      x-content-type-options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"location": "eastus2", "tags": {}, "properties": {"circuit": {"authorizations":
+      []}, "cluster": {"clusterSize": 3}, "internet": "enabled", "identitySources":
+      [], "networkBlock": "192.168.48.0/22"}}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - vmware privatecloud update
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '198'
+      Content-Type:
+      - application/json; charset=utf-8
+      ParameterSetName:
+      - -g -n --internet
+      User-Agent:
+      - python/3.7.4 (Darwin-18.7.0-x86_64-i386-64bit) msrest/0.6.9 msrest_azure/0.6.1
+        virtustreamclient/2019-08-09-preview Azure-SDK-For-Python AZURECLI/2.0.72
+      accept-language:
+      - en-US
+    method: PATCH
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1?api-version=2019-08-09-preview
+  response:
+    body:
+      string: ''
+    headers:
+      azure-asyncoperation:
+      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/8b7fce2e-8dae-4a97-b085-5e82830770eb?api-version=2019-08-09-preview
+      cache-control:
+      - no-cache
+      content-length:
+      - '0'
+      content-type:
+      - text/html
+      date:
+      - Thu, 19 Sep 2019 08:32:48 GMT
+      expires:
+      - '-1'
+      pragma:
+      - no-cache
+      server:
+      - nginx/1.15.4
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-content-type-options:
+      - nosniff
+      x-ms-ratelimit-remaining-subscription-writes:
+      - '1198'
+    status:
+      code: 201
+      message: Created
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - vmware privatecloud update
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - -g -n --internet
+      User-Agent:
+      - python/3.7.4 (Darwin-18.7.0-x86_64-i386-64bit) msrest/0.6.9 msrest_azure/0.6.1
+        virtustreamclient/2019-08-09-preview Azure-SDK-For-Python AZURECLI/2.0.72
+    method: GET
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/8b7fce2e-8dae-4a97-b085-5e82830770eb?api-version=2019-08-09-preview
+  response:
+    body:
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/8b7fce2e-8dae-4a97-b085-5e82830770eb","name":"8b7fce2e-8dae-4a97-b085-5e82830770eb","percentComplete":100,"startTime":"2019-09-19T08:32:47.9173427+00:00","status":"Building"}'
+    headers:
+      cache-control:
+      - no-cache
+      content-length:
+      - '401'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Thu, 19 Sep 2019 08:32:59 GMT
+      expires:
+      - '-1'
+      pragma:
+      - no-cache
+      server:
+      - nginx/1.15.4
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding
+      x-content-type-options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - vmware privatecloud update
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - -g -n --internet
+      User-Agent:
+      - python/3.7.4 (Darwin-18.7.0-x86_64-i386-64bit) msrest/0.6.9 msrest_azure/0.6.1
+        virtustreamclient/2019-08-09-preview Azure-SDK-For-Python AZURECLI/2.0.72
+    method: GET
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/8b7fce2e-8dae-4a97-b085-5e82830770eb?api-version=2019-08-09-preview
+  response:
+    body:
+      string: '{"endTime":"2019-09-19T08:32:58.2525185+00:00","id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/8b7fce2e-8dae-4a97-b085-5e82830770eb","name":"8b7fce2e-8dae-4a97-b085-5e82830770eb","percentComplete":100,"properties":{"circuit":{"authorizations":[],"expressRouteID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt22-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt22-cust-eastus-azurecontainer-er","expressRoutePrivatePeeringID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt22-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt22-cust-eastus-azurecontainer-er/peerings/AzurePrivatePeering","primarySubnet":"192.168.51.8/30","secondarySubnet":"192.168.51.12/30"},"cluster":{"clusterID":1,"clusterSize":3,"hosts":["he-fakehost11.nyc1.kubernetes.center","he-fakehost10.nyc1.kubernetes.center","he-fakehost08.nyc1.kubernetes.center"]},"clusters":[],"endpoints":{"nsxtManager":"https://192.168.48.3/","vcsa":"https://192.168.48.2/"},"identitySources":[],"internet":"Enabled","managementNetwork":"192.168.48.0/24","networkBlock":"192.168.48.0/22","provisioningNetwork":"192.168.50.0/24","provisioningState":"Succeeded","vmotionNetwork":"192.168.49.0/24"},"startTime":"2019-09-19T08:32:47.9173427+00:00","status":"Succeeded"}'
+    headers:
+      cache-control:
+      - no-cache
+      content-length:
+      - '1503'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Thu, 19 Sep 2019 08:33:10 GMT
+      expires:
+      - '-1'
+      pragma:
+      - no-cache
+      server:
+      - nginx/1.15.4
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding
+      x-content-type-options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - vmware privatecloud update
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - -g -n --internet
+      User-Agent:
+      - python/3.7.4 (Darwin-18.7.0-x86_64-i386-64bit) msrest/0.6.9 msrest_azure/0.6.1
+        virtustreamclient/2019-08-09-preview Azure-SDK-For-Python AZURECLI/2.0.72
+    method: GET
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1?api-version=2019-08-09-preview
+  response:
+    body:
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1","location":"eastus2","name":"cloud1","properties":{"circuit":{"authorizations":[],"expressRouteID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt22-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt22-cust-eastus-azurecontainer-er","expressRoutePrivatePeeringID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt22-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt22-cust-eastus-azurecontainer-er/peerings/AzurePrivatePeering","primarySubnet":"192.168.51.8/30","secondarySubnet":"192.168.51.12/30"},"cluster":{"clusterID":1,"clusterSize":3,"hosts":["he-fakehost11.nyc1.kubernetes.center","he-fakehost10.nyc1.kubernetes.center","he-fakehost08.nyc1.kubernetes.center"]},"clusters":[],"endpoints":{"nsxtManager":"https://192.168.48.3/","vcsa":"https://192.168.48.2/"},"identitySources":[],"internet":"Enabled","managementNetwork":"192.168.48.0/24","networkBlock":"192.168.48.0/22","provisioningNetwork":"192.168.50.0/24","provisioningState":"Succeeded","vmotionNetwork":"192.168.49.0/24"},"tags":{},"type":"Microsoft.VMwareVirtustream/privateClouds"}'
+    headers:
+      cache-control:
+      - no-cache
+      content-length:
+      - '1363'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Thu, 19 Sep 2019 08:33:11 GMT
       expires:
       - '-1'
       pragma:
@@ -1128,16 +1279,16 @@ interactions:
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1?api-version=2019-08-09-preview
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1","location":"eastus2","name":"cloud1","properties":{"circuit":{"authorizations":[],"expressRouteID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er","expressRoutePrivatePeeringID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er/peerings/AzurePrivatePeering","primarySubnet":"192.168.51.8/30","secondarySubnet":"192.168.51.12/30"},"cluster":{"clusterID":1,"clusterSize":3,"hosts":["he-fakehost46.nyc1.kubernetes.center","he-fakehost47.nyc1.kubernetes.center","he-fakehost48.nyc1.kubernetes.center"]},"clusters":[],"endpoints":{"nsxtManager":"https://192.168.48.3/","vcsa":"https://192.168.48.2/"},"identitySources":[],"internet":"Disabled","managementNetwork":"192.168.48.0/24","networkBlock":"192.168.48.0/22","provisioningNetwork":"192.168.50.0/24","provisioningState":"Succeeded","vmotionNetwork":"192.168.49.0/24"},"tags":{},"type":"Microsoft.VMwareVirtustream/privateClouds"}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1","location":"eastus2","name":"cloud1","properties":{"circuit":{"authorizations":[],"expressRouteID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt22-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt22-cust-eastus-azurecontainer-er","expressRoutePrivatePeeringID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt22-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt22-cust-eastus-azurecontainer-er/peerings/AzurePrivatePeering","primarySubnet":"192.168.51.8/30","secondarySubnet":"192.168.51.12/30"},"cluster":{"clusterID":1,"clusterSize":3,"hosts":["he-fakehost11.nyc1.kubernetes.center","he-fakehost10.nyc1.kubernetes.center","he-fakehost08.nyc1.kubernetes.center"]},"clusters":[],"endpoints":{"nsxtManager":"https://192.168.48.3/","vcsa":"https://192.168.48.2/"},"identitySources":[],"internet":"Enabled","managementNetwork":"192.168.48.0/24","networkBlock":"192.168.48.0/22","provisioningNetwork":"192.168.50.0/24","provisioningState":"Succeeded","vmotionNetwork":"192.168.49.0/24"},"tags":{},"type":"Microsoft.VMwareVirtustream/privateClouds"}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '1364'
+      - '1363'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 19 Sep 2019 07:49:16 GMT
+      - Thu, 19 Sep 2019 08:33:14 GMT
       expires:
       - '-1'
       pragma:
@@ -1157,7 +1308,7 @@ interactions:
       message: OK
 - request:
     body: '{"location": "eastus2", "tags": {}, "properties": {"circuit": {"authorizations":
-      [{"name": "myauthname"}]}, "cluster": {"clusterSize": 3}, "internet": "Disabled",
+      [{"name": "myauthname"}]}, "cluster": {"clusterSize": 3}, "internet": "Enabled",
       "identitySources": [], "networkBlock": "192.168.48.0/22"}}'
     headers:
       Accept:
@@ -1169,7 +1320,7 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '221'
+      - '220'
       Content-Type:
       - application/json; charset=utf-8
       ParameterSetName:
@@ -1183,16 +1334,16 @@ interactions:
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1?api-version=2019-08-09-preview
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1","location":"eastus2","name":"cloud1","properties":{"circuit":{"authorizations":[{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er/authorizations/myauthname","key":"84a9cb37-7b77-48c7-9af0-6ce893f5ef9c","name":"myauthname"}],"expressRouteID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er","expressRoutePrivatePeeringID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er/peerings/AzurePrivatePeering","primarySubnet":"192.168.51.8/30","secondarySubnet":"192.168.51.12/30"},"cluster":{"clusterID":1,"clusterSize":3,"hosts":["he-fakehost46.nyc1.kubernetes.center","he-fakehost47.nyc1.kubernetes.center","he-fakehost48.nyc1.kubernetes.center"]},"clusters":[],"endpoints":{"nsxtManager":"https://192.168.48.3/","vcsa":"https://192.168.48.2/"},"identitySources":[],"internet":"Disabled","managementNetwork":"192.168.48.0/24","networkBlock":"192.168.48.0/22","provisioningNetwork":"192.168.50.0/24","provisioningState":"Succeeded","vmotionNetwork":"192.168.49.0/24"},"tags":{},"type":"Microsoft.VMwareVirtustream/privateClouds"}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1","location":"eastus2","name":"cloud1","properties":{"circuit":{"authorizations":[{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt22-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt22-cust-eastus-azurecontainer-er/authorizations/myauthname","key":"0b3d57ea-53e7-4101-9b46-a45ab10f3ac8","name":"myauthname"}],"expressRouteID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt22-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt22-cust-eastus-azurecontainer-er","expressRoutePrivatePeeringID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt22-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt22-cust-eastus-azurecontainer-er/peerings/AzurePrivatePeering","primarySubnet":"192.168.51.8/30","secondarySubnet":"192.168.51.12/30"},"cluster":{"clusterID":1,"clusterSize":3,"hosts":["he-fakehost11.nyc1.kubernetes.center","he-fakehost10.nyc1.kubernetes.center","he-fakehost08.nyc1.kubernetes.center"]},"clusters":[],"endpoints":{"nsxtManager":"https://192.168.48.3/","vcsa":"https://192.168.48.2/"},"identitySources":[],"internet":"Enabled","managementNetwork":"192.168.48.0/24","networkBlock":"192.168.48.0/22","provisioningNetwork":"192.168.50.0/24","provisioningState":"Succeeded","vmotionNetwork":"192.168.49.0/24"},"tags":{},"type":"Microsoft.VMwareVirtustream/privateClouds"}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '1648'
+      - '1647'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 19 Sep 2019 07:49:19 GMT
+      - Thu, 19 Sep 2019 08:33:17 GMT
       expires:
       - '-1'
       pragma:
@@ -1234,16 +1385,16 @@ interactions:
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1?api-version=2019-08-09-preview
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1","location":"eastus2","name":"cloud1","properties":{"circuit":{"authorizations":[{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er/authorizations/myauthname","key":"84a9cb37-7b77-48c7-9af0-6ce893f5ef9c","name":"myauthname"}],"expressRouteID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er","expressRoutePrivatePeeringID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er/peerings/AzurePrivatePeering","primarySubnet":"192.168.51.8/30","secondarySubnet":"192.168.51.12/30"},"cluster":{"clusterID":1,"clusterSize":3,"hosts":["he-fakehost46.nyc1.kubernetes.center","he-fakehost47.nyc1.kubernetes.center","he-fakehost48.nyc1.kubernetes.center"]},"clusters":[],"endpoints":{"nsxtManager":"https://192.168.48.3/","vcsa":"https://192.168.48.2/"},"identitySources":[],"internet":"Disabled","managementNetwork":"192.168.48.0/24","networkBlock":"192.168.48.0/22","provisioningNetwork":"192.168.50.0/24","provisioningState":"Succeeded","vmotionNetwork":"192.168.49.0/24"},"tags":{},"type":"Microsoft.VMwareVirtustream/privateClouds"}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1","location":"eastus2","name":"cloud1","properties":{"circuit":{"authorizations":[{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt22-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt22-cust-eastus-azurecontainer-er/authorizations/myauthname","key":"0b3d57ea-53e7-4101-9b46-a45ab10f3ac8","name":"myauthname"}],"expressRouteID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt22-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt22-cust-eastus-azurecontainer-er","expressRoutePrivatePeeringID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt22-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt22-cust-eastus-azurecontainer-er/peerings/AzurePrivatePeering","primarySubnet":"192.168.51.8/30","secondarySubnet":"192.168.51.12/30"},"cluster":{"clusterID":1,"clusterSize":3,"hosts":["he-fakehost11.nyc1.kubernetes.center","he-fakehost10.nyc1.kubernetes.center","he-fakehost08.nyc1.kubernetes.center"]},"clusters":[],"endpoints":{"nsxtManager":"https://192.168.48.3/","vcsa":"https://192.168.48.2/"},"identitySources":[],"internet":"Enabled","managementNetwork":"192.168.48.0/24","networkBlock":"192.168.48.0/22","provisioningNetwork":"192.168.50.0/24","provisioningState":"Succeeded","vmotionNetwork":"192.168.49.0/24"},"tags":{},"type":"Microsoft.VMwareVirtustream/privateClouds"}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '1648'
+      - '1647'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 19 Sep 2019 07:49:20 GMT
+      - Thu, 19 Sep 2019 08:33:18 GMT
       expires:
       - '-1'
       pragma:
@@ -1283,16 +1434,16 @@ interactions:
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1?api-version=2019-08-09-preview
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1","location":"eastus2","name":"cloud1","properties":{"circuit":{"authorizations":[{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er/authorizations/myauthname","key":"84a9cb37-7b77-48c7-9af0-6ce893f5ef9c","name":"myauthname"}],"expressRouteID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er","expressRoutePrivatePeeringID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er/peerings/AzurePrivatePeering","primarySubnet":"192.168.51.8/30","secondarySubnet":"192.168.51.12/30"},"cluster":{"clusterID":1,"clusterSize":3,"hosts":["he-fakehost46.nyc1.kubernetes.center","he-fakehost47.nyc1.kubernetes.center","he-fakehost48.nyc1.kubernetes.center"]},"clusters":[],"endpoints":{"nsxtManager":"https://192.168.48.3/","vcsa":"https://192.168.48.2/"},"identitySources":[],"internet":"Disabled","managementNetwork":"192.168.48.0/24","networkBlock":"192.168.48.0/22","provisioningNetwork":"192.168.50.0/24","provisioningState":"Succeeded","vmotionNetwork":"192.168.49.0/24"},"tags":{},"type":"Microsoft.VMwareVirtustream/privateClouds"}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1","location":"eastus2","name":"cloud1","properties":{"circuit":{"authorizations":[{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt22-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt22-cust-eastus-azurecontainer-er/authorizations/myauthname","key":"0b3d57ea-53e7-4101-9b46-a45ab10f3ac8","name":"myauthname"}],"expressRouteID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt22-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt22-cust-eastus-azurecontainer-er","expressRoutePrivatePeeringID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt22-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt22-cust-eastus-azurecontainer-er/peerings/AzurePrivatePeering","primarySubnet":"192.168.51.8/30","secondarySubnet":"192.168.51.12/30"},"cluster":{"clusterID":1,"clusterSize":3,"hosts":["he-fakehost11.nyc1.kubernetes.center","he-fakehost10.nyc1.kubernetes.center","he-fakehost08.nyc1.kubernetes.center"]},"clusters":[],"endpoints":{"nsxtManager":"https://192.168.48.3/","vcsa":"https://192.168.48.2/"},"identitySources":[],"internet":"Enabled","managementNetwork":"192.168.48.0/24","networkBlock":"192.168.48.0/22","provisioningNetwork":"192.168.50.0/24","provisioningState":"Succeeded","vmotionNetwork":"192.168.49.0/24"},"tags":{},"type":"Microsoft.VMwareVirtustream/privateClouds"}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '1648'
+      - '1647'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 19 Sep 2019 07:49:22 GMT
+      - Thu, 19 Sep 2019 08:33:20 GMT
       expires:
       - '-1'
       pragma:
@@ -1312,7 +1463,7 @@ interactions:
       message: OK
 - request:
     body: '{"location": "eastus2", "tags": {}, "properties": {"circuit": {"authorizations":
-      []}, "cluster": {"clusterSize": 3}, "internet": "Disabled", "identitySources":
+      []}, "cluster": {"clusterSize": 3}, "internet": "Enabled", "identitySources":
       [], "networkBlock": "192.168.48.0/22"}}'
     headers:
       Accept:
@@ -1324,7 +1475,7 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '199'
+      - '198'
       Content-Type:
       - application/json; charset=utf-8
       ParameterSetName:
@@ -1338,16 +1489,16 @@ interactions:
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1?api-version=2019-08-09-preview
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1","location":"eastus2","name":"cloud1","properties":{"circuit":{"authorizations":[],"expressRouteID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er","expressRoutePrivatePeeringID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er/peerings/AzurePrivatePeering","primarySubnet":"192.168.51.8/30","secondarySubnet":"192.168.51.12/30"},"cluster":{"clusterID":1,"clusterSize":3,"hosts":["he-fakehost46.nyc1.kubernetes.center","he-fakehost47.nyc1.kubernetes.center","he-fakehost48.nyc1.kubernetes.center"]},"clusters":[],"endpoints":{"nsxtManager":"https://192.168.48.3/","vcsa":"https://192.168.48.2/"},"identitySources":[],"internet":"Disabled","managementNetwork":"192.168.48.0/24","networkBlock":"192.168.48.0/22","provisioningNetwork":"192.168.50.0/24","provisioningState":"Succeeded","vmotionNetwork":"192.168.49.0/24"},"tags":{},"type":"Microsoft.VMwareVirtustream/privateClouds"}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1","location":"eastus2","name":"cloud1","properties":{"circuit":{"authorizations":[],"expressRouteID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt22-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt22-cust-eastus-azurecontainer-er","expressRoutePrivatePeeringID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt22-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt22-cust-eastus-azurecontainer-er/peerings/AzurePrivatePeering","primarySubnet":"192.168.51.8/30","secondarySubnet":"192.168.51.12/30"},"cluster":{"clusterID":1,"clusterSize":3,"hosts":["he-fakehost11.nyc1.kubernetes.center","he-fakehost10.nyc1.kubernetes.center","he-fakehost08.nyc1.kubernetes.center"]},"clusters":[],"endpoints":{"nsxtManager":"https://192.168.48.3/","vcsa":"https://192.168.48.2/"},"identitySources":[],"internet":"Enabled","managementNetwork":"192.168.48.0/24","networkBlock":"192.168.48.0/22","provisioningNetwork":"192.168.50.0/24","provisioningState":"Succeeded","vmotionNetwork":"192.168.49.0/24"},"tags":{},"type":"Microsoft.VMwareVirtustream/privateClouds"}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '1364'
+      - '1363'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 19 Sep 2019 07:49:25 GMT
+      - Thu, 19 Sep 2019 08:33:24 GMT
       expires:
       - '-1'
       pragma:
@@ -1389,16 +1540,16 @@ interactions:
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1?api-version=2019-08-09-preview
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1","location":"eastus2","name":"cloud1","properties":{"circuit":{"authorizations":[],"expressRouteID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er","expressRoutePrivatePeeringID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er/peerings/AzurePrivatePeering","primarySubnet":"192.168.51.8/30","secondarySubnet":"192.168.51.12/30"},"cluster":{"clusterID":1,"clusterSize":3,"hosts":["he-fakehost46.nyc1.kubernetes.center","he-fakehost47.nyc1.kubernetes.center","he-fakehost48.nyc1.kubernetes.center"]},"clusters":[],"endpoints":{"nsxtManager":"https://192.168.48.3/","vcsa":"https://192.168.48.2/"},"identitySources":[],"internet":"Disabled","managementNetwork":"192.168.48.0/24","networkBlock":"192.168.48.0/22","provisioningNetwork":"192.168.50.0/24","provisioningState":"Succeeded","vmotionNetwork":"192.168.49.0/24"},"tags":{},"type":"Microsoft.VMwareVirtustream/privateClouds"}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1","location":"eastus2","name":"cloud1","properties":{"circuit":{"authorizations":[],"expressRouteID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt22-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt22-cust-eastus-azurecontainer-er","expressRoutePrivatePeeringID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt22-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt22-cust-eastus-azurecontainer-er/peerings/AzurePrivatePeering","primarySubnet":"192.168.51.8/30","secondarySubnet":"192.168.51.12/30"},"cluster":{"clusterID":1,"clusterSize":3,"hosts":["he-fakehost11.nyc1.kubernetes.center","he-fakehost10.nyc1.kubernetes.center","he-fakehost08.nyc1.kubernetes.center"]},"clusters":[],"endpoints":{"nsxtManager":"https://192.168.48.3/","vcsa":"https://192.168.48.2/"},"identitySources":[],"internet":"Enabled","managementNetwork":"192.168.48.0/24","networkBlock":"192.168.48.0/22","provisioningNetwork":"192.168.50.0/24","provisioningState":"Succeeded","vmotionNetwork":"192.168.49.0/24"},"tags":{},"type":"Microsoft.VMwareVirtustream/privateClouds"}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '1364'
+      - '1363'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 19 Sep 2019 07:49:27 GMT
+      - Thu, 19 Sep 2019 08:33:25 GMT
       expires:
       - '-1'
       pragma:
@@ -1439,16 +1590,16 @@ interactions:
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1?api-version=2019-08-09-preview
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1","location":"eastus2","name":"cloud1","properties":{"circuit":{"authorizations":[],"expressRouteID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er","expressRoutePrivatePeeringID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er/peerings/AzurePrivatePeering","primarySubnet":"192.168.51.8/30","secondarySubnet":"192.168.51.12/30"},"cluster":{"clusterID":1,"clusterSize":3,"hosts":["he-fakehost46.nyc1.kubernetes.center","he-fakehost47.nyc1.kubernetes.center","he-fakehost48.nyc1.kubernetes.center"]},"clusters":[],"endpoints":{"nsxtManager":"https://192.168.48.3/","vcsa":"https://192.168.48.2/"},"identitySources":[],"internet":"Disabled","managementNetwork":"192.168.48.0/24","networkBlock":"192.168.48.0/22","provisioningNetwork":"192.168.50.0/24","provisioningState":"Succeeded","vmotionNetwork":"192.168.49.0/24"},"tags":{},"type":"Microsoft.VMwareVirtustream/privateClouds"}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1","location":"eastus2","name":"cloud1","properties":{"circuit":{"authorizations":[],"expressRouteID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt22-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt22-cust-eastus-azurecontainer-er","expressRoutePrivatePeeringID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt22-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt22-cust-eastus-azurecontainer-er/peerings/AzurePrivatePeering","primarySubnet":"192.168.51.8/30","secondarySubnet":"192.168.51.12/30"},"cluster":{"clusterID":1,"clusterSize":3,"hosts":["he-fakehost11.nyc1.kubernetes.center","he-fakehost10.nyc1.kubernetes.center","he-fakehost08.nyc1.kubernetes.center"]},"clusters":[],"endpoints":{"nsxtManager":"https://192.168.48.3/","vcsa":"https://192.168.48.2/"},"identitySources":[],"internet":"Enabled","managementNetwork":"192.168.48.0/24","networkBlock":"192.168.48.0/22","provisioningNetwork":"192.168.50.0/24","provisioningState":"Succeeded","vmotionNetwork":"192.168.49.0/24"},"tags":{},"type":"Microsoft.VMwareVirtustream/privateClouds"}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '1364'
+      - '1363'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 19 Sep 2019 07:49:28 GMT
+      - Thu, 19 Sep 2019 08:33:26 GMT
       expires:
       - '-1'
       pragma:
@@ -1468,7 +1619,7 @@ interactions:
       message: OK
 - request:
     body: '{"location": "eastus2", "tags": {}, "properties": {"circuit": {"authorizations":
-      []}, "cluster": {"clusterSize": 3}, "internet": "Disabled", "identitySources":
+      []}, "cluster": {"clusterSize": 3}, "internet": "Enabled", "identitySources":
       [{"name": "groupName", "alias": "groupAlias", "domain": "domain", "baseUserDN":
       "ou=baseUser", "baseGroupDN": "ou=baseGroup", "primaryServer": "ldaps://1.1.1.1:636",
       "secondaryServer": "ldaps://1.1.1.2:636", "ssl": "Enabled", "username": "someone",
@@ -1483,7 +1634,7 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '471'
+      - '470'
       Content-Type:
       - application/json; charset=utf-8
       ParameterSetName:
@@ -1501,7 +1652,7 @@ interactions:
       string: ''
     headers:
       azure-asyncoperation:
-      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/281e637e-f4e9-42a2-a01f-0fb670420e44?api-version=2019-08-09-preview
+      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/4952d8d1-7de9-404d-8a76-12217c1670a3?api-version=2019-08-09-preview
       cache-control:
       - no-cache
       content-length:
@@ -1509,7 +1660,7 @@ interactions:
       content-type:
       - text/html
       date:
-      - Thu, 19 Sep 2019 07:49:31 GMT
+      - Thu, 19 Sep 2019 08:33:30 GMT
       expires:
       - '-1'
       pragma:
@@ -1543,10 +1694,10 @@ interactions:
       - python/3.7.4 (Darwin-18.7.0-x86_64-i386-64bit) msrest/0.6.9 msrest_azure/0.6.1
         virtustreamclient/2019-08-09-preview Azure-SDK-For-Python AZURECLI/2.0.72
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/281e637e-f4e9-42a2-a01f-0fb670420e44?api-version=2019-08-09-preview
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/4952d8d1-7de9-404d-8a76-12217c1670a3?api-version=2019-08-09-preview
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/281e637e-f4e9-42a2-a01f-0fb670420e44","name":"281e637e-f4e9-42a2-a01f-0fb670420e44","percentComplete":50,"startTime":"2019-09-19T07:49:30.3497103+00:00","status":"Building"}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/4952d8d1-7de9-404d-8a76-12217c1670a3","name":"4952d8d1-7de9-404d-8a76-12217c1670a3","percentComplete":50,"startTime":"2019-09-19T08:33:29.0254221+00:00","status":"Building"}'
     headers:
       cache-control:
       - no-cache
@@ -1555,7 +1706,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 19 Sep 2019 07:49:42 GMT
+      - Thu, 19 Sep 2019 08:33:41 GMT
       expires:
       - '-1'
       pragma:
@@ -1591,10 +1742,10 @@ interactions:
       - python/3.7.4 (Darwin-18.7.0-x86_64-i386-64bit) msrest/0.6.9 msrest_azure/0.6.1
         virtustreamclient/2019-08-09-preview Azure-SDK-For-Python AZURECLI/2.0.72
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/281e637e-f4e9-42a2-a01f-0fb670420e44?api-version=2019-08-09-preview
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/4952d8d1-7de9-404d-8a76-12217c1670a3?api-version=2019-08-09-preview
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/281e637e-f4e9-42a2-a01f-0fb670420e44","name":"281e637e-f4e9-42a2-a01f-0fb670420e44","percentComplete":100,"startTime":"2019-09-19T07:49:30.3497103+00:00","status":"Building"}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/4952d8d1-7de9-404d-8a76-12217c1670a3","name":"4952d8d1-7de9-404d-8a76-12217c1670a3","percentComplete":100,"startTime":"2019-09-19T08:33:29.0254221+00:00","status":"Building"}'
     headers:
       cache-control:
       - no-cache
@@ -1603,7 +1754,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 19 Sep 2019 07:49:53 GMT
+      - Thu, 19 Sep 2019 08:33:51 GMT
       expires:
       - '-1'
       pragma:
@@ -1639,19 +1790,19 @@ interactions:
       - python/3.7.4 (Darwin-18.7.0-x86_64-i386-64bit) msrest/0.6.9 msrest_azure/0.6.1
         virtustreamclient/2019-08-09-preview Azure-SDK-For-Python AZURECLI/2.0.72
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/281e637e-f4e9-42a2-a01f-0fb670420e44?api-version=2019-08-09-preview
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/4952d8d1-7de9-404d-8a76-12217c1670a3?api-version=2019-08-09-preview
   response:
     body:
-      string: '{"endTime":"2019-09-19T07:49:30.3497103+00:00","id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/281e637e-f4e9-42a2-a01f-0fb670420e44","name":"281e637e-f4e9-42a2-a01f-0fb670420e44","percentComplete":100,"properties":{"circuit":{"authorizations":[],"expressRouteID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er","expressRoutePrivatePeeringID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er/peerings/AzurePrivatePeering","primarySubnet":"192.168.51.8/30","secondarySubnet":"192.168.51.12/30"},"cluster":{"clusterID":1,"clusterSize":3,"hosts":["he-fakehost46.nyc1.kubernetes.center","he-fakehost47.nyc1.kubernetes.center","he-fakehost48.nyc1.kubernetes.center"]},"clusters":[],"endpoints":{"nsxtManager":"https://192.168.48.3/","vcsa":"https://192.168.48.2/"},"identitySources":[{"alias":"groupAlias","baseGroupDN":"ou=baseGroup","baseUserDN":"ou=baseUser","domain":"domain","name":"groupName","primaryServer":"ldaps://1.1.1.1:636/","secondaryServer":"ldaps://1.1.1.2:636/","ssl":"Enabled"}],"internet":"Disabled","managementNetwork":"192.168.48.0/24","networkBlock":"192.168.48.0/22","provisioningNetwork":"192.168.50.0/24","provisioningState":"Succeeded","vmotionNetwork":"192.168.49.0/24"},"startTime":"2019-09-19T07:49:30.3497103+00:00","status":"Succeeded"}'
+      string: '{"endTime":"2019-09-19T08:33:29.0254221+00:00","id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/4952d8d1-7de9-404d-8a76-12217c1670a3","name":"4952d8d1-7de9-404d-8a76-12217c1670a3","percentComplete":100,"properties":{"circuit":{"authorizations":[],"expressRouteID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt22-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt22-cust-eastus-azurecontainer-er","expressRoutePrivatePeeringID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt22-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt22-cust-eastus-azurecontainer-er/peerings/AzurePrivatePeering","primarySubnet":"192.168.51.8/30","secondarySubnet":"192.168.51.12/30"},"cluster":{"clusterID":1,"clusterSize":3,"hosts":["he-fakehost11.nyc1.kubernetes.center","he-fakehost10.nyc1.kubernetes.center","he-fakehost08.nyc1.kubernetes.center"]},"clusters":[],"endpoints":{"nsxtManager":"https://192.168.48.3/","vcsa":"https://192.168.48.2/"},"identitySources":[{"alias":"groupAlias","baseGroupDN":"ou=baseGroup","baseUserDN":"ou=baseUser","domain":"domain","name":"groupName","primaryServer":"ldaps://1.1.1.1:636/","secondaryServer":"ldaps://1.1.1.2:636/","ssl":"Enabled"}],"internet":"Enabled","managementNetwork":"192.168.48.0/24","networkBlock":"192.168.48.0/22","provisioningNetwork":"192.168.50.0/24","provisioningState":"Succeeded","vmotionNetwork":"192.168.49.0/24"},"startTime":"2019-09-19T08:33:29.0254221+00:00","status":"Succeeded"}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '1715'
+      - '1714'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 19 Sep 2019 07:50:04 GMT
+      - Thu, 19 Sep 2019 08:34:02 GMT
       expires:
       - '-1'
       pragma:
@@ -1690,16 +1841,16 @@ interactions:
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1?api-version=2019-08-09-preview
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1","location":"eastus2","name":"cloud1","properties":{"circuit":{"authorizations":[],"expressRouteID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er","expressRoutePrivatePeeringID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er/peerings/AzurePrivatePeering","primarySubnet":"192.168.51.8/30","secondarySubnet":"192.168.51.12/30"},"cluster":{"clusterID":1,"clusterSize":3,"hosts":["he-fakehost46.nyc1.kubernetes.center","he-fakehost47.nyc1.kubernetes.center","he-fakehost48.nyc1.kubernetes.center"]},"clusters":[],"endpoints":{"nsxtManager":"https://192.168.48.3/","vcsa":"https://192.168.48.2/"},"identitySources":[{"alias":"groupAlias","baseGroupDN":"ou=baseGroup","baseUserDN":"ou=baseUser","domain":"domain","name":"groupName","primaryServer":"ldaps://1.1.1.1:636/","secondaryServer":"ldaps://1.1.1.2:636/","ssl":"Enabled"}],"internet":"Disabled","managementNetwork":"192.168.48.0/24","networkBlock":"192.168.48.0/22","provisioningNetwork":"192.168.50.0/24","provisioningState":"Succeeded","vmotionNetwork":"192.168.49.0/24"},"tags":{},"type":"Microsoft.VMwareVirtustream/privateClouds"}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1","location":"eastus2","name":"cloud1","properties":{"circuit":{"authorizations":[],"expressRouteID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt22-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt22-cust-eastus-azurecontainer-er","expressRoutePrivatePeeringID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt22-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt22-cust-eastus-azurecontainer-er/peerings/AzurePrivatePeering","primarySubnet":"192.168.51.8/30","secondarySubnet":"192.168.51.12/30"},"cluster":{"clusterID":1,"clusterSize":3,"hosts":["he-fakehost11.nyc1.kubernetes.center","he-fakehost10.nyc1.kubernetes.center","he-fakehost08.nyc1.kubernetes.center"]},"clusters":[],"endpoints":{"nsxtManager":"https://192.168.48.3/","vcsa":"https://192.168.48.2/"},"identitySources":[{"alias":"groupAlias","baseGroupDN":"ou=baseGroup","baseUserDN":"ou=baseUser","domain":"domain","name":"groupName","primaryServer":"ldaps://1.1.1.1:636/","secondaryServer":"ldaps://1.1.1.2:636/","ssl":"Enabled"}],"internet":"Enabled","managementNetwork":"192.168.48.0/24","networkBlock":"192.168.48.0/22","provisioningNetwork":"192.168.50.0/24","provisioningState":"Succeeded","vmotionNetwork":"192.168.49.0/24"},"tags":{},"type":"Microsoft.VMwareVirtustream/privateClouds"}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '1575'
+      - '1574'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 19 Sep 2019 07:50:05 GMT
+      - Thu, 19 Sep 2019 08:34:03 GMT
       expires:
       - '-1'
       pragma:
@@ -1739,16 +1890,16 @@ interactions:
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1?api-version=2019-08-09-preview
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1","location":"eastus2","name":"cloud1","properties":{"circuit":{"authorizations":[],"expressRouteID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er","expressRoutePrivatePeeringID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er/peerings/AzurePrivatePeering","primarySubnet":"192.168.51.8/30","secondarySubnet":"192.168.51.12/30"},"cluster":{"clusterID":1,"clusterSize":3,"hosts":["he-fakehost46.nyc1.kubernetes.center","he-fakehost47.nyc1.kubernetes.center","he-fakehost48.nyc1.kubernetes.center"]},"clusters":[],"endpoints":{"nsxtManager":"https://192.168.48.3/","vcsa":"https://192.168.48.2/"},"identitySources":[{"alias":"groupAlias","baseGroupDN":"ou=baseGroup","baseUserDN":"ou=baseUser","domain":"domain","name":"groupName","primaryServer":"ldaps://1.1.1.1:636/","secondaryServer":"ldaps://1.1.1.2:636/","ssl":"Enabled"}],"internet":"Disabled","managementNetwork":"192.168.48.0/24","networkBlock":"192.168.48.0/22","provisioningNetwork":"192.168.50.0/24","provisioningState":"Succeeded","vmotionNetwork":"192.168.49.0/24"},"tags":{},"type":"Microsoft.VMwareVirtustream/privateClouds"}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1","location":"eastus2","name":"cloud1","properties":{"circuit":{"authorizations":[],"expressRouteID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt22-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt22-cust-eastus-azurecontainer-er","expressRoutePrivatePeeringID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt22-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt22-cust-eastus-azurecontainer-er/peerings/AzurePrivatePeering","primarySubnet":"192.168.51.8/30","secondarySubnet":"192.168.51.12/30"},"cluster":{"clusterID":1,"clusterSize":3,"hosts":["he-fakehost11.nyc1.kubernetes.center","he-fakehost10.nyc1.kubernetes.center","he-fakehost08.nyc1.kubernetes.center"]},"clusters":[],"endpoints":{"nsxtManager":"https://192.168.48.3/","vcsa":"https://192.168.48.2/"},"identitySources":[{"alias":"groupAlias","baseGroupDN":"ou=baseGroup","baseUserDN":"ou=baseUser","domain":"domain","name":"groupName","primaryServer":"ldaps://1.1.1.1:636/","secondaryServer":"ldaps://1.1.1.2:636/","ssl":"Enabled"}],"internet":"Enabled","managementNetwork":"192.168.48.0/24","networkBlock":"192.168.48.0/22","provisioningNetwork":"192.168.50.0/24","provisioningState":"Succeeded","vmotionNetwork":"192.168.49.0/24"},"tags":{},"type":"Microsoft.VMwareVirtustream/privateClouds"}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '1575'
+      - '1574'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 19 Sep 2019 07:50:06 GMT
+      - Thu, 19 Sep 2019 08:34:04 GMT
       expires:
       - '-1'
       pragma:
@@ -1788,16 +1939,16 @@ interactions:
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1?api-version=2019-08-09-preview
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1","location":"eastus2","name":"cloud1","properties":{"circuit":{"authorizations":[],"expressRouteID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er","expressRoutePrivatePeeringID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er/peerings/AzurePrivatePeering","primarySubnet":"192.168.51.8/30","secondarySubnet":"192.168.51.12/30"},"cluster":{"clusterID":1,"clusterSize":3,"hosts":["he-fakehost46.nyc1.kubernetes.center","he-fakehost47.nyc1.kubernetes.center","he-fakehost48.nyc1.kubernetes.center"]},"clusters":[],"endpoints":{"nsxtManager":"https://192.168.48.3/","vcsa":"https://192.168.48.2/"},"identitySources":[{"alias":"groupAlias","baseGroupDN":"ou=baseGroup","baseUserDN":"ou=baseUser","domain":"domain","name":"groupName","primaryServer":"ldaps://1.1.1.1:636/","secondaryServer":"ldaps://1.1.1.2:636/","ssl":"Enabled"}],"internet":"Disabled","managementNetwork":"192.168.48.0/24","networkBlock":"192.168.48.0/22","provisioningNetwork":"192.168.50.0/24","provisioningState":"Succeeded","vmotionNetwork":"192.168.49.0/24"},"tags":{},"type":"Microsoft.VMwareVirtustream/privateClouds"}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1","location":"eastus2","name":"cloud1","properties":{"circuit":{"authorizations":[],"expressRouteID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt22-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt22-cust-eastus-azurecontainer-er","expressRoutePrivatePeeringID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt22-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt22-cust-eastus-azurecontainer-er/peerings/AzurePrivatePeering","primarySubnet":"192.168.51.8/30","secondarySubnet":"192.168.51.12/30"},"cluster":{"clusterID":1,"clusterSize":3,"hosts":["he-fakehost11.nyc1.kubernetes.center","he-fakehost10.nyc1.kubernetes.center","he-fakehost08.nyc1.kubernetes.center"]},"clusters":[],"endpoints":{"nsxtManager":"https://192.168.48.3/","vcsa":"https://192.168.48.2/"},"identitySources":[{"alias":"groupAlias","baseGroupDN":"ou=baseGroup","baseUserDN":"ou=baseUser","domain":"domain","name":"groupName","primaryServer":"ldaps://1.1.1.1:636/","secondaryServer":"ldaps://1.1.1.2:636/","ssl":"Enabled"}],"internet":"Enabled","managementNetwork":"192.168.48.0/24","networkBlock":"192.168.48.0/22","provisioningNetwork":"192.168.50.0/24","provisioningState":"Succeeded","vmotionNetwork":"192.168.49.0/24"},"tags":{},"type":"Microsoft.VMwareVirtustream/privateClouds"}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '1575'
+      - '1574'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 19 Sep 2019 07:50:08 GMT
+      - Thu, 19 Sep 2019 08:34:06 GMT
       expires:
       - '-1'
       pragma:
@@ -1817,7 +1968,7 @@ interactions:
       message: OK
 - request:
     body: '{"location": "eastus2", "tags": {}, "properties": {"circuit": {"authorizations":
-      []}, "cluster": {"clusterSize": 3}, "internet": "Disabled", "identitySources":
+      []}, "cluster": {"clusterSize": 3}, "internet": "Enabled", "identitySources":
       [], "networkBlock": "192.168.48.0/22"}}'
     headers:
       Accept:
@@ -1829,7 +1980,7 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '199'
+      - '198'
       Content-Type:
       - application/json; charset=utf-8
       ParameterSetName:
@@ -1846,7 +1997,7 @@ interactions:
       string: ''
     headers:
       azure-asyncoperation:
-      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/774d68b8-3c63-4c46-a21b-13f36c008649?api-version=2019-08-09-preview
+      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/96dcfd55-2941-47bb-9854-133a9150be83?api-version=2019-08-09-preview
       cache-control:
       - no-cache
       content-length:
@@ -1854,7 +2005,7 @@ interactions:
       content-type:
       - text/html
       date:
-      - Thu, 19 Sep 2019 07:50:11 GMT
+      - Thu, 19 Sep 2019 08:34:09 GMT
       expires:
       - '-1'
       pragma:
@@ -1866,7 +2017,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-subscription-writes:
-      - '1199'
+      - '1198'
     status:
       code: 201
       message: Created
@@ -1887,10 +2038,10 @@ interactions:
       - python/3.7.4 (Darwin-18.7.0-x86_64-i386-64bit) msrest/0.6.9 msrest_azure/0.6.1
         virtustreamclient/2019-08-09-preview Azure-SDK-For-Python AZURECLI/2.0.72
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/774d68b8-3c63-4c46-a21b-13f36c008649?api-version=2019-08-09-preview
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/96dcfd55-2941-47bb-9854-133a9150be83?api-version=2019-08-09-preview
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/774d68b8-3c63-4c46-a21b-13f36c008649","name":"774d68b8-3c63-4c46-a21b-13f36c008649","percentComplete":100,"startTime":"2019-09-19T07:50:10.4160082+00:00","status":"Building"}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/96dcfd55-2941-47bb-9854-133a9150be83","name":"96dcfd55-2941-47bb-9854-133a9150be83","percentComplete":100,"startTime":"2019-09-19T08:34:08.4180954+00:00","status":"Building"}'
     headers:
       cache-control:
       - no-cache
@@ -1899,7 +2050,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 19 Sep 2019 07:50:22 GMT
+      - Thu, 19 Sep 2019 08:34:20 GMT
       expires:
       - '-1'
       pragma:
@@ -1934,19 +2085,19 @@ interactions:
       - python/3.7.4 (Darwin-18.7.0-x86_64-i386-64bit) msrest/0.6.9 msrest_azure/0.6.1
         virtustreamclient/2019-08-09-preview Azure-SDK-For-Python AZURECLI/2.0.72
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/774d68b8-3c63-4c46-a21b-13f36c008649?api-version=2019-08-09-preview
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/96dcfd55-2941-47bb-9854-133a9150be83?api-version=2019-08-09-preview
   response:
     body:
-      string: '{"endTime":"2019-09-19T07:50:10.4160082+00:00","id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/774d68b8-3c63-4c46-a21b-13f36c008649","name":"774d68b8-3c63-4c46-a21b-13f36c008649","percentComplete":100,"properties":{"circuit":{"authorizations":[],"expressRouteID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er","expressRoutePrivatePeeringID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er/peerings/AzurePrivatePeering","primarySubnet":"192.168.51.8/30","secondarySubnet":"192.168.51.12/30"},"cluster":{"clusterID":1,"clusterSize":3,"hosts":["he-fakehost46.nyc1.kubernetes.center","he-fakehost47.nyc1.kubernetes.center","he-fakehost48.nyc1.kubernetes.center"]},"clusters":[],"endpoints":{"nsxtManager":"https://192.168.48.3/","vcsa":"https://192.168.48.2/"},"identitySources":[],"internet":"Disabled","managementNetwork":"192.168.48.0/24","networkBlock":"192.168.48.0/22","provisioningNetwork":"192.168.50.0/24","provisioningState":"Succeeded","vmotionNetwork":"192.168.49.0/24"},"startTime":"2019-09-19T07:50:10.4160082+00:00","status":"Succeeded"}'
+      string: '{"endTime":"2019-09-19T08:34:08.4180954+00:00","id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/96dcfd55-2941-47bb-9854-133a9150be83","name":"96dcfd55-2941-47bb-9854-133a9150be83","percentComplete":100,"properties":{"circuit":{"authorizations":[],"expressRouteID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt22-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt22-cust-eastus-azurecontainer-er","expressRoutePrivatePeeringID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt22-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt22-cust-eastus-azurecontainer-er/peerings/AzurePrivatePeering","primarySubnet":"192.168.51.8/30","secondarySubnet":"192.168.51.12/30"},"cluster":{"clusterID":1,"clusterSize":3,"hosts":["he-fakehost11.nyc1.kubernetes.center","he-fakehost10.nyc1.kubernetes.center","he-fakehost08.nyc1.kubernetes.center"]},"clusters":[],"endpoints":{"nsxtManager":"https://192.168.48.3/","vcsa":"https://192.168.48.2/"},"identitySources":[],"internet":"Enabled","managementNetwork":"192.168.48.0/24","networkBlock":"192.168.48.0/22","provisioningNetwork":"192.168.50.0/24","provisioningState":"Succeeded","vmotionNetwork":"192.168.49.0/24"},"startTime":"2019-09-19T08:34:08.4180954+00:00","status":"Succeeded"}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '1504'
+      - '1503'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 19 Sep 2019 07:50:32 GMT
+      - Thu, 19 Sep 2019 08:34:30 GMT
       expires:
       - '-1'
       pragma:
@@ -1984,16 +2135,16 @@ interactions:
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1?api-version=2019-08-09-preview
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1","location":"eastus2","name":"cloud1","properties":{"circuit":{"authorizations":[],"expressRouteID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er","expressRoutePrivatePeeringID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er/peerings/AzurePrivatePeering","primarySubnet":"192.168.51.8/30","secondarySubnet":"192.168.51.12/30"},"cluster":{"clusterID":1,"clusterSize":3,"hosts":["he-fakehost46.nyc1.kubernetes.center","he-fakehost47.nyc1.kubernetes.center","he-fakehost48.nyc1.kubernetes.center"]},"clusters":[],"endpoints":{"nsxtManager":"https://192.168.48.3/","vcsa":"https://192.168.48.2/"},"identitySources":[],"internet":"Disabled","managementNetwork":"192.168.48.0/24","networkBlock":"192.168.48.0/22","provisioningNetwork":"192.168.50.0/24","provisioningState":"Succeeded","vmotionNetwork":"192.168.49.0/24"},"tags":{},"type":"Microsoft.VMwareVirtustream/privateClouds"}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1","location":"eastus2","name":"cloud1","properties":{"circuit":{"authorizations":[],"expressRouteID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt22-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt22-cust-eastus-azurecontainer-er","expressRoutePrivatePeeringID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt22-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt22-cust-eastus-azurecontainer-er/peerings/AzurePrivatePeering","primarySubnet":"192.168.51.8/30","secondarySubnet":"192.168.51.12/30"},"cluster":{"clusterID":1,"clusterSize":3,"hosts":["he-fakehost11.nyc1.kubernetes.center","he-fakehost10.nyc1.kubernetes.center","he-fakehost08.nyc1.kubernetes.center"]},"clusters":[],"endpoints":{"nsxtManager":"https://192.168.48.3/","vcsa":"https://192.168.48.2/"},"identitySources":[],"internet":"Enabled","managementNetwork":"192.168.48.0/24","networkBlock":"192.168.48.0/22","provisioningNetwork":"192.168.50.0/24","provisioningState":"Succeeded","vmotionNetwork":"192.168.49.0/24"},"tags":{},"type":"Microsoft.VMwareVirtustream/privateClouds"}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '1364'
+      - '1363'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 19 Sep 2019 07:50:34 GMT
+      - Thu, 19 Sep 2019 08:34:32 GMT
       expires:
       - '-1'
       pragma:
@@ -2033,16 +2184,16 @@ interactions:
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1?api-version=2019-08-09-preview
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1","location":"eastus2","name":"cloud1","properties":{"circuit":{"authorizations":[],"expressRouteID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er","expressRoutePrivatePeeringID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er/peerings/AzurePrivatePeering","primarySubnet":"192.168.51.8/30","secondarySubnet":"192.168.51.12/30"},"cluster":{"clusterID":1,"clusterSize":3,"hosts":["he-fakehost46.nyc1.kubernetes.center","he-fakehost47.nyc1.kubernetes.center","he-fakehost48.nyc1.kubernetes.center"]},"clusters":[],"endpoints":{"nsxtManager":"https://192.168.48.3/","vcsa":"https://192.168.48.2/"},"identitySources":[],"internet":"Disabled","managementNetwork":"192.168.48.0/24","networkBlock":"192.168.48.0/22","provisioningNetwork":"192.168.50.0/24","provisioningState":"Succeeded","vmotionNetwork":"192.168.49.0/24"},"tags":{},"type":"Microsoft.VMwareVirtustream/privateClouds"}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1","location":"eastus2","name":"cloud1","properties":{"circuit":{"authorizations":[],"expressRouteID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt22-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt22-cust-eastus-azurecontainer-er","expressRoutePrivatePeeringID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt22-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt22-cust-eastus-azurecontainer-er/peerings/AzurePrivatePeering","primarySubnet":"192.168.51.8/30","secondarySubnet":"192.168.51.12/30"},"cluster":{"clusterID":1,"clusterSize":3,"hosts":["he-fakehost11.nyc1.kubernetes.center","he-fakehost10.nyc1.kubernetes.center","he-fakehost08.nyc1.kubernetes.center"]},"clusters":[],"endpoints":{"nsxtManager":"https://192.168.48.3/","vcsa":"https://192.168.48.2/"},"identitySources":[],"internet":"Enabled","managementNetwork":"192.168.48.0/24","networkBlock":"192.168.48.0/22","provisioningNetwork":"192.168.50.0/24","provisioningState":"Succeeded","vmotionNetwork":"192.168.49.0/24"},"tags":{},"type":"Microsoft.VMwareVirtustream/privateClouds"}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '1364'
+      - '1363'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 19 Sep 2019 07:50:34 GMT
+      - Thu, 19 Sep 2019 08:34:33 GMT
       expires:
       - '-1'
       pragma:
@@ -2091,7 +2242,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 19 Sep 2019 07:50:36 GMT
+      - Thu, 19 Sep 2019 08:34:34 GMT
       expires:
       - '-1'
       pragma:
@@ -2138,7 +2289,7 @@ interactions:
       string: ''
     headers:
       azure-asyncoperation:
-      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/clusters/cluster1/operationstatuses/344abedd-d442-455b-a6f3-4563bc70d446?api-version=2019-08-09-preview
+      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/clusters/cluster1/operationstatuses/10fbdae1-a2d7-4271-ad6c-1934fb1dc538?api-version=2019-08-09-preview
       cache-control:
       - no-cache
       content-length:
@@ -2146,7 +2297,7 @@ interactions:
       content-type:
       - text/html
       date:
-      - Thu, 19 Sep 2019 07:50:39 GMT
+      - Thu, 19 Sep 2019 08:34:37 GMT
       expires:
       - '-1'
       pragma:
@@ -2179,10 +2330,10 @@ interactions:
       - python/3.7.4 (Darwin-18.7.0-x86_64-i386-64bit) msrest/0.6.9 msrest_azure/0.6.1
         virtustreamclient/2019-08-09-preview Azure-SDK-For-Python AZURECLI/2.0.72
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/clusters/cluster1/operationstatuses/344abedd-d442-455b-a6f3-4563bc70d446?api-version=2019-08-09-preview
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/clusters/cluster1/operationstatuses/10fbdae1-a2d7-4271-ad6c-1934fb1dc538?api-version=2019-08-09-preview
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/clusters/cluster1/operationstatuses/344abedd-d442-455b-a6f3-4563bc70d446","name":"344abedd-d442-455b-a6f3-4563bc70d446","percentComplete":50,"startTime":"2019-09-19T07:50:39.5558260+00:00","status":"Building"}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/clusters/cluster1/operationstatuses/10fbdae1-a2d7-4271-ad6c-1934fb1dc538","name":"10fbdae1-a2d7-4271-ad6c-1934fb1dc538","percentComplete":50,"startTime":"2019-09-19T08:34:37.6421029+00:00","status":"Building"}'
     headers:
       cache-control:
       - no-cache
@@ -2191,7 +2342,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 19 Sep 2019 07:50:50 GMT
+      - Thu, 19 Sep 2019 08:34:48 GMT
       expires:
       - '-1'
       pragma:
@@ -2226,10 +2377,10 @@ interactions:
       - python/3.7.4 (Darwin-18.7.0-x86_64-i386-64bit) msrest/0.6.9 msrest_azure/0.6.1
         virtustreamclient/2019-08-09-preview Azure-SDK-For-Python AZURECLI/2.0.72
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/clusters/cluster1/operationstatuses/344abedd-d442-455b-a6f3-4563bc70d446?api-version=2019-08-09-preview
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/clusters/cluster1/operationstatuses/10fbdae1-a2d7-4271-ad6c-1934fb1dc538?api-version=2019-08-09-preview
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/clusters/cluster1/operationstatuses/344abedd-d442-455b-a6f3-4563bc70d446","name":"344abedd-d442-455b-a6f3-4563bc70d446","percentComplete":100,"startTime":"2019-09-19T07:50:39.5558260+00:00","status":"Building"}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/clusters/cluster1/operationstatuses/10fbdae1-a2d7-4271-ad6c-1934fb1dc538","name":"10fbdae1-a2d7-4271-ad6c-1934fb1dc538","percentComplete":100,"startTime":"2019-09-19T08:34:37.6421029+00:00","status":"Building"}'
     headers:
       cache-control:
       - no-cache
@@ -2238,7 +2389,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 19 Sep 2019 07:51:01 GMT
+      - Thu, 19 Sep 2019 08:34:59 GMT
       expires:
       - '-1'
       pragma:
@@ -2273,10 +2424,10 @@ interactions:
       - python/3.7.4 (Darwin-18.7.0-x86_64-i386-64bit) msrest/0.6.9 msrest_azure/0.6.1
         virtustreamclient/2019-08-09-preview Azure-SDK-For-Python AZURECLI/2.0.72
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/clusters/cluster1/operationstatuses/344abedd-d442-455b-a6f3-4563bc70d446?api-version=2019-08-09-preview
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/clusters/cluster1/operationstatuses/10fbdae1-a2d7-4271-ad6c-1934fb1dc538?api-version=2019-08-09-preview
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/clusters/cluster1/operationstatuses/344abedd-d442-455b-a6f3-4563bc70d446","name":"344abedd-d442-455b-a6f3-4563bc70d446","percentComplete":100,"startTime":"2019-09-19T07:50:39.5558260+00:00","status":"Building"}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/clusters/cluster1/operationstatuses/10fbdae1-a2d7-4271-ad6c-1934fb1dc538","name":"10fbdae1-a2d7-4271-ad6c-1934fb1dc538","percentComplete":100,"startTime":"2019-09-19T08:34:37.6421029+00:00","status":"Building"}'
     headers:
       cache-control:
       - no-cache
@@ -2285,7 +2436,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 19 Sep 2019 07:51:12 GMT
+      - Thu, 19 Sep 2019 08:35:10 GMT
       expires:
       - '-1'
       pragma:
@@ -2320,10 +2471,10 @@ interactions:
       - python/3.7.4 (Darwin-18.7.0-x86_64-i386-64bit) msrest/0.6.9 msrest_azure/0.6.1
         virtustreamclient/2019-08-09-preview Azure-SDK-For-Python AZURECLI/2.0.72
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/clusters/cluster1/operationstatuses/344abedd-d442-455b-a6f3-4563bc70d446?api-version=2019-08-09-preview
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/clusters/cluster1/operationstatuses/10fbdae1-a2d7-4271-ad6c-1934fb1dc538?api-version=2019-08-09-preview
   response:
     body:
-      string: '{"endTime":"2019-09-19T07:51:14.4605446+00:00","id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/clusters/cluster1/operationstatuses/344abedd-d442-455b-a6f3-4563bc70d446","name":"344abedd-d442-455b-a6f3-4563bc70d446","percentComplete":100,"properties":{"clusterID":2,"clusterSize":3,"hosts":["he-fakehost49.nyc1.kubernetes.center","he-fakehost50.nyc1.kubernetes.center","he-fakehost12.nyc1.kubernetes.center"],"provisioningState":"Succeeded"},"startTime":"2019-09-19T07:50:39.5558260+00:00","status":"Succeeded"}'
+      string: '{"endTime":"2019-09-19T08:35:08.2845008+00:00","id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/clusters/cluster1/operationstatuses/10fbdae1-a2d7-4271-ad6c-1934fb1dc538","name":"10fbdae1-a2d7-4271-ad6c-1934fb1dc538","percentComplete":100,"properties":{"clusterID":2,"clusterSize":3,"hosts":["he-fakehost05.nyc1.kubernetes.center","he-fakehost07.nyc1.kubernetes.center","he-fakehost01.nyc1.kubernetes.center"],"provisioningState":"Succeeded"},"startTime":"2019-09-19T08:34:37.6421029+00:00","status":"Succeeded"}'
     headers:
       cache-control:
       - no-cache
@@ -2332,7 +2483,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 19 Sep 2019 07:51:22 GMT
+      - Thu, 19 Sep 2019 08:35:21 GMT
       expires:
       - '-1'
       pragma:
@@ -2370,7 +2521,7 @@ interactions:
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/clusters/cluster1?api-version=2019-08-09-preview
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/clusters/cluster1","location":"eastus2","name":"cluster1","properties":{"clusterID":2,"clusterSize":3,"hosts":["he-fakehost49.nyc1.kubernetes.center","he-fakehost50.nyc1.kubernetes.center","he-fakehost12.nyc1.kubernetes.center"],"provisioningState":"Succeeded"},"tags":{},"type":"Microsoft.VMwareVirtustream/privateClouds/clusters"}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/clusters/cluster1","location":"eastus2","name":"cluster1","properties":{"clusterID":2,"clusterSize":3,"hosts":["he-fakehost05.nyc1.kubernetes.center","he-fakehost07.nyc1.kubernetes.center","he-fakehost01.nyc1.kubernetes.center"],"provisioningState":"Succeeded"},"tags":{},"type":"Microsoft.VMwareVirtustream/privateClouds/clusters"}'
     headers:
       cache-control:
       - no-cache
@@ -2379,7 +2530,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 19 Sep 2019 07:51:23 GMT
+      - Thu, 19 Sep 2019 08:35:22 GMT
       expires:
       - '-1'
       pragma:
@@ -2419,7 +2570,7 @@ interactions:
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/clusters/cluster1?api-version=2019-08-09-preview
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/clusters/cluster1","location":"eastus2","name":"cluster1","properties":{"clusterID":2,"clusterSize":3,"hosts":["he-fakehost49.nyc1.kubernetes.center","he-fakehost50.nyc1.kubernetes.center","he-fakehost12.nyc1.kubernetes.center"],"provisioningState":"Succeeded"},"tags":{},"type":"Microsoft.VMwareVirtustream/privateClouds/clusters"}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/clusters/cluster1","location":"eastus2","name":"cluster1","properties":{"clusterID":2,"clusterSize":3,"hosts":["he-fakehost05.nyc1.kubernetes.center","he-fakehost07.nyc1.kubernetes.center","he-fakehost01.nyc1.kubernetes.center"],"provisioningState":"Succeeded"},"tags":{},"type":"Microsoft.VMwareVirtustream/privateClouds/clusters"}'
     headers:
       cache-control:
       - no-cache
@@ -2428,7 +2579,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 19 Sep 2019 07:51:25 GMT
+      - Thu, 19 Sep 2019 08:35:23 GMT
       expires:
       - '-1'
       pragma:
@@ -2468,7 +2619,7 @@ interactions:
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/clusters?api-version=2019-08-09-preview
   response:
     body:
-      string: '{"nextLink":null,"value":[{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/clusters/cluster1","location":"eastus2","name":"cluster1","properties":{"clusterID":2,"clusterSize":3,"hosts":["he-fakehost49.nyc1.kubernetes.center","he-fakehost50.nyc1.kubernetes.center","he-fakehost12.nyc1.kubernetes.center"],"provisioningState":"Succeeded"},"tags":{},"type":"Microsoft.VMwareVirtustream/privateClouds/clusters"}]}'
+      string: '{"nextLink":null,"value":[{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/clusters/cluster1","location":"eastus2","name":"cluster1","properties":{"clusterID":2,"clusterSize":3,"hosts":["he-fakehost05.nyc1.kubernetes.center","he-fakehost07.nyc1.kubernetes.center","he-fakehost01.nyc1.kubernetes.center"],"provisioningState":"Succeeded"},"tags":{},"type":"Microsoft.VMwareVirtustream/privateClouds/clusters"}]}'
     headers:
       cache-control:
       - no-cache
@@ -2477,7 +2628,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 19 Sep 2019 07:51:25 GMT
+      - Thu, 19 Sep 2019 08:35:24 GMT
       expires:
       - '-1'
       pragma:
@@ -2524,7 +2675,7 @@ interactions:
       string: ''
     headers:
       azure-asyncoperation:
-      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/clusters/cluster1/operationstatuses/d737e8e3-338b-4eb6-8c12-3d3bc6c08ff3?api-version=2019-08-09-preview
+      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/clusters/cluster1/operationstatuses/64e9b310-f131-4945-9cbe-5873c88c6be5?api-version=2019-08-09-preview
       cache-control:
       - no-cache
       content-length:
@@ -2532,7 +2683,7 @@ interactions:
       content-type:
       - text/html
       date:
-      - Thu, 19 Sep 2019 07:51:29 GMT
+      - Thu, 19 Sep 2019 08:35:27 GMT
       expires:
       - '-1'
       pragma:
@@ -2565,10 +2716,10 @@ interactions:
       - python/3.7.4 (Darwin-18.7.0-x86_64-i386-64bit) msrest/0.6.9 msrest_azure/0.6.1
         virtustreamclient/2019-08-09-preview Azure-SDK-For-Python AZURECLI/2.0.72
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/clusters/cluster1/operationstatuses/d737e8e3-338b-4eb6-8c12-3d3bc6c08ff3?api-version=2019-08-09-preview
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/clusters/cluster1/operationstatuses/64e9b310-f131-4945-9cbe-5873c88c6be5?api-version=2019-08-09-preview
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/clusters/cluster1/operationstatuses/d737e8e3-338b-4eb6-8c12-3d3bc6c08ff3","name":"d737e8e3-338b-4eb6-8c12-3d3bc6c08ff3","percentComplete":50,"startTime":"2019-09-19T07:51:29.2789586+00:00","status":"Building"}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/clusters/cluster1/operationstatuses/64e9b310-f131-4945-9cbe-5873c88c6be5","name":"64e9b310-f131-4945-9cbe-5873c88c6be5","percentComplete":50,"startTime":"2019-09-19T08:35:27.1564162+00:00","status":"Building"}'
     headers:
       cache-control:
       - no-cache
@@ -2577,7 +2728,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 19 Sep 2019 07:51:40 GMT
+      - Thu, 19 Sep 2019 08:35:38 GMT
       expires:
       - '-1'
       pragma:
@@ -2612,10 +2763,10 @@ interactions:
       - python/3.7.4 (Darwin-18.7.0-x86_64-i386-64bit) msrest/0.6.9 msrest_azure/0.6.1
         virtustreamclient/2019-08-09-preview Azure-SDK-For-Python AZURECLI/2.0.72
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/clusters/cluster1/operationstatuses/d737e8e3-338b-4eb6-8c12-3d3bc6c08ff3?api-version=2019-08-09-preview
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/clusters/cluster1/operationstatuses/64e9b310-f131-4945-9cbe-5873c88c6be5?api-version=2019-08-09-preview
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/clusters/cluster1/operationstatuses/d737e8e3-338b-4eb6-8c12-3d3bc6c08ff3","name":"d737e8e3-338b-4eb6-8c12-3d3bc6c08ff3","percentComplete":75,"startTime":"2019-09-19T07:51:29.2789586+00:00","status":"Building"}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/clusters/cluster1/operationstatuses/64e9b310-f131-4945-9cbe-5873c88c6be5","name":"64e9b310-f131-4945-9cbe-5873c88c6be5","percentComplete":75,"startTime":"2019-09-19T08:35:27.1564162+00:00","status":"Building"}'
     headers:
       cache-control:
       - no-cache
@@ -2624,7 +2775,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 19 Sep 2019 07:51:51 GMT
+      - Thu, 19 Sep 2019 08:35:49 GMT
       expires:
       - '-1'
       pragma:
@@ -2659,10 +2810,10 @@ interactions:
       - python/3.7.4 (Darwin-18.7.0-x86_64-i386-64bit) msrest/0.6.9 msrest_azure/0.6.1
         virtustreamclient/2019-08-09-preview Azure-SDK-For-Python AZURECLI/2.0.72
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/clusters/cluster1/operationstatuses/d737e8e3-338b-4eb6-8c12-3d3bc6c08ff3?api-version=2019-08-09-preview
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/clusters/cluster1/operationstatuses/64e9b310-f131-4945-9cbe-5873c88c6be5?api-version=2019-08-09-preview
   response:
     body:
-      string: '{"endTime":"2019-09-19T07:51:53.2446435+00:00","id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/clusters/cluster1/operationstatuses/d737e8e3-338b-4eb6-8c12-3d3bc6c08ff3","name":"d737e8e3-338b-4eb6-8c12-3d3bc6c08ff3","percentComplete":100,"properties":{"clusterID":2,"clusterSize":4,"hosts":["he-fakehost49.nyc1.kubernetes.center","he-fakehost50.nyc1.kubernetes.center","he-fakehost12.nyc1.kubernetes.center","he-fakehost09.nyc1.kubernetes.center"],"provisioningState":"Succeeded"},"startTime":"2019-09-19T07:51:29.2789586+00:00","status":"Succeeded"}'
+      string: '{"endTime":"2019-09-19T08:35:48.2088417+00:00","id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/clusters/cluster1/operationstatuses/64e9b310-f131-4945-9cbe-5873c88c6be5","name":"64e9b310-f131-4945-9cbe-5873c88c6be5","percentComplete":100,"properties":{"clusterID":2,"clusterSize":4,"hosts":["he-fakehost05.nyc1.kubernetes.center","he-fakehost07.nyc1.kubernetes.center","he-fakehost01.nyc1.kubernetes.center","he-fakehost02.nyc1.kubernetes.center"],"provisioningState":"Succeeded"},"startTime":"2019-09-19T08:35:27.1564162+00:00","status":"Succeeded"}'
     headers:
       cache-control:
       - no-cache
@@ -2671,7 +2822,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 19 Sep 2019 07:52:01 GMT
+      - Thu, 19 Sep 2019 08:36:00 GMT
       expires:
       - '-1'
       pragma:
@@ -2709,7 +2860,7 @@ interactions:
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/clusters/cluster1?api-version=2019-08-09-preview
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/clusters/cluster1","location":"eastus2","name":"cluster1","properties":{"clusterID":2,"clusterSize":4,"hosts":["he-fakehost49.nyc1.kubernetes.center","he-fakehost50.nyc1.kubernetes.center","he-fakehost12.nyc1.kubernetes.center","he-fakehost09.nyc1.kubernetes.center"],"provisioningState":"Succeeded"},"tags":{},"type":"Microsoft.VMwareVirtustream/privateClouds/clusters"}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/clusters/cluster1","location":"eastus2","name":"cluster1","properties":{"clusterID":2,"clusterSize":4,"hosts":["he-fakehost05.nyc1.kubernetes.center","he-fakehost07.nyc1.kubernetes.center","he-fakehost01.nyc1.kubernetes.center","he-fakehost02.nyc1.kubernetes.center"],"provisioningState":"Succeeded"},"tags":{},"type":"Microsoft.VMwareVirtustream/privateClouds/clusters"}'
     headers:
       cache-control:
       - no-cache
@@ -2718,7 +2869,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 19 Sep 2019 07:52:02 GMT
+      - Thu, 19 Sep 2019 08:36:01 GMT
       expires:
       - '-1'
       pragma:
@@ -2758,7 +2909,7 @@ interactions:
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/clusters/cluster1?api-version=2019-08-09-preview
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/clusters/cluster1","location":"eastus2","name":"cluster1","properties":{"clusterID":2,"clusterSize":4,"hosts":["he-fakehost49.nyc1.kubernetes.center","he-fakehost50.nyc1.kubernetes.center","he-fakehost12.nyc1.kubernetes.center","he-fakehost09.nyc1.kubernetes.center"],"provisioningState":"Succeeded"},"tags":{},"type":"Microsoft.VMwareVirtustream/privateClouds/clusters"}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/clusters/cluster1","location":"eastus2","name":"cluster1","properties":{"clusterID":2,"clusterSize":4,"hosts":["he-fakehost05.nyc1.kubernetes.center","he-fakehost07.nyc1.kubernetes.center","he-fakehost01.nyc1.kubernetes.center","he-fakehost02.nyc1.kubernetes.center"],"provisioningState":"Succeeded"},"tags":{},"type":"Microsoft.VMwareVirtustream/privateClouds/clusters"}'
     headers:
       cache-control:
       - no-cache
@@ -2767,7 +2918,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 19 Sep 2019 07:52:03 GMT
+      - Thu, 19 Sep 2019 08:36:02 GMT
       expires:
       - '-1'
       pragma:
@@ -2812,7 +2963,7 @@ interactions:
       string: ''
     headers:
       azure-asyncoperation:
-      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/clusters/cluster1/operationstatuses/55166712-756a-4966-8729-cd80371b8593?api-version=2019-08-09-preview
+      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/clusters/cluster1/operationstatuses/199d5281-b863-49fe-95b0-582df148f8cd?api-version=2019-08-09-preview
       cache-control:
       - no-cache
       content-length:
@@ -2820,11 +2971,11 @@ interactions:
       content-type:
       - text/html
       date:
-      - Thu, 19 Sep 2019 07:52:04 GMT
+      - Thu, 19 Sep 2019 08:36:03 GMT
       expires:
       - '-1'
       location:
-      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/clusters/cluster1/operationresults/55166712-756a-4966-8729-cd80371b8593?api-version=2019-08-09-preview
+      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/clusters/cluster1/operationresults/199d5281-b863-49fe-95b0-582df148f8cd?api-version=2019-08-09-preview
       pragma:
       - no-cache
       server:
@@ -2860,408 +3011,16 @@ interactions:
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1?api-version=2019-08-09-preview
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1","location":"eastus2","name":"cloud1","properties":{"circuit":{"authorizations":[],"expressRouteID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er","expressRoutePrivatePeeringID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er/peerings/AzurePrivatePeering","primarySubnet":"192.168.51.8/30","secondarySubnet":"192.168.51.12/30"},"cluster":{"clusterID":1,"clusterSize":3,"hosts":["he-fakehost46.nyc1.kubernetes.center","he-fakehost47.nyc1.kubernetes.center","he-fakehost48.nyc1.kubernetes.center"]},"clusters":["/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/clusters/cluster1"],"endpoints":{"nsxtManager":"https://192.168.48.3/","vcsa":"https://192.168.48.2/"},"identitySources":[],"internet":"Disabled","managementNetwork":"192.168.48.0/24","networkBlock":"192.168.48.0/22","provisioningNetwork":"192.168.50.0/24","provisioningState":"Updating","vmotionNetwork":"192.168.49.0/24"},"tags":{},"type":"Microsoft.VMwareVirtustream/privateClouds"}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1","location":"eastus2","name":"cloud1","properties":{"circuit":{"authorizations":[],"expressRouteID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt22-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt22-cust-eastus-azurecontainer-er","expressRoutePrivatePeeringID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt22-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt22-cust-eastus-azurecontainer-er/peerings/AzurePrivatePeering","primarySubnet":"192.168.51.8/30","secondarySubnet":"192.168.51.12/30"},"cluster":{"clusterID":1,"clusterSize":3,"hosts":["he-fakehost11.nyc1.kubernetes.center","he-fakehost10.nyc1.kubernetes.center","he-fakehost08.nyc1.kubernetes.center"]},"clusters":[],"endpoints":{"nsxtManager":"https://192.168.48.3/","vcsa":"https://192.168.48.2/"},"identitySources":[],"internet":"Enabled","managementNetwork":"192.168.48.0/24","networkBlock":"192.168.48.0/22","provisioningNetwork":"192.168.50.0/24","provisioningState":"Succeeded","vmotionNetwork":"192.168.49.0/24"},"tags":{},"type":"Microsoft.VMwareVirtustream/privateClouds"}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '1584'
+      - '1363'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 19 Sep 2019 07:52:05 GMT
-      expires:
-      - '-1'
-      pragma:
-      - no-cache
-      server:
-      - nginx/1.15.4
-      strict-transport-security:
-      - max-age=31536000; includeSubDomains
-      transfer-encoding:
-      - chunked
-      vary:
-      - Accept-Encoding
-      x-content-type-options:
-      - nosniff
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      CommandName:
-      - vmware privatecloud show
-      Connection:
-      - keep-alive
-      ParameterSetName:
-      - -g -n
-      User-Agent:
-      - python/3.7.4 (Darwin-18.7.0-x86_64-i386-64bit) msrest/0.6.9 msrest_azure/0.6.1
-        virtustreamclient/2019-08-09-preview Azure-SDK-For-Python AZURECLI/2.0.72
-      accept-language:
-      - en-US
-    method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1?api-version=2019-08-09-preview
-  response:
-    body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1","location":"eastus2","name":"cloud1","properties":{"circuit":{"authorizations":[],"expressRouteID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er","expressRoutePrivatePeeringID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er/peerings/AzurePrivatePeering","primarySubnet":"192.168.51.8/30","secondarySubnet":"192.168.51.12/30"},"cluster":{"clusterID":1,"clusterSize":3,"hosts":["he-fakehost46.nyc1.kubernetes.center","he-fakehost47.nyc1.kubernetes.center","he-fakehost48.nyc1.kubernetes.center"]},"clusters":["/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/clusters/cluster1"],"endpoints":{"nsxtManager":"https://192.168.48.3/","vcsa":"https://192.168.48.2/"},"identitySources":[],"internet":"Disabled","managementNetwork":"192.168.48.0/24","networkBlock":"192.168.48.0/22","provisioningNetwork":"192.168.50.0/24","provisioningState":"Updating","vmotionNetwork":"192.168.49.0/24"},"tags":{},"type":"Microsoft.VMwareVirtustream/privateClouds"}'
-    headers:
-      cache-control:
-      - no-cache
-      content-length:
-      - '1584'
-      content-type:
-      - application/json; charset=utf-8
-      date:
-      - Thu, 19 Sep 2019 07:52:09 GMT
-      expires:
-      - '-1'
-      pragma:
-      - no-cache
-      server:
-      - nginx/1.15.4
-      strict-transport-security:
-      - max-age=31536000; includeSubDomains
-      transfer-encoding:
-      - chunked
-      vary:
-      - Accept-Encoding
-      x-content-type-options:
-      - nosniff
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      CommandName:
-      - vmware privatecloud show
-      Connection:
-      - keep-alive
-      ParameterSetName:
-      - -g -n
-      User-Agent:
-      - python/3.7.4 (Darwin-18.7.0-x86_64-i386-64bit) msrest/0.6.9 msrest_azure/0.6.1
-        virtustreamclient/2019-08-09-preview Azure-SDK-For-Python AZURECLI/2.0.72
-      accept-language:
-      - en-US
-    method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1?api-version=2019-08-09-preview
-  response:
-    body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1","location":"eastus2","name":"cloud1","properties":{"circuit":{"authorizations":[],"expressRouteID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er","expressRoutePrivatePeeringID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er/peerings/AzurePrivatePeering","primarySubnet":"192.168.51.8/30","secondarySubnet":"192.168.51.12/30"},"cluster":{"clusterID":1,"clusterSize":3,"hosts":["he-fakehost46.nyc1.kubernetes.center","he-fakehost47.nyc1.kubernetes.center","he-fakehost48.nyc1.kubernetes.center"]},"clusters":["/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/clusters/cluster1"],"endpoints":{"nsxtManager":"https://192.168.48.3/","vcsa":"https://192.168.48.2/"},"identitySources":[],"internet":"Disabled","managementNetwork":"192.168.48.0/24","networkBlock":"192.168.48.0/22","provisioningNetwork":"192.168.50.0/24","provisioningState":"Updating","vmotionNetwork":"192.168.49.0/24"},"tags":{},"type":"Microsoft.VMwareVirtustream/privateClouds"}'
-    headers:
-      cache-control:
-      - no-cache
-      content-length:
-      - '1584'
-      content-type:
-      - application/json; charset=utf-8
-      date:
-      - Thu, 19 Sep 2019 07:52:14 GMT
-      expires:
-      - '-1'
-      pragma:
-      - no-cache
-      server:
-      - nginx/1.15.4
-      strict-transport-security:
-      - max-age=31536000; includeSubDomains
-      transfer-encoding:
-      - chunked
-      vary:
-      - Accept-Encoding
-      x-content-type-options:
-      - nosniff
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      CommandName:
-      - vmware privatecloud show
-      Connection:
-      - keep-alive
-      ParameterSetName:
-      - -g -n
-      User-Agent:
-      - python/3.7.4 (Darwin-18.7.0-x86_64-i386-64bit) msrest/0.6.9 msrest_azure/0.6.1
-        virtustreamclient/2019-08-09-preview Azure-SDK-For-Python AZURECLI/2.0.72
-      accept-language:
-      - en-US
-    method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1?api-version=2019-08-09-preview
-  response:
-    body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1","location":"eastus2","name":"cloud1","properties":{"circuit":{"authorizations":[],"expressRouteID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er","expressRoutePrivatePeeringID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er/peerings/AzurePrivatePeering","primarySubnet":"192.168.51.8/30","secondarySubnet":"192.168.51.12/30"},"cluster":{"clusterID":1,"clusterSize":3,"hosts":["he-fakehost46.nyc1.kubernetes.center","he-fakehost47.nyc1.kubernetes.center","he-fakehost48.nyc1.kubernetes.center"]},"clusters":["/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/clusters/cluster1"],"endpoints":{"nsxtManager":"https://192.168.48.3/","vcsa":"https://192.168.48.2/"},"identitySources":[],"internet":"Disabled","managementNetwork":"192.168.48.0/24","networkBlock":"192.168.48.0/22","provisioningNetwork":"192.168.50.0/24","provisioningState":"Updating","vmotionNetwork":"192.168.49.0/24"},"tags":{},"type":"Microsoft.VMwareVirtustream/privateClouds"}'
-    headers:
-      cache-control:
-      - no-cache
-      content-length:
-      - '1584'
-      content-type:
-      - application/json; charset=utf-8
-      date:
-      - Thu, 19 Sep 2019 07:52:18 GMT
-      expires:
-      - '-1'
-      pragma:
-      - no-cache
-      server:
-      - nginx/1.15.4
-      strict-transport-security:
-      - max-age=31536000; includeSubDomains
-      transfer-encoding:
-      - chunked
-      vary:
-      - Accept-Encoding
-      x-content-type-options:
-      - nosniff
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      CommandName:
-      - vmware privatecloud show
-      Connection:
-      - keep-alive
-      ParameterSetName:
-      - -g -n
-      User-Agent:
-      - python/3.7.4 (Darwin-18.7.0-x86_64-i386-64bit) msrest/0.6.9 msrest_azure/0.6.1
-        virtustreamclient/2019-08-09-preview Azure-SDK-For-Python AZURECLI/2.0.72
-      accept-language:
-      - en-US
-    method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1?api-version=2019-08-09-preview
-  response:
-    body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1","location":"eastus2","name":"cloud1","properties":{"circuit":{"authorizations":[],"expressRouteID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er","expressRoutePrivatePeeringID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er/peerings/AzurePrivatePeering","primarySubnet":"192.168.51.8/30","secondarySubnet":"192.168.51.12/30"},"cluster":{"clusterID":1,"clusterSize":3,"hosts":["he-fakehost46.nyc1.kubernetes.center","he-fakehost47.nyc1.kubernetes.center","he-fakehost48.nyc1.kubernetes.center"]},"clusters":["/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/clusters/cluster1"],"endpoints":{"nsxtManager":"https://192.168.48.3/","vcsa":"https://192.168.48.2/"},"identitySources":[],"internet":"Disabled","managementNetwork":"192.168.48.0/24","networkBlock":"192.168.48.0/22","provisioningNetwork":"192.168.50.0/24","provisioningState":"Updating","vmotionNetwork":"192.168.49.0/24"},"tags":{},"type":"Microsoft.VMwareVirtustream/privateClouds"}'
-    headers:
-      cache-control:
-      - no-cache
-      content-length:
-      - '1584'
-      content-type:
-      - application/json; charset=utf-8
-      date:
-      - Thu, 19 Sep 2019 07:52:22 GMT
-      expires:
-      - '-1'
-      pragma:
-      - no-cache
-      server:
-      - nginx/1.15.4
-      strict-transport-security:
-      - max-age=31536000; includeSubDomains
-      transfer-encoding:
-      - chunked
-      vary:
-      - Accept-Encoding
-      x-content-type-options:
-      - nosniff
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      CommandName:
-      - vmware privatecloud show
-      Connection:
-      - keep-alive
-      ParameterSetName:
-      - -g -n
-      User-Agent:
-      - python/3.7.4 (Darwin-18.7.0-x86_64-i386-64bit) msrest/0.6.9 msrest_azure/0.6.1
-        virtustreamclient/2019-08-09-preview Azure-SDK-For-Python AZURECLI/2.0.72
-      accept-language:
-      - en-US
-    method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1?api-version=2019-08-09-preview
-  response:
-    body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1","location":"eastus2","name":"cloud1","properties":{"circuit":{"authorizations":[],"expressRouteID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er","expressRoutePrivatePeeringID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er/peerings/AzurePrivatePeering","primarySubnet":"192.168.51.8/30","secondarySubnet":"192.168.51.12/30"},"cluster":{"clusterID":1,"clusterSize":3,"hosts":["he-fakehost46.nyc1.kubernetes.center","he-fakehost47.nyc1.kubernetes.center","he-fakehost48.nyc1.kubernetes.center"]},"clusters":["/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/clusters/cluster1"],"endpoints":{"nsxtManager":"https://192.168.48.3/","vcsa":"https://192.168.48.2/"},"identitySources":[],"internet":"Disabled","managementNetwork":"192.168.48.0/24","networkBlock":"192.168.48.0/22","provisioningNetwork":"192.168.50.0/24","provisioningState":"Updating","vmotionNetwork":"192.168.49.0/24"},"tags":{},"type":"Microsoft.VMwareVirtustream/privateClouds"}'
-    headers:
-      cache-control:
-      - no-cache
-      content-length:
-      - '1584'
-      content-type:
-      - application/json; charset=utf-8
-      date:
-      - Thu, 19 Sep 2019 07:52:25 GMT
-      expires:
-      - '-1'
-      pragma:
-      - no-cache
-      server:
-      - nginx/1.15.4
-      strict-transport-security:
-      - max-age=31536000; includeSubDomains
-      transfer-encoding:
-      - chunked
-      vary:
-      - Accept-Encoding
-      x-content-type-options:
-      - nosniff
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      CommandName:
-      - vmware privatecloud show
-      Connection:
-      - keep-alive
-      ParameterSetName:
-      - -g -n
-      User-Agent:
-      - python/3.7.4 (Darwin-18.7.0-x86_64-i386-64bit) msrest/0.6.9 msrest_azure/0.6.1
-        virtustreamclient/2019-08-09-preview Azure-SDK-For-Python AZURECLI/2.0.72
-      accept-language:
-      - en-US
-    method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1?api-version=2019-08-09-preview
-  response:
-    body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1","location":"eastus2","name":"cloud1","properties":{"circuit":{"authorizations":[],"expressRouteID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er","expressRoutePrivatePeeringID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er/peerings/AzurePrivatePeering","primarySubnet":"192.168.51.8/30","secondarySubnet":"192.168.51.12/30"},"cluster":{"clusterID":1,"clusterSize":3,"hosts":["he-fakehost46.nyc1.kubernetes.center","he-fakehost47.nyc1.kubernetes.center","he-fakehost48.nyc1.kubernetes.center"]},"clusters":["/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/clusters/cluster1"],"endpoints":{"nsxtManager":"https://192.168.48.3/","vcsa":"https://192.168.48.2/"},"identitySources":[],"internet":"Disabled","managementNetwork":"192.168.48.0/24","networkBlock":"192.168.48.0/22","provisioningNetwork":"192.168.50.0/24","provisioningState":"Updating","vmotionNetwork":"192.168.49.0/24"},"tags":{},"type":"Microsoft.VMwareVirtustream/privateClouds"}'
-    headers:
-      cache-control:
-      - no-cache
-      content-length:
-      - '1584'
-      content-type:
-      - application/json; charset=utf-8
-      date:
-      - Thu, 19 Sep 2019 07:52:30 GMT
-      expires:
-      - '-1'
-      pragma:
-      - no-cache
-      server:
-      - nginx/1.15.4
-      strict-transport-security:
-      - max-age=31536000; includeSubDomains
-      transfer-encoding:
-      - chunked
-      vary:
-      - Accept-Encoding
-      x-content-type-options:
-      - nosniff
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      CommandName:
-      - vmware privatecloud show
-      Connection:
-      - keep-alive
-      ParameterSetName:
-      - -g -n
-      User-Agent:
-      - python/3.7.4 (Darwin-18.7.0-x86_64-i386-64bit) msrest/0.6.9 msrest_azure/0.6.1
-        virtustreamclient/2019-08-09-preview Azure-SDK-For-Python AZURECLI/2.0.72
-      accept-language:
-      - en-US
-    method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1?api-version=2019-08-09-preview
-  response:
-    body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1","location":"eastus2","name":"cloud1","properties":{"circuit":{"authorizations":[],"expressRouteID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er","expressRoutePrivatePeeringID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er/peerings/AzurePrivatePeering","primarySubnet":"192.168.51.8/30","secondarySubnet":"192.168.51.12/30"},"cluster":{"clusterID":1,"clusterSize":3,"hosts":["he-fakehost46.nyc1.kubernetes.center","he-fakehost47.nyc1.kubernetes.center","he-fakehost48.nyc1.kubernetes.center"]},"clusters":["/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/clusters/cluster1"],"endpoints":{"nsxtManager":"https://192.168.48.3/","vcsa":"https://192.168.48.2/"},"identitySources":[],"internet":"Disabled","managementNetwork":"192.168.48.0/24","networkBlock":"192.168.48.0/22","provisioningNetwork":"192.168.50.0/24","provisioningState":"Updating","vmotionNetwork":"192.168.49.0/24"},"tags":{},"type":"Microsoft.VMwareVirtustream/privateClouds"}'
-    headers:
-      cache-control:
-      - no-cache
-      content-length:
-      - '1584'
-      content-type:
-      - application/json; charset=utf-8
-      date:
-      - Thu, 19 Sep 2019 07:52:34 GMT
-      expires:
-      - '-1'
-      pragma:
-      - no-cache
-      server:
-      - nginx/1.15.4
-      strict-transport-security:
-      - max-age=31536000; includeSubDomains
-      transfer-encoding:
-      - chunked
-      vary:
-      - Accept-Encoding
-      x-content-type-options:
-      - nosniff
-    status:
-      code: 200
-      message: OK
-- request:
-    body: null
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      CommandName:
-      - vmware privatecloud show
-      Connection:
-      - keep-alive
-      ParameterSetName:
-      - -g -n
-      User-Agent:
-      - python/3.7.4 (Darwin-18.7.0-x86_64-i386-64bit) msrest/0.6.9 msrest_azure/0.6.1
-        virtustreamclient/2019-08-09-preview Azure-SDK-For-Python AZURECLI/2.0.72
-      accept-language:
-      - en-US
-    method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1?api-version=2019-08-09-preview
-  response:
-    body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1","location":"eastus2","name":"cloud1","properties":{"circuit":{"authorizations":[],"expressRouteID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er","expressRoutePrivatePeeringID":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/tnt27-cust-eastus-azurecontainer/providers/Microsoft.Network/expressroutecircuits/tnt27-cust-eastus-azurecontainer-er/peerings/AzurePrivatePeering","primarySubnet":"192.168.51.8/30","secondarySubnet":"192.168.51.12/30"},"cluster":{"clusterID":1,"clusterSize":3,"hosts":["he-fakehost46.nyc1.kubernetes.center","he-fakehost47.nyc1.kubernetes.center","he-fakehost48.nyc1.kubernetes.center"]},"clusters":["/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/clusters/cluster1"],"endpoints":{"nsxtManager":"https://192.168.48.3/","vcsa":"https://192.168.48.2/"},"identitySources":[],"internet":"Disabled","managementNetwork":"192.168.48.0/24","networkBlock":"192.168.48.0/22","provisioningNetwork":"192.168.50.0/24","provisioningState":"Succeeded","vmotionNetwork":"192.168.49.0/24"},"tags":{},"type":"Microsoft.VMwareVirtustream/privateClouds"}'
-    headers:
-      cache-control:
-      - no-cache
-      content-length:
-      - '1585'
-      content-type:
-      - application/json; charset=utf-8
-      date:
-      - Thu, 19 Sep 2019 07:52:37 GMT
+      - Thu, 19 Sep 2019 08:36:51 GMT
       expires:
       - '-1'
       pragma:
@@ -3306,7 +3065,7 @@ interactions:
       string: ''
     headers:
       azure-asyncoperation:
-      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/63f6c623-1917-405a-bedd-7b37868e545d?api-version=2019-08-09-preview
+      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/f8b3563c-e557-4686-99ee-162067eebbff?api-version=2019-08-09-preview
       cache-control:
       - no-cache
       content-length:
@@ -3314,11 +3073,11 @@ interactions:
       content-type:
       - text/html
       date:
-      - Thu, 19 Sep 2019 07:52:40 GMT
+      - Thu, 19 Sep 2019 08:36:54 GMT
       expires:
       - '-1'
       location:
-      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationresults/63f6c623-1917-405a-bedd-7b37868e545d?api-version=2019-08-09-preview
+      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationresults/f8b3563c-e557-4686-99ee-162067eebbff?api-version=2019-08-09-preview
       pragma:
       - no-cache
       server:
@@ -3349,10 +3108,10 @@ interactions:
       - python/3.7.4 (Darwin-18.7.0-x86_64-i386-64bit) msrest/0.6.9 msrest_azure/0.6.1
         virtustreamclient/2019-08-09-preview Azure-SDK-For-Python AZURECLI/2.0.72
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/63f6c623-1917-405a-bedd-7b37868e545d?api-version=2019-08-09-preview
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/f8b3563c-e557-4686-99ee-162067eebbff?api-version=2019-08-09-preview
   response:
     body:
-      string: '{"endTime":"2019-09-19T07:52:40.6775696+00:00","id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/63f6c623-1917-405a-bedd-7b37868e545d","name":"63f6c623-1917-405a-bedd-7b37868e545d","percentComplete":100,"properties":{},"startTime":"2019-09-19T07:52:40.6775696+00:00","status":"Succeeded"}'
+      string: '{"endTime":"2019-09-19T08:36:54.5062331+00:00","id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1/operationstatuses/f8b3563c-e557-4686-99ee-162067eebbff","name":"f8b3563c-e557-4686-99ee-162067eebbff","percentComplete":100,"properties":{},"startTime":"2019-09-19T08:36:54.5062331+00:00","status":"Succeeded"}'
     headers:
       cache-control:
       - no-cache
@@ -3361,7 +3120,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 19 Sep 2019 07:52:50 GMT
+      - Thu, 19 Sep 2019 08:37:05 GMT
       expires:
       - '-1'
       pragma:
@@ -3401,26 +3160,22 @@ interactions:
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds?api-version=2019-08-09-preview
   response:
     body:
-      string: '{"nextLink":null,"value":[]}'
+      string: '{"value":[]}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '28'
+      - '12'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 19 Sep 2019 07:52:52 GMT
+      - Thu, 19 Sep 2019 08:37:06 GMT
       expires:
       - '-1'
       pragma:
       - no-cache
-      server:
-      - nginx/1.15.4
       strict-transport-security:
       - max-age=31536000; includeSubDomains
-      transfer-encoding:
-      - chunked
       vary:
       - Accept-Encoding
       x-content-type-options:
@@ -3450,26 +3205,27 @@ interactions:
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vmware000001/providers/Microsoft.VMwareVirtustream/privateClouds/cloud1?api-version=2019-08-09-preview
   response:
     body:
-      string: '{"error":{"code":"NotFound","message":"Resource does not exist"}}'
+      string: '{"error":{"code":"ResourceNotFound","message":"The Resource ''Microsoft.VMwareVirtustream/privateClouds/cloud1''
+        under resource group ''cli_test_vmware000001'' was not found."}}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '65'
+      - '227'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Thu, 19 Sep 2019 07:52:53 GMT
+      - Thu, 19 Sep 2019 08:37:06 GMT
       expires:
       - '-1'
       pragma:
       - no-cache
-      server:
-      - nginx/1.15.4
       strict-transport-security:
       - max-age=31536000; includeSubDomains
       x-content-type-options:
       - nosniff
+      x-ms-failure-cause:
+      - gateway
     status:
       code: 404
       message: Not Found

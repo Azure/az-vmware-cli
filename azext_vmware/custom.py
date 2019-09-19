@@ -13,7 +13,7 @@ def privatecloud_list(cmd, client: VirtustreamClient, resource_group_name):
 def privatecloud_show(cmd, client: VirtustreamClient, resource_group_name, resource_name):
     return client.private_clouds.get(resource_group_name, resource_name)
 
-def privatecloud_create(cmd, client: VirtustreamClient, resource_group_name, resource_name, location, cluster_size, network_block, circuit_primary_subnet=None, circuit_secondary_subnet=None, tags=[]):
+def privatecloud_create(cmd, client: VirtustreamClient, resource_group_name, resource_name, location, cluster_size, network_block, circuit_primary_subnet=None, circuit_secondary_subnet=None, internet=None, tags=[]):
     from azext_vmware.vendored_sdks.models import PrivateCloud, PrivateCloudProperties, Circuit, DefaultClusterProperties
     if circuit_primary_subnet is not None or circuit_secondary_subnet is not None:
         circuit = Circuit(primary_subnet=circuit_primary_subnet, secondary_subnet=circuit_secondary_subnet)
@@ -22,13 +22,16 @@ def privatecloud_create(cmd, client: VirtustreamClient, resource_group_name, res
     clusterProps = DefaultClusterProperties(cluster_size=cluster_size)
     cloudProps = PrivateCloudProperties(circuit=circuit, cluster=clusterProps, network_block=network_block)
     cloud = PrivateCloud(location=location, properties=cloudProps, tags=tags)
+    if internet is not None:
+        cloud.properties.internet = internet
     return client.private_clouds.create_or_update(resource_group_name, resource_name, cloud)
 
-def privatecloud_update(cmd, client: VirtustreamClient, resource_group_name, resource_name, cluster_size=None):
-    # from azext_vmware.vendored_sdks.models import PrivateCloud, PrivateCloudProperties, Circuit, DefaultClusterProperties
+def privatecloud_update(cmd, client: VirtustreamClient, resource_group_name, resource_name, cluster_size=None, internet=None):
     cloud = privatecloud_show(cmd, client, resource_group_name, resource_name)
     if cluster_size is not None:
         cloud.properties.cluster.cluster_size = cluster_size
+    if internet is not None:
+        cloud.properties.internet = internet
     return client.private_clouds.update(resource_group_name, resource_name, cloud)
 
 def privatecloud_delete(cmd, client: VirtustreamClient, resource_group_name, resource_name):
