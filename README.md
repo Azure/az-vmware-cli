@@ -3,18 +3,21 @@
 The Azure CLI extension for Azure VMWare Solution by Virtustream is an extension for Azure CLI 2.0.
 
 ## Install
+You can download the latest extension from the [releases](https://github.com/virtustream/azure-vmware-virtustream-cli-extension/releases) page. Is a python whl file that can be downloaded and then installed with `az extension add`, for example:
 ``` sh
-whl=azure_vmware_virtustream_cli_extension-0.2.0-py2.py3-none-any.whl
-az extension add --source $whl -y
+az extension add --source azure_vmware_virtustream_cli_extension-0.4.0-py2.py3-none-any.whl -y
 ```
 
 ## Usage
 ``` sh
 az vmware --help
-az vmware privatecloud list -g $resourcegroup
+az vmware privatecloud list
+az vmware privatecloud create -g $resourcegroup -n $privatecloudname --location $location --cluster-size 3 --network-block 10.175.0.0/22
 ```
+See [test_vmware_scenario.py](https://github.com/virtustream/azure-vmware-virtustream-cli-extension/blob/master/azext_vmware/tests/latest/test_vmware_scenario.py) for other examples.
 
 ## Uninstall
+You can see if the extension is installed by running `az extension list`. You can remove the extension by running `az extension remove`.
 ``` sh
 az extension remove --name azure-vmware-virtustream-cli-extension
 ```
