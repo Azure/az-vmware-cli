@@ -9,19 +9,19 @@ from .default_cluster_properties import DefaultClusterProperties
 
 
 class ClusterProperties(DefaultClusterProperties):
-    """ClusterProperties.
+    """The properties of a cluster.
 
     Variables are only populated by the server, and will be ignored when
     sending a request.
 
-    :ivar cluster_id:
+    :ivar cluster_id: The identity
     :vartype cluster_id: int
-    :param cluster_size:
+    :param cluster_size: The cluster size
     :type cluster_size: int
-    :ivar hosts:
+    :ivar hosts: The hosts
     :vartype hosts: list[str]
-    :ivar provisioning_state: Possible values include: 'Succeeded', 'Failed',
-     'Cancelled', 'Updating'
+    :ivar provisioning_state: The state of the cluster provisioning. Possible
+     values include: 'Succeeded', 'Failed', 'Cancelled', 'Updating'
     :vartype provisioning_state: str or
      ~vendored_sdks.models.ClusterProvisioningState
     """

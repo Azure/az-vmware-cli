@@ -9,16 +9,16 @@ from msrest.serialization import Model
 
 
 class ExpressRouteAuthorization(Model):
-    """ExpressRouteAuthorization.
+    """Authorization for an ExpressRoute.
 
     Variables are only populated by the server, and will be ignored when
     sending a request.
 
-    :param name:
+    :param name: The name of the ExpressRoute
     :type name: str
-    :ivar id:
+    :ivar id: The ID of the ExpressRoute
     :vartype id: str
-    :ivar key:
+    :ivar key: The key of the ExpressRoute
     :vartype key: str
     """
 

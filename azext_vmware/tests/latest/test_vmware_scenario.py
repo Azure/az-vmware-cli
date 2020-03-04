@@ -77,7 +77,7 @@ class VmwareScenarioTest(AsyncScenarioTest):
     @AsyncScenarioTest.await_prepared_test
     async def test_vmware(self):
         self.kwargs.update({
-            'loc': 'eastus2',
+            'loc': 'northcentralus',
             'privatecloud': 'cloud1',
             'cluster': 'cluster1'
         })
@@ -105,7 +105,8 @@ class VmwareScenarioTest(AsyncScenarioTest):
         await self.poll_until_result(lambda: self.cmd('vmware privatecloud show -g {rg} -n {privatecloud}'), provissioning_succeeded)
 
         # get admin credentials
-        self.cmd('vmware privatecloud listadmincredentials -g {rg} -n {privatecloud}')
+        # TODO VCFM-2605 not currently supported in test environment
+        # self.cmd('vmware privatecloud listadmincredentials -g {rg} -n {privatecloud}')
 
         # update private cloud to changed default cluster size
         self.cmd('vmware privatecloud update -g {rg} -n {privatecloud} --cluster-size 3')
@@ -134,7 +135,7 @@ class VmwareScenarioTest(AsyncScenarioTest):
         self.assertEqual(count, 0, 'cluster count expected to be 0')
 
         # cluster create
-        self.cmd('vmware cluster create -g {rg} -p {privatecloud} -n {cluster} --size 3 --location eastus')
+        self.cmd('vmware cluster create -g {rg} -p {privatecloud} -n {cluster} --size 3 --location northcentralus')
         await self.poll_until_result(lambda: self.cmd('vmware cluster show -g {rg} -p {privatecloud} -n {cluster}'), provissioning_succeeded)
 
         # cluster list should report 1

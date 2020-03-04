@@ -9,7 +9,7 @@ from msrest.serialization import Model
 
 
 class AdminCredentials(Model):
-    """AdminCredentials.
+    """Administrative credentials for accessing vCenter and NSX-T.
 
     Variables are only populated by the server, and will be ignored when
     sending a request.

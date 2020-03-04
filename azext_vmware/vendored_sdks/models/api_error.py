@@ -12,7 +12,7 @@ from msrest.exceptions import HttpOperationError
 class ApiError(Model):
     """API error response.
 
-    :param error:
+    :param error: An error returned by the API
     :type error: ~vendored_sdks.models.ApiErrorBase
     """
 

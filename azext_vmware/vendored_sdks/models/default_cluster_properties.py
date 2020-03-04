@@ -9,16 +9,16 @@ from msrest.serialization import Model
 
 
 class DefaultClusterProperties(Model):
-    """DefaultClusterProperties.
+    """The properties of a default cluster.
 
     Variables are only populated by the server, and will be ignored when
     sending a request.
 
-    :ivar cluster_id:
+    :ivar cluster_id: The identity
     :vartype cluster_id: int
-    :param cluster_size:
+    :param cluster_size: The cluster size
     :type cluster_size: int
-    :ivar hosts:
+    :ivar hosts: The hosts
     :vartype hosts: list[str]
     """
 

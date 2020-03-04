@@ -9,7 +9,7 @@ from msrest.serialization import Model
 
 
 class Circuit(Model):
-    """Circuit.
+    """An ExpressRoute Circuit.
 
     Variables are only populated by the server, and will be ignored when
     sending a request.

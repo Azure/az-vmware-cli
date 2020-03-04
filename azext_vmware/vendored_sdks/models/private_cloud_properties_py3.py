@@ -9,34 +9,40 @@ from msrest.serialization import Model
 
 
 class PrivateCloudProperties(Model):
-    """PrivateCloudProperties.
+    """The properties of a private cloud resource.
 
     Variables are only populated by the server, and will be ignored when
     sending a request.
 
-    :ivar provisioning_state: Possible values include: 'Succeeded', 'Failed',
-     'Cancelled', 'Pending', 'Building', 'Updating'
+    :ivar provisioning_state: The provisioning state. Possible values include:
+     'Succeeded', 'Failed', 'Cancelled', 'Pending', 'Building', 'Updating'
     :vartype provisioning_state: str or
      ~vendored_sdks.models.PrivateCloudProvisioningState
-    :param circuit:
+    :param circuit: An ExpressRoute Circuit
     :type circuit: ~vendored_sdks.models.Circuit
-    :param cluster:
+    :param cluster: The default cluster used for management
     :type cluster: ~vendored_sdks.models.DefaultClusterProperties
-    :ivar clusters:
+    :ivar clusters: The clusters
     :vartype clusters: list[str]
-    :ivar endpoints:
+    :ivar endpoints: The endpoints
     :vartype endpoints: ~vendored_sdks.models.Endpoints
-    :param internet: Possible values include: 'Enabled', 'Disabled'
+    :param internet: Connectivity to internet is enabled or disabled. Possible
+     values include: 'Enabled', 'Disabled'
     :type internet: str or ~vendored_sdks.models.InternetEnum
-    :param identity_sources:
+    :param identity_sources: vCenter Single Sign On Identity Sources
     :type identity_sources: list[~vendored_sdks.models.IdentitySource]
-    :param network_block:
+    :param network_block: The block of addresses should be unique across VNet
+     in your subscription as well as on-premise. Make sure the CIDR format is
+     conformed to (A.B.C.D/X) where A,B,C,D are between 0 and 255, and X is
+     between 0 and 22
     :type network_block: str
-    :ivar management_network:
+    :ivar management_network: Network used to access vCenter Server and NSX-T
+     Manager
     :vartype management_network: str
-    :ivar provisioning_network:
+    :ivar provisioning_network: Used for virtual machine cold migration,
+     cloning, and snapshot migration
     :vartype provisioning_network: str
-    :ivar vmotion_network:
+    :ivar vmotion_network: Used for live migration of virtual machines
     :vartype vmotion_network: str
     :param vcenter_password: Optionally, set the vCenter admin password when
      the private cloud is created

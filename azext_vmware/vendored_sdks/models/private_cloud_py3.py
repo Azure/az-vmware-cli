@@ -9,7 +9,7 @@ from .tracked_resource_py3 import TrackedResource
 
 
 class PrivateCloud(TrackedResource):
-    """PrivateCloud.
+    """A private cloud resource.
 
     Variables are only populated by the server, and will be ignored when
     sending a request.
@@ -24,7 +24,7 @@ class PrivateCloud(TrackedResource):
     :type location: str
     :param tags: Resource tags
     :type tags: dict[str, str]
-    :param properties:
+    :param properties: The properties of a private cloud resource
     :type properties: ~vendored_sdks.models.PrivateCloudProperties
     """
 

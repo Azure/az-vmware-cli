@@ -21,7 +21,7 @@ steps:
 
 - script: |
     pip install pipenv
-    pipenv install
+    pipenv install --ignore-pipfile
   displayName: 'Install dependencies'
 
 - script: |

@@ -8,9 +8,9 @@ pylint = "*"
 
 [packages]
 # azure-cli = "*"
-azure-cli-core = "*"
+# azure-cli-core = "*"
 azdev = "==0.1.4"
-azure-cli-testsdk = { git = "https://github.com/Azure/azure-cli", subdirectory = "src/azure-cli-testsdk" }
+# azure-cli-testsdk = { git = "https://github.com/Azure/azure-cli", subdirectory = "src/azure-cli-testsdk" }
 
 # [requires]
 # python_version = "3.7"

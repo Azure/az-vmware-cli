@@ -9,7 +9,7 @@ from .resource_py3 import Resource
 
 
 class Cluster(Resource):
-    """Cluster.
+    """A cluster resource.
 
     Variables are only populated by the server, and will be ignored when
     sending a request.
@@ -20,7 +20,7 @@ class Cluster(Resource):
     :vartype name: str
     :ivar type: Resource type.
     :vartype type: str
-    :param properties:
+    :param properties: The properties of a cluster resource
     :type properties: ~vendored_sdks.models.ClusterProperties
     """
 

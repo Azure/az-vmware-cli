@@ -9,14 +9,14 @@ from msrest.serialization import Model
 
 
 class Endpoints(Model):
-    """Endpoints.
+    """Endpoint addresses.
 
     Variables are only populated by the server, and will be ignored when
     sending a request.
 
-    :ivar nsxt_manager:
+    :ivar nsxt_manager: Endpoint for the NSX-T Data Center manager
     :vartype nsxt_manager: str
-    :ivar vcsa:
+    :ivar vcsa: Endpoint for Virtual Center Server Appliance
     :vartype vcsa: str
     """
 

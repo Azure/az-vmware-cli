@@ -9,27 +9,30 @@ from msrest.serialization import Model
 
 
 class IdentitySource(Model):
-    """IdentitySource.
+    """vCenter Single Sign On Identity Source.
 
-    :param name:
+    :param name: The name of the identity source
     :type name: str
-    :param alias:
+    :param alias: The domain's NetBIOS name
     :type alias: str
-    :param domain:
+    :param domain: The domain's dns name
     :type domain: str
-    :param base_user_dn:
+    :param base_user_dn: The base distinguished name for users
     :type base_user_dn: str
-    :param base_group_dn:
+    :param base_group_dn: The base distinguished name for groups
     :type base_group_dn: str
-    :param primary_server:
+    :param primary_server: Primary server URL
     :type primary_server: str
-    :param secondary_server:
+    :param secondary_server: Secondary server URL
     :type secondary_server: str
-    :param ssl: Possible values include: 'Enabled', 'Disabled'
+    :param ssl: Protect LDAP communication using SSL certificate (LDAPS).
+     Possible values include: 'Enabled', 'Disabled'
     :type ssl: str or ~vendored_sdks.models.SslEnum
-    :param username:
+    :param username: The ID of an Active Directory user with a minimum of
+     read-only access to Base DN for users and group
     :type username: str
-    :param password:
+    :param password: The password of the Active Directory user with a minimum
+     of read-only access to Base DN for users and groups.
     :type password: str
     """
 
