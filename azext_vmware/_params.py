@@ -15,7 +15,7 @@ def load_arguments(self, _):
         c.argument('tags', tags_type)
         c.argument('location', validator=get_default_location_from_resource_group)
 
-    with self.argument_context('vmware privatecloud') as c:
+    with self.argument_context('vmware private-cloud') as c:
         c.argument('circuit_primary_subnet', help='A /30 subnet for the primary circuit in the Express Route to configure routing between your network and Microsoft\'s Enterprise edge (MSEEs) routers.')
         c.argument('circuit_secondary_subnet', help='A /30 subnet for the secondary circuit in the Express Route to configure routing between your network and Microsoft\'s Enterprise edge (MSEEs) routers.')
         c.argument('cluster_size', help='Number of hosts for the new cluster. Minimum 4, Maximum 16.')

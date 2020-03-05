@@ -13,7 +13,7 @@ def load_command_table(self, _):
         operations_tmpl='azext_vmware.vendored_sdks.operations#PrivateCloudOperations.{}',
         client_factory=cf_vmware)
 
-    with self.command_group('vmware privatecloud', vmware_sdk, client_factory=cf_vmware) as g:
+    with self.command_group('vmware private-cloud', vmware_sdk, client_factory=cf_vmware) as g:
         g.custom_command('list', 'privatecloud_list')
         g.custom_command('show', 'privatecloud_show')
         g.custom_command('create', 'privatecloud_create')

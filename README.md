@@ -11,8 +11,8 @@ az extension add --source azure_vmware_virtustream_cli_extension-0.4.0-py2.py3-n
 ## Usage
 ``` sh
 az vmware --help
-az vmware privatecloud list
-az vmware privatecloud create -g $resourcegroup -n $privatecloudname --location $location --cluster-size 3 --network-block 10.175.0.0/22
+az vmware private-cloud list
+az vmware private-cloud create -g $resourcegroup -n $privatecloudname --location $location --cluster-size 3 --network-block 10.175.0.0/22
 ```
 See [test_vmware_scenario.py](https://github.com/virtustream/azure-vmware-virtustream-cli-extension/blob/master/azext_vmware/tests/latest/test_vmware_scenario.py) for other examples.
 
