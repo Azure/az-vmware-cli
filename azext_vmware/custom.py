@@ -16,7 +16,7 @@ def privatecloud_list(cmd, client: VirtustreamClient, resource_group_name=None):
 def privatecloud_show(cmd, client: VirtustreamClient, resource_group_name, resource_name):
     return client.private_clouds.get(resource_group_name, resource_name)
 
-def privatecloud_create(cmd, client: VirtustreamClient, resource_group_name, resource_name, location, cluster_size, network_block, circuit_primary_subnet=None, circuit_secondary_subnet=None, internet=None, tags=[]):
+def privatecloud_create(cmd, client: VirtustreamClient, resource_group_name, resource_name, location, cluster_size, network_block, circuit_primary_subnet=None, circuit_secondary_subnet=None, internet=None, vcenter_password=None, nsxt_password=None, tags=[]):
     from azext_vmware.vendored_sdks.models import PrivateCloud, PrivateCloudProperties, Circuit, DefaultClusterProperties
     if circuit_primary_subnet is not None or circuit_secondary_subnet is not None:
         circuit = Circuit(primary_subnet=circuit_primary_subnet, secondary_subnet=circuit_secondary_subnet)
@@ -27,6 +27,10 @@ def privatecloud_create(cmd, client: VirtustreamClient, resource_group_name, res
     cloud = PrivateCloud(location=location, properties=cloudProps, tags=tags)
     if internet is not None:
         cloud.properties.internet = internet
+    if vcenter_password is not None:
+        cloud.properties.vcenter_password = vcenter_password
+    if nsxt_password is not None:
+        cloud.properties.nsxt_password = nsxt_password
     return client.private_clouds.create_or_update(resource_group_name, resource_name, cloud)
 
 def privatecloud_update(cmd, client: VirtustreamClient, resource_group_name, resource_name, cluster_size=None, internet=None):

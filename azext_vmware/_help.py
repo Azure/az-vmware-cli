@@ -25,7 +25,7 @@ helps['vmware cluster'] = """
 
 helps['vmware cluster create'] = """
     type: command
-    short-summary: Create a cluster in a private cloud.
+    short-summary: Create a cluster in a private cloud. The maximum number of clusters is 4.
 """
 
 helps['vmware cluster delete'] = """

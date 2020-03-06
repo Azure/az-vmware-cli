@@ -42,6 +42,8 @@ def load_arguments(self, _):
 
     with self.argument_context('vmware private-cloud create') as c:
         c.argument('internet', help='Connectivity to internet. Specify "Enabled" or "Disabled".')
+        c.argument('vcenter_password', help='vCenter admin password.')
+        c.argument('nsxt_password', help='NSX-T Manager password.')
 
     with self.argument_context('vmware private-cloud deleteauthorization') as c:
         c.argument('authorization_name', help='Name of the authorization.')
