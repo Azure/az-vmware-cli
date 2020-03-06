@@ -24,6 +24,8 @@ class PrivateCloud(TrackedResource):
     :type location: str
     :param tags: Resource tags
     :type tags: dict[str, str]
+    :param sku: The private cloud SKU
+    :type sku: ~vendored_sdks.models.Sku
     :param properties: The properties of a private cloud resource
     :type properties: ~vendored_sdks.models.PrivateCloudProperties
     """
@@ -40,9 +42,11 @@ class PrivateCloud(TrackedResource):
         'type': {'key': 'type', 'type': 'str'},
         'location': {'key': 'location', 'type': 'str'},
         'tags': {'key': 'tags', 'type': '{str}'},
+        'sku': {'key': 'sku', 'type': 'Sku'},
         'properties': {'key': 'properties', 'type': 'PrivateCloudProperties'},
     }
 
-    def __init__(self, *, location: str=None, tags=None, properties=None, **kwargs) -> None:
+    def __init__(self, *, location: str=None, tags=None, sku=None, properties=None, **kwargs) -> None:
         super(PrivateCloud, self).__init__(location=location, tags=tags, **kwargs)
+        self.sku = sku
         self.properties = properties

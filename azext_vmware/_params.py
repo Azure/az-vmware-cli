@@ -27,6 +27,7 @@ def load_arguments(self, _):
 
     with self.argument_context('vmware private-cloud create') as c:
         c.argument('name', options_list=['--name', '-n'], help='Name of the private cloud.')
+        c.argument('sku', help='The product SKU.')
         c.argument('internet', help='Connectivity to internet. Specify "Enabled" or "Disabled".')
         c.argument('vcenter_password', help='vCenter admin password.')
         c.argument('nsxt_password', help='NSX-T Manager password.')

@@ -16,6 +16,7 @@ try:
     from .circuit_py3 import Circuit
     from .endpoints_py3 import Endpoints
     from .identity_source_py3 import IdentitySource
+    from .sku_py3 import Sku
     from .default_cluster_properties_py3 import DefaultClusterProperties
     from .private_cloud_properties_py3 import PrivateCloudProperties
     from .private_cloud_py3 import PrivateCloud
@@ -33,6 +34,7 @@ except (SyntaxError, ImportError):
     from .circuit import Circuit
     from .endpoints import Endpoints
     from .identity_source import IdentitySource
+    from .sku import Sku
     from .default_cluster_properties import DefaultClusterProperties
     from .private_cloud_properties import PrivateCloudProperties
     from .private_cloud import PrivateCloud
@@ -60,6 +62,7 @@ __all__ = [
     'Circuit',
     'Endpoints',
     'IdentitySource',
+    'Sku',
     'DefaultClusterProperties',
     'PrivateCloudProperties',
     'PrivateCloud',
