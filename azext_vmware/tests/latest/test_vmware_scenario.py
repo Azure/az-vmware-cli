@@ -115,39 +115,39 @@ class VmwareScenarioTest(AsyncScenarioTest):
         self.cmd('vmware private-cloud update -g {rg} -n {privatecloud} --internet enabled')
 
         # add authorization
-        self.cmd('vmware private-cloud addauthorization -g {rg} -n {privatecloud} --authorization-name myauthname')
+        self.cmd('vmware private-cloud addauthorization -g {rg} -c {privatecloud} -n myauthname')
         await self.poll_until_result(lambda: self.cmd('vmware private-cloud show -g {rg} -n {privatecloud}'), provissioning_succeeded)
 
         # delete authorization
-        self.cmd('vmware private-cloud deleteauthorization -g {rg} -n {privatecloud} --authorization-name myauthname')
+        self.cmd('vmware private-cloud deleteauthorization -g {rg} -c {privatecloud} -n myauthname')
         await self.poll_until_result(lambda: self.cmd('vmware private-cloud show -g {rg} -n {privatecloud}'), provissioning_succeeded)
 
         # add identity source
-        self.cmd('vmware private-cloud addidentitysource -g {rg} -n {privatecloud} --name groupName --alias groupAlias --domain domain --base-user-dn "ou=baseUser" --base-group-dn "ou=baseGroup" --primary-server ldaps://1.1.1.1:636 --secondary-server ldaps://1.1.1.2:636 --ssl Enabled --username someone --password something')
+        self.cmd('vmware private-cloud addidentitysource -g {rg} -c {privatecloud} -n groupName --alias groupAlias --domain domain --base-user-dn "ou=baseUser" --base-group-dn "ou=baseGroup" --primary-server ldaps://1.1.1.1:636 --secondary-server ldaps://1.1.1.2:636 --ssl Enabled --username someone --password something')
         await self.poll_until_result(lambda: self.cmd('vmware private-cloud show -g {rg} -n {privatecloud}'), provissioning_succeeded)
 
         # delete identity source
-        self.cmd('vmware private-cloud deleteidentitysource -g {rg} -n {privatecloud} --name groupName --alias groupAlias --domain domain')
+        self.cmd('vmware private-cloud deleteidentitysource -g {rg} -c {privatecloud} -n groupName --alias groupAlias --domain domain')
         await self.poll_until_result(lambda: self.cmd('vmware private-cloud show -g {rg} -n {privatecloud}'), provissioning_succeeded)
 
         # cluster list should report 0
-        count = len(self.cmd('vmware cluster list -g {rg} -p {privatecloud}').get_output_in_json())
+        count = len(self.cmd('vmware cluster list -g {rg} -c {privatecloud}').get_output_in_json())
         self.assertEqual(count, 0, 'cluster count expected to be 0')
 
         # cluster create
-        self.cmd('vmware cluster create -g {rg} -p {privatecloud} -n {cluster} --size 3 --location northcentralus')
-        await self.poll_until_result(lambda: self.cmd('vmware cluster show -g {rg} -p {privatecloud} -n {cluster}'), provissioning_succeeded)
+        self.cmd('vmware cluster create -g {rg} -c {privatecloud} -n {cluster} --size 3 --location northcentralus')
+        await self.poll_until_result(lambda: self.cmd('vmware cluster show -g {rg} -c {privatecloud} -n {cluster}'), provissioning_succeeded)
 
         # cluster list should report 1
-        count = len(self.cmd('vmware cluster list -g {rg} -p {privatecloud}').get_output_in_json())
+        count = len(self.cmd('vmware cluster list -g {rg} -c {privatecloud}').get_output_in_json())
         self.assertEqual(count, 1, 'cluster count expected to be 1')
 
         # cluster update
-        self.cmd('vmware cluster update -g {rg} --location {loc} -p {privatecloud} -n {cluster} --size 4')
-        await self.poll_until_result(lambda: self.cmd('vmware cluster show -g {rg} -p {privatecloud} -n {cluster}'), provissioning_succeeded)
+        self.cmd('vmware cluster update -g {rg} --location {loc} -c {privatecloud} -n {cluster} --size 4')
+        await self.poll_until_result(lambda: self.cmd('vmware cluster show -g {rg} -c {privatecloud} -n {cluster}'), provissioning_succeeded)
 
         # cluster delete
-        self.cmd('vmware cluster delete -g {rg} -p {privatecloud} -n {cluster}')
+        self.cmd('vmware cluster delete -g {rg} -c {privatecloud} -n {cluster}')
         await self.poll_until_result(lambda: self.cmd('vmware private-cloud show -g {rg} -n {privatecloud}'), provissioning_succeeded)
 
         # delete the private cloud
