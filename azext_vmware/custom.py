@@ -47,10 +47,12 @@ def privatecloud_delete(cmd, client: VirtustreamClient, resource_group_name, nam
 def privatecloud_listadmincredentials(cmd, client: VirtustreamClient, resource_group_name, private_cloud):
     return client.private_clouds.list_admin_credentials(resource_group_name=resource_group_name, private_cloud_name=private_cloud)
 
-def privatecloud_addidentitysource(cmd, client: VirtustreamClient, resource_group_name, name, private_cloud, alias, domain, base_user_dn, base_group_dn, primary_server, secondary_server, ssl, username, password):
+def privatecloud_addidentitysource(cmd, client: VirtustreamClient, resource_group_name, name, private_cloud, alias, domain, base_user_dn, base_group_dn, primary_server, username, password, secondary_server=None, ssl="Disabled"):
     from azext_vmware.vendored_sdks.models import IdentitySource
     pc = client.private_clouds.get(resource_group_name, private_cloud)
-    identitysource = IdentitySource(name=name, alias=alias, domain=domain, base_user_dn=base_user_dn, base_group_dn=base_group_dn, primary_server=primary_server, secondary_server=secondary_server, ssl=ssl, username=username, password=password)
+    identitysource = IdentitySource(name=name, alias=alias, domain=domain, base_user_dn=base_user_dn, base_group_dn=base_group_dn, primary_server=primary_server, ssl=ssl, username=username, password=password)
+    if secondary_server is not None:
+        identitysource.secondary_server = secondary_server
     pc.properties.identity_sources.append(identitysource)
     return client.private_clouds.update(resource_group_name=resource_group_name, private_cloud_name=private_cloud, private_cloud=pc)
 

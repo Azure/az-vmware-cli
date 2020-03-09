@@ -123,7 +123,7 @@ class VmwareScenarioTest(AsyncScenarioTest):
         await self.poll_until_result(lambda: self.cmd('vmware private-cloud show -g {rg} -n {privatecloud}'), provissioning_succeeded)
 
         # add identity source
-        self.cmd('vmware private-cloud addidentitysource -g {rg} -c {privatecloud} -n groupName --alias groupAlias --domain domain --base-user-dn "ou=baseUser" --base-group-dn "ou=baseGroup" --primary-server ldaps://1.1.1.1:636 --secondary-server ldaps://1.1.1.2:636 --ssl Enabled --username someone --password something')
+        self.cmd('vmware private-cloud addidentitysource -g {rg} -c {privatecloud} -n groupName --alias groupAlias --domain domain --base-user-dn "ou=baseUser" --base-group-dn "ou=baseGroup" --primary-server ldaps://1.1.1.1:636 --username someone --password something')
         await self.poll_until_result(lambda: self.cmd('vmware private-cloud show -g {rg} -n {privatecloud}'), provissioning_succeeded)
 
         # delete identity source
