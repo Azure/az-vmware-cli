@@ -1,6 +1,6 @@
-#  Azure VMWare Solution by Virtustream Extension
+#  Azure VMware Solution by Virtustream Extension
 
-The Azure CLI extension for Azure VMWare Solution by Virtustream is an extension for Azure CLI 2.0.
+The Azure CLI extension for Azure VMware Solution by Virtustream is an extension for Azure CLI 2.0.
 
 ## Install
 You can download the latest extension from the [releases](https://github.com/virtustream/azure-vmware-virtustream-cli-extension/releases) page. Is a python whl file that can be downloaded and then installed with `az extension add`, for example:
