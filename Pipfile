@@ -9,7 +9,8 @@ pylint = "*"
 [packages]
 # azure-cli = "*"
 # azure-cli-core = "*"
-azdev = "==0.1.4"
+# https://github.com/Azure/azure-cli-dev-tools/releases
+azdev = "==0.1.9"
 # azure-cli-testsdk = { git = "https://github.com/Azure/azure-cli", subdirectory = "src/azure-cli-testsdk" }
 
 # [requires]
