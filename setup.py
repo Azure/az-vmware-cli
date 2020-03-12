@@ -14,7 +14,7 @@ from setuptools import setup, find_packages
 #     from distutils import log as logger
 #     logger.warn("Wheel is not available, disabling bdist_wheel hook")
 
-VERSION = "0.5.2"
+VERSION = "0.5.3"
 
 # TODO: Add any additional SDK dependencies here
 DEPENDENCIES = [
@@ -22,7 +22,7 @@ DEPENDENCIES = [
 ]
 
 setup(
-    name='azure-vmware-virtustream-cli-extension',
+    name='vmware',
     version=VERSION,
     description='Preview Azure VMware Solution by Virtustream commands.',
     long_description='Additional commands providing support for preview Azure VMware Solution by Virtustream features.',
