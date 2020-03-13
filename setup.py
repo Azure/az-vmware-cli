@@ -14,7 +14,7 @@ from setuptools import setup, find_packages
 #     from distutils import log as logger
 #     logger.warn("Wheel is not available, disabling bdist_wheel hook")
 
-VERSION = "0.5.3"
+VERSION = "0.5.4"
 
 # TODO: Add any additional SDK dependencies here
 DEPENDENCIES = [
