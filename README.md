@@ -10,6 +10,7 @@ az extension add --name vmware
 Take a look at the [releases](https://github.com/virtustream/azure-vmware-virtustream-cli-extension/releases) page if you wish to install a specific version. It can be installed with `az extension add`, for example:
 ``` sh
 az extension add -s https://github.com/virtustream/azure-vmware-virtustream-cli-extension/releases/download/0.5.5/vmware-0.5.5-py2.py3-none-any.whl -y
+```
 
 ## Usage
 ``` sh
