@@ -135,7 +135,7 @@ class VmwareScenarioTest(AsyncScenarioTest):
         self.assertEqual(count, 0, 'cluster count expected to be 0')
 
         # cluster create
-        self.cmd('vmware cluster create -g {rg} -c {privatecloud} -n {cluster} --size 3 --location northcentralus')
+        self.cmd('vmware cluster create -g {rg} -c {privatecloud} -n {cluster} --size 3')
         await self.poll_until_result(lambda: self.cmd('vmware cluster show -g {rg} -c {privatecloud} -n {cluster}'), provissioning_succeeded)
 
         # cluster list should report 1
@@ -143,7 +143,7 @@ class VmwareScenarioTest(AsyncScenarioTest):
         self.assertEqual(count, 1, 'cluster count expected to be 1')
 
         # cluster update
-        self.cmd('vmware cluster update -g {rg} --location {loc} -c {privatecloud} -n {cluster} --size 4')
+        self.cmd('vmware cluster update -g {rg} -c {privatecloud} -n {cluster} --size 4')
         await self.poll_until_result(lambda: self.cmd('vmware cluster show -g {rg} -c {privatecloud} -n {cluster}'), provissioning_succeeded)
 
         # cluster delete

@@ -85,16 +85,16 @@ def privatecloud_deleteauthorization(cmd, client: VirtustreamClient, resource_gr
     else:
         return pc
 
-def cluster_create(cmd, client: VirtustreamClient, resource_group_name, location, name, private_cloud, size, tags=[]):
+def cluster_create(cmd, client: VirtustreamClient, resource_group_name, name, private_cloud, size, tags=[]):
     from azext_vmware.vendored_sdks.models import Cluster, ClusterProperties
     clusterProps = ClusterProperties(cluster_size=size)
-    cluster = Cluster(location=location, properties=clusterProps, tags=tags)
+    cluster = Cluster(properties=clusterProps, tags=tags)
     return client.clusters.create_or_update(resource_group_name=resource_group_name, private_cloud_name=private_cloud, cluster_name=name, cluster=cluster)
 
-def cluster_update(cmd, client: VirtustreamClient, resource_group_name, location, name, private_cloud, size, tags=[]):
+def cluster_update(cmd, client: VirtustreamClient, resource_group_name, name, private_cloud, size, tags=[]):
     from azext_vmware.vendored_sdks.models import Cluster, ClusterProperties
     clusterProps = ClusterProperties(cluster_size=size)
-    cluster = Cluster(location=location, properties=clusterProps, tags=tags)
+    cluster = Cluster(properties=clusterProps, tags=tags)
     return client.clusters.update(resource_group_name=resource_group_name, private_cloud_name=private_cloud, cluster_name=name, cluster=cluster)
 
 def cluster_list(cmd, client: VirtustreamClient, resource_group_name, private_cloud):
