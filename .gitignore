@@ -3,7 +3,6 @@ generated/
 swagger.resourceprovider.yaml
 swagger.json
 vmwarevirtustream.json
-Pipfile.lock
 vmwarevirtustream.svg
 examples/
 errors.txt
