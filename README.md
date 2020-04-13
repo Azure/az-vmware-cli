@@ -2,6 +2,8 @@
 
 The Azure CLI extension for Azure VMware Solution by Virtustream is an extension for Azure CLI 2.0.
 
+**WARNING**: Preview features are enabled at the Azure subscription level. Do not install preview features on production subscription as it can change default API behavior impacting regular operations.
+
 ## Install
 ``` sh
 az extension add --name vmware
@@ -13,6 +15,8 @@ az extension add -s https://github.com/virtustream/azure-vmware-virtustream-cli-
 ```
 
 ## Usage
+See the [extension reference documenation](https://docs.microsoft.com/en-us/cli/azure/ext/vmware/vmware?view=azure-cli-latest).
+
 ``` sh
 az vmware --help
 az vmware private-cloud list
