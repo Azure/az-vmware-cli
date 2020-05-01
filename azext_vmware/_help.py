@@ -97,3 +97,8 @@ helps['vmware private-cloud update'] = """
     type: command
     short-summary: Update a private cloud.
 """
+
+helps['vmware checkquotaavailability'] = """
+    type: command
+    short-summary: Return quota for subscription by region.
+"""

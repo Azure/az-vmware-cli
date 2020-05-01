@@ -105,3 +105,6 @@ def cluster_show(cmd, client: VirtustreamClient, resource_group_name, private_cl
 
 def cluster_delete(cmd, client: VirtustreamClient, resource_group_name, private_cloud, name):
     return client.clusters.delete(resource_group_name=resource_group_name, private_cloud_name=private_cloud, cluster_name=name)
+
+def check_quota_availability(cmd, client: VirtustreamClient, location):
+    return client.check_quota_availability(location)

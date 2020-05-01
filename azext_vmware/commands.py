@@ -32,3 +32,6 @@ def load_command_table(self, _):
         g.custom_command('list', 'cluster_list')
         g.custom_command('delete', 'cluster_delete')
         g.custom_command('show', 'cluster_show')
+
+    with self.command_group('vmware', vmware_sdk, client_factory=cf_vmware) as g:
+        g.custom_command('checkquotaavailability', 'check_quota_availability')

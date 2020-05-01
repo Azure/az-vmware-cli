@@ -6,6 +6,7 @@
 # --------------------------------------------------------------------------
 
 try:
+    from .quota_py3 import Quota
     from .resource_py3 import Resource
     from .tracked_resource_py3 import TrackedResource
     from .api_error_base_py3 import ApiErrorBase
@@ -24,6 +25,7 @@ try:
     from .cluster_py3 import Cluster
     from .admin_credentials_py3 import AdminCredentials
 except (SyntaxError, ImportError):
+    from .quota import Quota
     from .resource import Resource
     from .tracked_resource import TrackedResource
     from .api_error_base import ApiErrorBase
@@ -45,6 +47,7 @@ from .operation_paged import OperationPaged
 from .private_cloud_paged import PrivateCloudPaged
 from .cluster_paged import ClusterPaged
 from .virtustream_client_enums import (
+    QuotaEnabled,
     SslEnum,
     PrivateCloudProvisioningState,
     InternetEnum,
@@ -52,6 +55,7 @@ from .virtustream_client_enums import (
 )
 
 __all__ = [
+    'Quota',
     'Resource',
     'TrackedResource',
     'ApiErrorBase',
@@ -72,6 +76,7 @@ __all__ = [
     'OperationPaged',
     'PrivateCloudPaged',
     'ClusterPaged',
+    'QuotaEnabled',
     'SslEnum',
     'PrivateCloudProvisioningState',
     'InternetEnum',
