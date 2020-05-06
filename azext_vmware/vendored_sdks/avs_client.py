@@ -19,8 +19,8 @@ from .operations.clusters_operations import ClustersOperations
 from . import models
 
 
-class VirtustreamClientConfiguration(AzureConfiguration):
-    """Configuration for VirtustreamClient
+class AVSClientConfiguration(AzureConfiguration):
+    """Configuration for AVSClient
     Note that all parameters used to create this instance are saved as instance
     attributes.
 
@@ -42,20 +42,20 @@ class VirtustreamClientConfiguration(AzureConfiguration):
         if not base_url:
             base_url = 'https://management.azure.com'
 
-        super(VirtustreamClientConfiguration, self).__init__(base_url)
+        super(AVSClientConfiguration, self).__init__(base_url)
 
-        self.add_user_agent('virtustreamclient/{}'.format(VERSION))
+        self.add_user_agent('avsclient/{}'.format(VERSION))
         self.add_user_agent('Azure-SDK-For-Python')
 
         self.credentials = credentials
         self.subscription_id = subscription_id
 
 
-class VirtustreamClient(SDKClient):
-    """Azure VMware Solution by Virtustream API
+class AVSClient(SDKClient):
+    """Azure VMware Solution API
 
     :ivar config: Configuration for client.
-    :vartype config: VirtustreamClientConfiguration
+    :vartype config: AVSClientConfiguration
 
     :ivar operations: Operations operations
     :vartype operations: vendored_sdks.operations.Operations
@@ -75,8 +75,8 @@ class VirtustreamClient(SDKClient):
     def __init__(
             self, credentials, subscription_id, base_url=None):
 
-        self.config = VirtustreamClientConfiguration(credentials, subscription_id, base_url)
-        super(VirtustreamClient, self).__init__(self.config.credentials, self.config)
+        self.config = AVSClientConfiguration(credentials, subscription_id, base_url)
+        super(AVSClient, self).__init__(self.config.credentials, self.config)
 
         client_models = {k: v for k, v in models.__dict__.items() if isinstance(v, type)}
         self.api_version = '2019-08-09-preview'
@@ -146,4 +146,4 @@ class VirtustreamClient(SDKClient):
             return client_raw_response
 
         return deserialized
-    check_quota_availability.metadata = {'url': '/subscriptions/{subscriptionId}/providers/Microsoft.VMwareVirtustream/locations/{location}/checkQuotaAvailability'}
+    check_quota_availability.metadata = {'url': '/subscriptions/{subscriptionId}/providers/Microsoft.AVS/locations/{location}/checkQuotaAvailability'}

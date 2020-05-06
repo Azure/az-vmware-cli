@@ -38,7 +38,7 @@ python setup.py bdist_wheel
 ```
 
 ## AutoRest client code generation
-The code in the `azext_vmware/vendored_sdks` subdirectory was generated using the [AutoRest CLI](http://azure.github.io/autorest/user/command-line-interface.html). It is a Node app that bootstraps a dotnet app. It generates code from the a Swagger 2 spec. Here is how the current code was generated:
+The code in the `azext_vmware/vendored_sdks` subdirectory was generated using the [AutoRest CLI](http://azure.github.io/autorest/user/command-line-interface.html). It is a Node app that bootstraps a dotnet app. It generates code from the a Swagger 2 spec. Here is how the code is generated:
 
 ``` sh
 docker run --rm -it -v ${PWD}:/src -v ${PWD}/../azure-rest-api-specs:/azure-rest-api-specs -w /src node:lts bash

@@ -46,7 +46,7 @@ except (SyntaxError, ImportError):
 from .operation_paged import OperationPaged
 from .private_cloud_paged import PrivateCloudPaged
 from .cluster_paged import ClusterPaged
-from .virtustream_client_enums import (
+from .avs_client_enums import (
     QuotaEnabled,
     SslEnum,
     PrivateCloudProvisioningState,

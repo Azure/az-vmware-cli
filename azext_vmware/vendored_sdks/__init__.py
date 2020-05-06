@@ -5,10 +5,10 @@
 # regenerated.
 # --------------------------------------------------------------------------
 
-from .virtustream_client import VirtustreamClient
+from .avs_client import AVSClient
 from .version import VERSION
 
-__all__ = ['VirtustreamClient']
+__all__ = ['AVSClient']
 
 __version__ = VERSION
 

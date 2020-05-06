@@ -50,6 +50,12 @@ class PrivateCloudProperties(Model):
     :param nsxt_password: Optionally, set the NSX-T Manager password when the
      private cloud is created
     :type nsxt_password: str
+    :ivar vcenter_certificate_thumbprint: Thumbprint of the vCenter Server SSL
+     certificate
+    :vartype vcenter_certificate_thumbprint: str
+    :ivar nsxt_certificate_thumbprint: Thumbprint of the NSX-T Manager SSL
+     certificate
+    :vartype nsxt_certificate_thumbprint: str
     """
 
     _validation = {
@@ -59,6 +65,8 @@ class PrivateCloudProperties(Model):
         'management_network': {'readonly': True},
         'provisioning_network': {'readonly': True},
         'vmotion_network': {'readonly': True},
+        'vcenter_certificate_thumbprint': {'readonly': True},
+        'nsxt_certificate_thumbprint': {'readonly': True},
     }
 
     _attribute_map = {
@@ -75,6 +83,8 @@ class PrivateCloudProperties(Model):
         'vmotion_network': {'key': 'vmotionNetwork', 'type': 'str'},
         'vcenter_password': {'key': 'vcenterPassword', 'type': 'str'},
         'nsxt_password': {'key': 'nsxtPassword', 'type': 'str'},
+        'vcenter_certificate_thumbprint': {'key': 'vcenterCertificateThumbprint', 'type': 'str'},
+        'nsxt_certificate_thumbprint': {'key': 'nsxtCertificateThumbprint', 'type': 'str'},
     }
 
     def __init__(self, *, circuit=None, cluster=None, internet=None, identity_sources=None, network_block: str=None, vcenter_password: str=None, nsxt_password: str=None, **kwargs) -> None:
@@ -92,3 +102,5 @@ class PrivateCloudProperties(Model):
         self.vmotion_network = None
         self.vcenter_password = vcenter_password
         self.nsxt_password = nsxt_password
+        self.vcenter_certificate_thumbprint = None
+        self.nsxt_certificate_thumbprint = None

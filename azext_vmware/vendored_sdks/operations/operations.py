@@ -18,7 +18,7 @@ class Operations(object):
     :param config: Configuration of service client.
     :param serializer: An object model serializer.
     :param deserializer: An object model deserializer.
-    :ivar api_version: Version of Azure VMware Solution by Virtustream API to be used with the client request. Constant value: "2019-08-09-preview".
+    :ivar api_version: Version of Azure VMware Solution API to be used with the client request. Constant value: "2019-08-09-preview".
     """
 
     models = models
@@ -89,4 +89,4 @@ class Operations(object):
             return client_raw_response
 
         return deserialized
-    list.metadata = {'url': '/providers/Microsoft.VMwareVirtustream/operations'}
+    list.metadata = {'url': '/providers/Microsoft.AVS/operations'}
