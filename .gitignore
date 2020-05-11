@@ -2,8 +2,6 @@
 generated/
 swagger.resourceprovider.yaml
 swagger.json
-vmwarevirtustream.json
-vmwarevirtustream.svg
 examples/
 errors.txt
 

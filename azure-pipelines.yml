@@ -28,7 +28,7 @@ steps:
 
 - script: |
     pipenv run azdev extension list
-    # pipenv run azdev extension add azure-vmware-virtustream-cli-extension
+    # pipenv run azdev extension add az-vmware-cli
     # I do not understand why azdev is using the directory name.
     nm=${PWD##*/}
     pipenv run azdev extension add $nm
