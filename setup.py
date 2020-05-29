@@ -8,7 +8,7 @@
 from codecs import open
 from setuptools import setup, find_packages
 
-VERSION = "0.6.0"
+VERSION = "0.6.1"
 
 DEPENDENCIES = [
 ]
@@ -21,7 +21,7 @@ setup(
     license='MIT',
     author='Microsoft',
     author_email='azpycli@microsoft.com',
-    url='https://github.com/virtustream/az-vmware-cli',
+    url='https://github.com/Azure/az-vmware-cli',
     packages=find_packages(exclude=["tests"]),
     install_requires=DEPENDENCIES,
     package_data={'azext_vmware': ['azext_metadata.json']}

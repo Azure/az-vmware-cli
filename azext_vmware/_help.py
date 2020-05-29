@@ -9,7 +9,7 @@ from knack.help_files import helps  # pylint: disable=unused-import
 
 helps['vmware'] = """
     type: group
-    short-summary: Commands to manage Azure VMware Solutions.
+    short-summary: Commands to manage Azure VMware Solution.
 """
 
 helps['vmware private-cloud'] = """
