@@ -5,40 +5,35 @@
 # regenerated.
 # --------------------------------------------------------------------------
 
-from .default_cluster_properties_py3 import DefaultClusterProperties
+from .cluster_update_properties_py3 import ClusterUpdateProperties
 
 
-class ClusterProperties(DefaultClusterProperties):
-    """The properties of a cluster.
+class ManagementCluster(ClusterUpdateProperties):
+    """The properties of a default cluster.
 
     Variables are only populated by the server, and will be ignored when
     sending a request.
 
-    :ivar cluster_id: The identity
-    :vartype cluster_id: int
     :param cluster_size: The cluster size
     :type cluster_size: int
+    :ivar cluster_id: The identity
+    :vartype cluster_id: int
     :ivar hosts: The hosts
     :vartype hosts: list[str]
-    :ivar provisioning_state: The state of the cluster provisioning. Possible
-     values include: 'Succeeded', 'Failed', 'Cancelled', 'Updating'
-    :vartype provisioning_state: str or
-     ~vendored_sdks.models.ClusterProvisioningState
     """
 
     _validation = {
         'cluster_id': {'readonly': True},
         'hosts': {'readonly': True},
-        'provisioning_state': {'readonly': True},
     }
 
     _attribute_map = {
-        'cluster_id': {'key': 'clusterId', 'type': 'int'},
         'cluster_size': {'key': 'clusterSize', 'type': 'int'},
+        'cluster_id': {'key': 'clusterId', 'type': 'int'},
         'hosts': {'key': 'hosts', 'type': '[str]'},
-        'provisioning_state': {'key': 'provisioningState', 'type': 'str'},
     }
 
     def __init__(self, *, cluster_size: int=None, **kwargs) -> None:
-        super(ClusterProperties, self).__init__(cluster_size=cluster_size, **kwargs)
-        self.provisioning_state = None
+        super(ManagementCluster, self).__init__(cluster_size=cluster_size, **kwargs)
+        self.cluster_id = None
+        self.hosts = None

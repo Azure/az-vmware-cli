@@ -18,15 +18,11 @@ class Circuit(Model):
     :vartype primary_subnet: str
     :ivar secondary_subnet: CIDR of secondary subnet
     :vartype secondary_subnet: str
-    :ivar express_route_id: Identifier of the ExpressRoute (Microsoft Colo
-     only)
+    :ivar express_route_id: Identifier of the ExpressRoute Circuit (Microsoft
+     Colo only)
     :vartype express_route_id: str
-    :param authorizations: Authorizations for the ExpressRoute (Microsoft Colo
-     only)
-    :type authorizations:
-     list[~vendored_sdks.models.ExpressRouteAuthorization]
-    :ivar express_route_private_peering_id: ExpressRoute private peering
-     identifier
+    :ivar express_route_private_peering_id: ExpressRoute Circuit private
+     peering identifier
     :vartype express_route_private_peering_id: str
     """
 
@@ -41,7 +37,6 @@ class Circuit(Model):
         'primary_subnet': {'key': 'primarySubnet', 'type': 'str'},
         'secondary_subnet': {'key': 'secondarySubnet', 'type': 'str'},
         'express_route_id': {'key': 'expressRouteID', 'type': 'str'},
-        'authorizations': {'key': 'authorizations', 'type': '[ExpressRouteAuthorization]'},
         'express_route_private_peering_id': {'key': 'expressRoutePrivatePeeringID', 'type': 'str'},
     }
 
@@ -50,5 +45,4 @@ class Circuit(Model):
         self.primary_subnet = None
         self.secondary_subnet = None
         self.express_route_id = None
-        self.authorizations = kwargs.get('authorizations', None)
         self.express_route_private_peering_id = None

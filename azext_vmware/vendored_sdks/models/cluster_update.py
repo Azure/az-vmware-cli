@@ -8,21 +8,17 @@
 from msrest.serialization import Model
 
 
-class ApiErrorBase(Model):
-    """Api error.
+class ClusterUpdate(Model):
+    """An update of a cluster resource.
 
-    :param code: Error code
-    :type code: str
-    :param message: Error message
-    :type message: str
+    :param cluster_size: The cluster size
+    :type cluster_size: int
     """
 
     _attribute_map = {
-        'code': {'key': 'code', 'type': 'str'},
-        'message': {'key': 'message', 'type': 'str'},
+        'cluster_size': {'key': 'properties.clusterSize', 'type': 'int'},
     }
 
     def __init__(self, **kwargs):
-        super(ApiErrorBase, self).__init__(**kwargs)
-        self.code = kwargs.get('code', None)
-        self.message = kwargs.get('message', None)
+        super(ClusterUpdate, self).__init__(**kwargs)
+        self.cluster_size = kwargs.get('cluster_size', None)

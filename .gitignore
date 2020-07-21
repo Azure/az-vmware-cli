@@ -4,6 +4,7 @@ swagger.resourceprovider.yaml
 swagger.json
 examples/
 errors.txt
+/*.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

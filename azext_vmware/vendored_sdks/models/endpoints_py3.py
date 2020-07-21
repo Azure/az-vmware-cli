@@ -18,19 +18,24 @@ class Endpoints(Model):
     :vartype nsxt_manager: str
     :ivar vcsa: Endpoint for Virtual Center Server Appliance
     :vartype vcsa: str
+    :ivar hcx_cloud_manager: Endpoint for the HCX Cloud Manager
+    :vartype hcx_cloud_manager: str
     """
 
     _validation = {
         'nsxt_manager': {'readonly': True},
         'vcsa': {'readonly': True},
+        'hcx_cloud_manager': {'readonly': True},
     }
 
     _attribute_map = {
         'nsxt_manager': {'key': 'nsxtManager', 'type': 'str'},
         'vcsa': {'key': 'vcsa', 'type': 'str'},
+        'hcx_cloud_manager': {'key': 'hcxCloudManager', 'type': 'str'},
     }
 
     def __init__(self, **kwargs) -> None:
         super(Endpoints, self).__init__(**kwargs)
         self.nsxt_manager = None
         self.vcsa = None
+        self.hcx_cloud_manager = None

@@ -16,13 +16,14 @@ class Quota(Model):
 
     :ivar hosts_remaining: Remaining hosts quota by sku type
     :vartype hosts_remaining: dict[str, int]
-    :param quota_enabled: Host quota is active for current subscription.
+    :ivar quota_enabled: Host quota is active for current subscription.
      Possible values include: 'Enabled', 'Disabled'
-    :type quota_enabled: str or ~vendored_sdks.models.QuotaEnabled
+    :vartype quota_enabled: str or ~vendored_sdks.models.QuotaEnabled
     """
 
     _validation = {
         'hosts_remaining': {'readonly': True},
+        'quota_enabled': {'readonly': True},
     }
 
     _attribute_map = {
@@ -33,4 +34,4 @@ class Quota(Model):
     def __init__(self, **kwargs):
         super(Quota, self).__init__(**kwargs)
         self.hosts_remaining = None
-        self.quota_enabled = kwargs.get('quota_enabled', None)
+        self.quota_enabled = None

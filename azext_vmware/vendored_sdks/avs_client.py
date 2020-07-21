@@ -9,13 +9,12 @@ from msrest.service_client import SDKClient
 from msrest import Serializer, Deserializer
 from msrestazure import AzureConfiguration
 from .version import VERSION
-from msrest.pipeline import ClientRawResponse
-from msrest.polling import LROPoller, NoPolling
-from msrestazure.polling.arm_polling import ARMPolling
-import uuid
 from .operations.operations import Operations
+from .operations.locations_operations import LocationsOperations
 from .operations.private_clouds_operations import PrivateCloudsOperations
 from .operations.clusters_operations import ClustersOperations
+from .operations.hcx_enterprise_sites_operations import HcxEnterpriseSitesOperations
+from .operations.authorizations_operations import AuthorizationsOperations
 from . import models
 
 
@@ -27,7 +26,7 @@ class AVSClientConfiguration(AzureConfiguration):
     :param credentials: Credentials needed for the client to connect to Azure.
     :type credentials: :mod:`A msrestazure Credentials
      object<msrestazure.azure_active_directory>`
-    :param subscription_id: Unique identifier for the Azure subscription
+    :param subscription_id: The ID of the target subscription.
     :type subscription_id: str
     :param str base_url: Service URL
     """
@@ -59,15 +58,21 @@ class AVSClient(SDKClient):
 
     :ivar operations: Operations operations
     :vartype operations: vendored_sdks.operations.Operations
+    :ivar locations: Locations operations
+    :vartype locations: vendored_sdks.operations.LocationsOperations
     :ivar private_clouds: PrivateClouds operations
     :vartype private_clouds: vendored_sdks.operations.PrivateCloudsOperations
     :ivar clusters: Clusters operations
     :vartype clusters: vendored_sdks.operations.ClustersOperations
+    :ivar hcx_enterprise_sites: HcxEnterpriseSites operations
+    :vartype hcx_enterprise_sites: vendored_sdks.operations.HcxEnterpriseSitesOperations
+    :ivar authorizations: Authorizations operations
+    :vartype authorizations: vendored_sdks.operations.AuthorizationsOperations
 
     :param credentials: Credentials needed for the client to connect to Azure.
     :type credentials: :mod:`A msrestazure Credentials
      object<msrestazure.azure_active_directory>`
-    :param subscription_id: Unique identifier for the Azure subscription
+    :param subscription_id: The ID of the target subscription.
     :type subscription_id: str
     :param str base_url: Service URL
     """
@@ -79,71 +84,19 @@ class AVSClient(SDKClient):
         super(AVSClient, self).__init__(self.config.credentials, self.config)
 
         client_models = {k: v for k, v in models.__dict__.items() if isinstance(v, type)}
-        self.api_version = '2019-08-09-preview'
+        self.api_version = '2020-03-20'
         self._serialize = Serializer(client_models)
         self._deserialize = Deserializer(client_models)
 
         self.operations = Operations(
             self._client, self.config, self._serialize, self._deserialize)
+        self.locations = LocationsOperations(
+            self._client, self.config, self._serialize, self._deserialize)
         self.private_clouds = PrivateCloudsOperations(
             self._client, self.config, self._serialize, self._deserialize)
         self.clusters = ClustersOperations(
             self._client, self.config, self._serialize, self._deserialize)
-
-    def check_quota_availability(
-            self, location, custom_headers=None, raw=False, **operation_config):
-        """Return quota for subscription by region.
-
-        :param location: Azure region
-        :type location: str
-        :param dict custom_headers: headers that will be added to the request
-        :param bool raw: returns the direct response alongside the
-         deserialized response
-        :param operation_config: :ref:`Operation configuration
-         overrides<msrest:optionsforoperations>`.
-        :return: Quota or ClientRawResponse if raw=true
-        :rtype: ~vendored_sdks.models.Quota or
-         ~msrest.pipeline.ClientRawResponse
-        :raises:
-         :class:`ApiErrorException<vendored_sdks.models.ApiErrorException>`
-        """
-        # Construct URL
-        url = self.check_quota_availability.metadata['url']
-        path_format_arguments = {
-            'subscriptionId': self._serialize.url("self.config.subscription_id", self.config.subscription_id, 'str'),
-            'location': self._serialize.url("location", location, 'str')
-        }
-        url = self._client.format_url(url, **path_format_arguments)
-
-        # Construct parameters
-        query_parameters = {}
-        query_parameters['api-version'] = self._serialize.query("self.api_version", self.api_version, 'str')
-
-        # Construct headers
-        header_parameters = {}
-        header_parameters['Accept'] = 'application/json'
-        if self.config.generate_client_request_id:
-            header_parameters['x-ms-client-request-id'] = str(uuid.uuid1())
-        if custom_headers:
-            header_parameters.update(custom_headers)
-        if self.config.accept_language is not None:
-            header_parameters['accept-language'] = self._serialize.header("self.config.accept_language", self.config.accept_language, 'str')
-
-        # Construct and send request
-        request = self._client.post(url, query_parameters, header_parameters)
-        response = self._client.send(request, stream=False, **operation_config)
-
-        if response.status_code not in [200]:
-            raise models.ApiErrorException(self._deserialize, response)
-
-        deserialized = None
-
-        if response.status_code == 200:
-            deserialized = self._deserialize('Quota', response)
-
-        if raw:
-            client_raw_response = ClientRawResponse(deserialized, response)
-            return client_raw_response
-
-        return deserialized
-    check_quota_availability.metadata = {'url': '/subscriptions/{subscriptionId}/providers/Microsoft.AVS/locations/{location}/checkQuotaAvailability'}
+        self.hcx_enterprise_sites = HcxEnterpriseSitesOperations(
+            self._client, self.config, self._serialize, self._deserialize)
+        self.authorizations = AuthorizationsOperations(
+            self._client, self.config, self._serialize, self._deserialize)

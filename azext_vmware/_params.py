@@ -22,6 +22,7 @@ def load_arguments(self, _):
 
     with self.argument_context('vmware cluster') as c:
         c.argument('name', options_list=['--name', '-n'], help='Name of the cluster.')
+        c.argument('sku', help='The product SKU.')
         c.argument('size', help='Number of hosts for the cluster. Minimum of 3 and a maximum of 16.')
 
     with self.argument_context('vmware private-cloud create') as c:
@@ -40,10 +41,7 @@ def load_arguments(self, _):
     with self.argument_context('vmware private-cloud delete') as c:
         c.argument('name', options_list=['--name', '-n'], help='Name of the private cloud.')
 
-    with self.argument_context('vmware private-cloud addauthorization') as c:
-        c.argument('name', options_list=['--name', '-n'], help='Name of the authorization.')
-
-    with self.argument_context('vmware private-cloud deleteauthorization') as c:
+    with self.argument_context('vmware authorization') as c:
         c.argument('name', options_list=['--name', '-n'], help='Name of the authorization.')
 
     with self.argument_context('vmware private-cloud addidentitysource') as c:
@@ -66,3 +64,6 @@ def load_arguments(self, _):
     with self.argument_context('vmware private-cloud update') as c:
         c.argument('name', options_list=['--name', '-n'], help='Name of the private cloud.')
         c.argument('internet', help='Connectivity to internet. Specify "Enabled" or "Disabled".')
+
+    with self.argument_context('vmware hcx-enterprise-site') as c:
+        c.argument('name', options_list=['--name', '-n'], help='The name of the HCX Enterprise Site.')

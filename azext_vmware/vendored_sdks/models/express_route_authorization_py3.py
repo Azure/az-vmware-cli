@@ -5,36 +5,54 @@
 # regenerated.
 # --------------------------------------------------------------------------
 
-from msrest.serialization import Model
+from .resource_py3 import Resource
 
 
-class ExpressRouteAuthorization(Model):
-    """Authorization for an ExpressRoute.
+class ExpressRouteAuthorization(Resource):
+    """ExpressRoute Circuit Authorization.
 
     Variables are only populated by the server, and will be ignored when
     sending a request.
 
-    :param name: The name of the ExpressRoute
-    :type name: str
-    :ivar id: The ID of the ExpressRoute
+    :ivar id: Resource ID.
     :vartype id: str
-    :ivar key: The key of the ExpressRoute
-    :vartype key: str
+    :ivar name: Resource name.
+    :vartype name: str
+    :ivar type: Resource type.
+    :vartype type: str
+    :ivar provisioning_state: The state of the  ExpressRoute Circuit
+     Authorization provisioning. Possible values include: 'Succeeded',
+     'Failed', 'Updating'
+    :vartype provisioning_state: str or
+     ~vendored_sdks.models.ExpressRouteAuthorizationProvisioningState
+    :ivar express_route_authorization_id: The ID of the ExpressRoute Circuit
+     Authorization
+    :vartype express_route_authorization_id: str
+    :ivar express_route_authorization_key: The key of the ExpressRoute Circuit
+     Authorization
+    :vartype express_route_authorization_key: str
     """
 
     _validation = {
         'id': {'readonly': True},
-        'key': {'readonly': True},
+        'name': {'readonly': True},
+        'type': {'readonly': True},
+        'provisioning_state': {'readonly': True},
+        'express_route_authorization_id': {'readonly': True},
+        'express_route_authorization_key': {'readonly': True},
     }
 
     _attribute_map = {
-        'name': {'key': 'name', 'type': 'str'},
         'id': {'key': 'id', 'type': 'str'},
-        'key': {'key': 'key', 'type': 'str'},
+        'name': {'key': 'name', 'type': 'str'},
+        'type': {'key': 'type', 'type': 'str'},
+        'provisioning_state': {'key': 'properties.provisioningState', 'type': 'str'},
+        'express_route_authorization_id': {'key': 'properties.expressRouteAuthorizationId', 'type': 'str'},
+        'express_route_authorization_key': {'key': 'properties.expressRouteAuthorizationKey', 'type': 'str'},
     }
 
-    def __init__(self, *, name: str=None, **kwargs) -> None:
+    def __init__(self, **kwargs) -> None:
         super(ExpressRouteAuthorization, self).__init__(**kwargs)
-        self.name = name
-        self.id = None
-        self.key = None
+        self.provisioning_state = None
+        self.express_route_authorization_id = None
+        self.express_route_authorization_key = None

@@ -22,6 +22,21 @@ helps['vmware cluster'] = """
     short-summary: Commands to manage clusters in a private cloud.
 """
 
+helps['vmware authorization'] = """
+    type: group
+    short-summary: Commands to manage the authorizations of an ExpressRoute Circuit for a private cloud.
+"""
+
+helps['vmware hcx-enterprise-site'] = """
+    type: group
+    short-summary: Commands to manage HCX Enterprise Sites in a private cloud.
+"""
+
+helps['vmware location'] = """
+    type: group
+    short-summary: Commands to check availability by location.
+"""
+
 helps['vmware cluster create'] = """
     type: command
     short-summary: Create a cluster in a private cloud. The maximum number of clusters is 4.
@@ -47,11 +62,6 @@ helps['vmware cluster update'] = """
     short-summary: Update a cluster in a private cloud.
 """
 
-helps['vmware private-cloud addauthorization'] = """
-    type: command
-    short-summary: Add an authorization to the ExpressRoute for a private cloud.
-"""
-
 helps['vmware private-cloud addidentitysource'] = """
     type: command
     short-summary: Add a vCenter Single Sign On Identity Source to a private cloud.
@@ -65,11 +75,6 @@ helps['vmware private-cloud create'] = """
 helps['vmware private-cloud delete'] = """
     type: command
     short-summary: Delete a private cloud.
-"""
-
-helps['vmware private-cloud deleteauthorization'] = """
-    type: command
-    short-summary: Delete an authorization to the ExpressRoute for a private cloud.
 """
 
 helps['vmware private-cloud deleteidentitysource'] = """
@@ -97,7 +102,52 @@ helps['vmware private-cloud update'] = """
     short-summary: Update a private cloud.
 """
 
-helps['vmware checkquotaavailability'] = """
+helps['vmware authorization create'] = """
+    type: command
+    short-summary: Create an authorization for an ExpressRoute Circuit in a private cloud.
+"""
+
+helps['vmware authorization list'] = """
+    type: command
+    short-summary: List authorizations for an ExpressRoute Circuit in a private cloud.
+"""
+
+helps['vmware authorization show'] = """
+    type: command
+    short-summary: Show details of an authorization for an ExpressRoute Circuit in a private cloud.
+"""
+
+helps['vmware authorization delete'] = """
+    type: command
+    short-summary: Delete an authorization for an ExpressRoute Circuit in a private cloud.
+"""
+
+helps['vmware hcx-enterprise-site create'] = """
+    type: command
+    short-summary: Create an HCX Enterprise Site in a private cloud.
+"""
+
+helps['vmware hcx-enterprise-site list'] = """
+    type: command
+    short-summary: List HCX Enterprise Sites in a private cloud.
+"""
+
+helps['vmware hcx-enterprise-site show'] = """
+    type: command
+    short-summary: Show details of an HCX Enterprise Site in a private cloud.
+"""
+
+helps['vmware hcx-enterprise-site delete'] = """
+    type: command
+    short-summary: Delete an HCX Enterprise Site in a private cloud.
+"""
+
+helps['vmware location checkquotaavailability'] = """
     type: command
     short-summary: Return quota for subscription by region.
+"""
+
+helps['vmware location checktrialavailability'] = """
+    type: command
+    short-summary: Return trial status for subscription by region.
 """

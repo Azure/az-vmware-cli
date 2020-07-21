@@ -6,11 +6,12 @@
 # --------------------------------------------------------------------------
 
 try:
+    from .trial_py3 import Trial
     from .quota_py3 import Quota
     from .resource_py3 import Resource
     from .tracked_resource_py3 import TrackedResource
-    from .api_error_base_py3 import ApiErrorBase
-    from .api_error_py3 import ApiError, ApiErrorException
+    from .error_additional_info_py3 import ErrorAdditionalInfo
+    from .error_response_py3 import ErrorResponse
     from .operation_display_py3 import OperationDisplay
     from .operation_py3 import Operation
     from .express_route_authorization_py3 import ExpressRouteAuthorization
@@ -18,18 +19,21 @@ try:
     from .endpoints_py3 import Endpoints
     from .identity_source_py3 import IdentitySource
     from .sku_py3 import Sku
-    from .default_cluster_properties_py3 import DefaultClusterProperties
-    from .private_cloud_properties_py3 import PrivateCloudProperties
     from .private_cloud_py3 import PrivateCloud
-    from .cluster_properties_py3 import ClusterProperties
+    from .management_cluster_py3 import ManagementCluster
+    from .private_cloud_update_py3 import PrivateCloudUpdate
     from .cluster_py3 import Cluster
+    from .cluster_update_properties_py3 import ClusterUpdateProperties
+    from .cluster_update_py3 import ClusterUpdate
     from .admin_credentials_py3 import AdminCredentials
+    from .hcx_enterprise_site_py3 import HcxEnterpriseSite
 except (SyntaxError, ImportError):
+    from .trial import Trial
     from .quota import Quota
     from .resource import Resource
     from .tracked_resource import TrackedResource
-    from .api_error_base import ApiErrorBase
-    from .api_error import ApiError, ApiErrorException
+    from .error_additional_info import ErrorAdditionalInfo
+    from .error_response import ErrorResponse
     from .operation_display import OperationDisplay
     from .operation import Operation
     from .express_route_authorization import ExpressRouteAuthorization
@@ -37,29 +41,37 @@ except (SyntaxError, ImportError):
     from .endpoints import Endpoints
     from .identity_source import IdentitySource
     from .sku import Sku
-    from .default_cluster_properties import DefaultClusterProperties
-    from .private_cloud_properties import PrivateCloudProperties
     from .private_cloud import PrivateCloud
-    from .cluster_properties import ClusterProperties
+    from .management_cluster import ManagementCluster
+    from .private_cloud_update import PrivateCloudUpdate
     from .cluster import Cluster
+    from .cluster_update_properties import ClusterUpdateProperties
+    from .cluster_update import ClusterUpdate
     from .admin_credentials import AdminCredentials
+    from .hcx_enterprise_site import HcxEnterpriseSite
 from .operation_paged import OperationPaged
 from .private_cloud_paged import PrivateCloudPaged
 from .cluster_paged import ClusterPaged
+from .hcx_enterprise_site_paged import HcxEnterpriseSitePaged
+from .express_route_authorization_paged import ExpressRouteAuthorizationPaged
 from .avs_client_enums import (
+    TrialStatus,
     QuotaEnabled,
+    ExpressRouteAuthorizationProvisioningState,
     SslEnum,
     PrivateCloudProvisioningState,
     InternetEnum,
     ClusterProvisioningState,
+    HcxEnterpriseSiteStatus,
 )
 
 __all__ = [
+    'Trial',
     'Quota',
     'Resource',
     'TrackedResource',
-    'ApiErrorBase',
-    'ApiError', 'ApiErrorException',
+    'ErrorAdditionalInfo',
+    'ErrorResponse',
     'OperationDisplay',
     'Operation',
     'ExpressRouteAuthorization',
@@ -67,18 +79,25 @@ __all__ = [
     'Endpoints',
     'IdentitySource',
     'Sku',
-    'DefaultClusterProperties',
-    'PrivateCloudProperties',
     'PrivateCloud',
-    'ClusterProperties',
+    'ManagementCluster',
+    'PrivateCloudUpdate',
     'Cluster',
+    'ClusterUpdateProperties',
+    'ClusterUpdate',
     'AdminCredentials',
+    'HcxEnterpriseSite',
     'OperationPaged',
     'PrivateCloudPaged',
     'ClusterPaged',
+    'HcxEnterpriseSitePaged',
+    'ExpressRouteAuthorizationPaged',
+    'TrialStatus',
     'QuotaEnabled',
+    'ExpressRouteAuthorizationProvisioningState',
     'SslEnum',
     'PrivateCloudProvisioningState',
     'InternetEnum',
     'ClusterProvisioningState',
+    'HcxEnterpriseSiteStatus',
 ]

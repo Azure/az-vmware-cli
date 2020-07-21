@@ -7,6 +7,7 @@
 
 import uuid
 from msrest.pipeline import ClientRawResponse
+from msrestazure.azure_exceptions import CloudError
 
 from .. import models
 
@@ -18,7 +19,7 @@ class Operations(object):
     :param config: Configuration of service client.
     :param serializer: An object model serializer.
     :param deserializer: An object model deserializer.
-    :ivar api_version: Version of Azure VMware Solution API to be used with the client request. Constant value: "2019-08-09-preview".
+    :ivar api_version: The API version to use for this operation. Constant value: "2020-03-20".
     """
 
     models = models
@@ -28,7 +29,7 @@ class Operations(object):
         self._client = client
         self._serialize = serializer
         self._deserialize = deserializer
-        self.api_version = "2019-08-09-preview"
+        self.api_version = "2020-03-20"
 
         self.config = config
 
@@ -44,8 +45,7 @@ class Operations(object):
         :return: An iterator like instance of Operation
         :rtype:
          ~vendored_sdks.models.OperationPaged[~vendored_sdks.models.Operation]
-        :raises:
-         :class:`ApiErrorException<vendored_sdks.models.ApiErrorException>`
+        :raises: :class:`CloudError<msrestazure.azure_exceptions.CloudError>`
         """
         def internal_paging(next_link=None, raw=False):
 
@@ -55,7 +55,7 @@ class Operations(object):
 
                 # Construct parameters
                 query_parameters = {}
-                query_parameters['api-version'] = self._serialize.query("self.api_version", self.api_version, 'str')
+                query_parameters['api-version'] = self._serialize.query("self.api_version", self.api_version, 'str', min_length=1)
 
             else:
                 url = next_link
@@ -76,7 +76,9 @@ class Operations(object):
             response = self._client.send(request, stream=False, **operation_config)
 
             if response.status_code not in [200]:
-                raise models.ApiErrorException(self._deserialize, response)
+                exp = CloudError(response)
+                exp.request_id = response.headers.get('x-ms-request-id')
+                raise exp
 
             return response
 
