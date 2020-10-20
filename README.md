@@ -9,9 +9,9 @@ The Azure CLI extension for Azure VMware Solution is an extension for Azure CLI 
 az extension add --name vmware
 ```
 
-Take a look at the [releases](https://github.com/virtustream/az-vmware-cli/releases) page if you wish to install a specific version. It can be installed with `az extension add`, for example:
+Take a look at the [releases](https://github.com/Azure/az-vmware-cli/releases) page if you wish to install a specific version. It can be installed with `az extension add`, for example:
 ``` sh
-az extension add -s https://github.com/virtustream/az-vmware-cli/releases/download/0.5.5/vmware-0.5.5-py2.py3-none-any.whl -y
+az extension add -s https://github.com/Azure/az-vmware-cli/releases/download/0.7.2/vmware-0.7.2-py2.py3-none-any.whl -y
 ```
 
 ## Usage
@@ -22,7 +22,7 @@ az vmware --help
 az vmware private-cloud list
 az vmware private-cloud create -g $resourcegroup -n $privatecloudname --location $location --cluster-size 3 --network-block 10.175.0.0/22
 ```
-See [test_vmware_scenario.py](https://github.com/virtustream/az-vmware-cli/blob/master/azext_vmware/tests/latest/test_vmware_scenario.py) for other examples.
+See [test_vmware_scenario.py](https://github.com/Azure/az-vmware-cli/blob/master/azext_vmware/tests/latest/test_vmware_scenario.py) for other examples.
 
 ## Uninstall
 You can see if the extension is installed by running `az extension list`. You can remove the extension by running `az extension remove`.
